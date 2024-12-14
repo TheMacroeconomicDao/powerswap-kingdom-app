@@ -1,0 +1,20 @@
+@keyframes glow {
+  0% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+.loading {
+  animation: glow 1.5s infinite ease-in-out;
+}

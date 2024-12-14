@@ -1,0 +1,45 @@
+.slider {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+  background-color: transparent;
+  border: 0.5px solid white;
+  height: 8px;
+}
+
+.slider::-moz-range-track {
+  background-color: transparent;
+  border: 0.5px solid white;
+  height: 8px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -10px;
+  border-radius: 0;
+  border: none;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -10px;
+  border-radius: 0;
+  border: none;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+}
+
+.slider::-webkit-slider-thumb:focus,
+.slider::-moz-range-thumb:focus {
+  outline: none;
+}

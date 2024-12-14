@@ -1,0 +1,15 @@
+.tab_wrapper {
+  position: fixed;
+  bottom: 81px;
+  left: 0;
+  width: 100vw;
+  height: 65%;
+  border-top: 1px white solid;
+  border-radius: 20px;
+  background: rgba(14, 14, 14, 0.98);
+  z-index: 40;
+  scrollbar-width: none;
+}
+.tab_wrapper::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=referral.module.css.map */

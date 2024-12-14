@@ -1,0 +1,108 @@
+{
+  "game": {
+    "header": {
+      "about": "À propos de nous"
+    },
+    "tabs": {
+      "resources": {
+        "resourcePool": {
+          "title": "Piscine de Ressources"
+        },
+        "updatePool": {
+          "text": "Mettre à jour la piscine"
+        },
+        "buyResource": {
+          "text": "Acheter une ressource"
+        }
+      },
+      "augmentations": {
+        "buyButton": "Acheter"
+      }
+    }
+  },
+  "referral": {
+    "pages": {
+      "main": {
+        "sections": {
+          "header": {
+            "exitButton": "Sortie!"
+          },
+          "url": {
+            "myUrl": "Mon URL",
+            "copied": "Copié!"
+          },
+          "referralInfo": {
+            "title": "Points PSWMeta"
+          },
+          "quests": {
+            "inviteQuests": {
+              "title": "Missions",
+              "invite10": "Invitez 10 amis",
+              "invite100": "Invitez 100 amis",
+              "invite150": "Invitez 150 amis",
+              "sideQuestsButton": "Quêtes secondaires",
+              "soon": "Bientôt"
+            },
+            "sideQuestsTab": {
+              "title": "Quêtes",
+              "quests": [
+                {
+                  "title": "Abonnez-vous à notre chaîne Telegram",
+                  "reward": "Vous recevrez <0>10.000</0> Tokens"
+                },
+                {
+                  "title": "Rejoignez notre chat Telegram",
+                  "reward": "Vous recevrez <0>15.000</0> Tokens"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "aboutUs": {
+        "sections": {
+          "mainTitle": {
+            "text": "Bienvenue dans la phase de démarrage du jeu PowerSwap Kingdom! Avec ce bot, vous pouvez obtenir votre <0lien de parrainage</0> et inviter des amis au projet. Pour chaque utilisateur invité, vous recevrez des récompenses qui accéléreront votre développement dans le jeu."
+          },
+          "articles": [
+            {
+              "title": "PowerSwap est une plateforme qui combine la technologie blockchain avec l'économie réelle.",
+              "text": "Elle comprend plusieurs modules : Mining Swap (investissement dans les fermes de minage), Trading Swap (commerce de cryptomonnaies), Profit Swap (répartition des bénéfices), Energy Swap (fourniture d'énergie verte) et GrowSwap (production d'aliments verts). L'objectif du projet est une croissance durable et une réduction des risques grâce à l'optimisation de l'interaction entre ces modules."
+            },
+            {
+              "title": "Qu'est-ce que PowerSwapMeta?",
+              "text": "PowerSwapMeta est un méta-univers créé autour du projet PowerSwap, montrant comment des personnes connectées dans un environnement numérique peuvent influencer le monde réel et l'économie. Dans ce méta-univers, les serres NFT, les fermes et les fermes de minage ont une existence et une base réelles. PowerSwapMeta intègre tous les aspects de la plateforme, permettant aux participants d'améliorer leurs fermes, d'obtenir des NFTs uniques et de créer une économie durable avec des actifs réels."
+            }
+          ],
+          "socials": {
+            "mainTitle": "Réseaux sociaux",
+            "telegramChannel": "/Chaîne_Telegram",
+            "telegramGroup": "/Groupe_Telegram"
+          }
+        }
+      },
+      "anotherWallet": {
+        "title": "Il semble que <0>vous</0> vous êtes connecté avec <1>un autre portefeuille</1>",
+        "text": "Veuillez utiliser le portefeuille précédent.",
+        "button": "Sortie"
+      }
+    },
+    "footer": {
+      "aboutUsButton": "À propos de nous"
+    },
+    "notAvailable": {
+      "title": "Actuellement en développement",
+      "text": "Abonnez-vous à notre <0>chaîne Telegram</0> pour connaître l'état actuel du projet."
+    },
+    "errorPage": {
+      "title": "Erreur!",
+      "button": "Retour"
+    }
+  },
+  "createUsername": {
+    "usernameField": "Nom d'utilisateur",
+    "loginButton": {
+      "text": "Entrer"
+    }
+  }
+}

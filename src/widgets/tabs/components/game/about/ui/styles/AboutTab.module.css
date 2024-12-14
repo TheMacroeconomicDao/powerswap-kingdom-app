@@ -1,0 +1,6 @@
+.about_text {
+  scrollbar-width: none;
+}
+.about_text::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=AboutTab.module.css.map */

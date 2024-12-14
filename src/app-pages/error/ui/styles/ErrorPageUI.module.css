@@ -1,0 +1,20 @@
+@keyframes TextPulsatingAnimated {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.text_pulsating {
+  font-size: 20px;
+  color: red;
+  text-transform: uppercase;
+  animation: TextPulsatingAnimated 1.5s ease-in-out infinite;
+}/*# sourceMappingURL=ErrorPageUI.module.css.map */

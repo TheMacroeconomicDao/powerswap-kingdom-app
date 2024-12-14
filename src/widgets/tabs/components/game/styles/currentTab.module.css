@@ -1,0 +1,20 @@
+.tab_wrapper {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-inline: auto;
+  padding-inline: 5%;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 100px);
+  background-color: rgba(14, 14, 14, 0.95);
+}
+
+.section_with_border {
+  border: 1px solid white;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  padding-inline: 5%;
+}/*# sourceMappingURL=currentTab.module.css.map */

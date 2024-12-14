@@ -1,0 +1,108 @@
+{
+  "game": {
+    "header": {
+      "about": "Über uns"
+    },
+    "tabs": {
+      "resources": {
+        "resourcePool": {
+          "title": "Ressourcenpool"
+        },
+        "updatePool": {
+          "text": "Pool aktualisieren"
+        },
+        "buyResource": {
+          "text": "Ressource kaufen"
+        }
+      },
+      "augmentations": {
+        "buyButton": "Kaufen"
+      }
+    }
+  },
+  "referral": {
+    "pages": {
+      "main": {
+        "sections": {
+          "header": {
+            "exitButton": "Beenden!"
+          },
+          "url": {
+            "myUrl": "Meine URL",
+            "copied": "Kopiert!"
+          },
+          "referralInfo": {
+            "title": "PSWMeta-Punkte"
+          },
+          "quests": {
+            "inviteQuests": {
+              "title": "Missionen",
+              "invite10": "Lade 10 Freunde ein",
+              "invite100": "Lade 100 Freunde ein",
+              "invite150": "Lade 150 Freunde ein",
+              "sideQuestsButton": "Nebenquests",
+              "soon": "Bald"
+            },
+            "sideQuestsTab": {
+              "title": "Quests",
+              "quests": [
+                {
+                  "title": "Abonniere unseren Telegram-Kanal",
+                  "reward": "Du erhältst <0>10.000</0> Tokens"
+                },
+                {
+                  "title": "Tritt unserem Telegram-Chat bei",
+                  "reward": "Du erhältst <0>15.000</0> Tokens"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "aboutUs": {
+        "sections": {
+          "mainTitle": {
+            "text": "Willkommen in der Anfangsphase des PowerSwap Kingdom Spiels! Mit diesem Bot kannst du deinen <0>Empfehlungslink</0> erhalten und Freunde zum Projekt einladen. Für jeden eingeladenen Benutzer erhältst du Belohnungen, die deine Entwicklung im Spiel beschleunigen."
+          },
+          "articles": [
+            {
+              "title": "PowerSwap ist eine Plattform, die Blockchain-Technologie mit der realen Wirtschaft verbindet.",
+              "text": "Es umfasst mehrere Module: Mining Swap (Investition in Mining-Farmen), Trading Swap (Handel mit Kryptowährungen), Profit Swap (Gewinnverteilung), Energy Swap (Bereitstellung von grüner Energie) und GrowSwap (Produktion von grünen Lebensmitteln). Das Ziel des Projekts ist nachhaltiges Wachstum und Risikominderung durch Optimierung der Interaktion zwischen diesen Modulen."
+            },
+            {
+              "title": "Was ist PowerSwapMeta?",
+              "text": "PowerSwapMeta ist ein Meta-Universum, das rund um das PowerSwap-Projekt geschaffen wurde und zeigt, wie Menschen, die in einer digitalen Umgebung verbunden sind, die reale Welt und Wirtschaft beeinflussen können. In diesem Meta-Universum haben NFT-Gewächshäuser, Farmen und Mining-Farmen eine reale Existenz und Grundlage. PowerSwapMeta integriert alle Aspekte der Plattform und ermöglicht es den Teilnehmern, ihre Farmen zu verbessern, einzigartige NFTs zu erhalten und eine nachhaltige Wirtschaft mit realen Vermögenswerten zu schaffen."
+            }
+          ],
+          "socials": {
+            "mainTitle": "Soziales",
+            "telegramChannel": "/Telegram_Kanal",
+            "telegramGroup": "/Telegram_Gruppe"
+          }
+        }
+      },
+      "anotherWallet": {
+        "title": "Sieht so aus, als ob <0>du</0> dich mit <1>einer anderen Brieftasche</1> angemeldet hast",
+        "text": "Bitte benutze die vorherige Brieftasche.",
+        "button": "Beenden"
+      }
+    },
+    "footer": {
+      "aboutUsButton": "Über uns"
+    },
+    "notAvailable": {
+      "title": "Derzeit in Entwicklung",
+      "text": "Abonniere unseren <0>Telegram-Kanal</0>, um über den aktuellen Projektstatus informiert zu werden."
+    },
+    "errorPage": {
+      "title": "Fehler!",
+      "button": "Zurückkehren"
+    }
+  },
+  "createUsername": {
+    "usernameField": "Benutzername",
+    "loginButton": {
+      "text": "Eingeben"
+    }
+  }
+}

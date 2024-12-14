@@ -1,0 +1,108 @@
+{
+  "game": {
+    "header": {
+      "about": "About us"
+    },
+    "tabs": {
+      "resources": {
+        "resourcePool": {
+          "title": "Resource pool"
+        },
+        "updatePool": {
+          "text": "Update pool"
+        },
+        "buyResource": {
+          "text": "Buy Resource"
+        }
+      },
+      "augmentations": {
+        "buyButton": "Buy"
+      }
+    }
+  },
+  "referral": {
+    "pages": {
+      "main": {
+        "sections": {
+          "header": {
+            "exitButton": "Exit!"
+          },
+          "url": {
+            "myUrl": "My url",
+            "copied": "Copied!"
+          },
+          "referralInfo": {
+            "title": "PSWMeta points"
+          },
+          "quests": {
+            "inviteQuests": {
+              "title": "Missions",
+              "invite10": "Invite 10 friends",
+              "invite100": "Invite 100 friends",
+              "invite150": "Invite 150 friends",
+              "sideQuestsButton": "Side quests",
+              "soon": "Soon"
+            },
+            "sideQuestsTab": {
+              "title": "Quests",
+              "quests": [
+                {
+                  "title": "Subscribe to our Telegram channel",
+                  "reward": "You will get <0>10.000</0> Tokens"
+                },
+                {
+                  "title": "Join our Telegram chat",
+                  "reward": "You will get <0>15.000</0> Tokens"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "aboutUs": {
+        "sections": {
+          "mainTitle": {
+            "text": "Welcome to the starting phase of the PowerSwap Kingdom game! With this bot you can get your <0>referral link</0> and invite friends to the project. For each invited user you will get rewards that will speed up your development in the game."
+          },
+          "articles": [
+            {
+              "title": "PowerSwap is a platform that combines blockchain technology with the real economy.",
+              "text": "It includes several modules: Mining Swap (investing in mining farms), Trading Swap (trading cryptocurrencies), Profit Swap (profit distribution), Energy Swap (providing green energy) and GrowSwap (producing green food). The goal of the project is sustainable growth and risk reduction through optimizing the interaction between these modules."
+            },
+            {
+              "title": "What is PowerSwapMeta?",
+              "text": "PowerSwapMeta is a meta-universe created around the PowerSwap project, showing how people connected in a digital environment can influence the real world and economy. In this meta-universe, NFT greenhouses, farms and mining farms have a real existence and basis. PowerSwapMeta integrates all aspects of the platform, allowing participants to improve their farms, obtain unique NFTs, and create a sustainable economy with real assets."
+            }
+          ],
+          "socials": {
+            "mainTitle": "Socials",
+            "telegramChannel": "/Telegram_channel",
+            "telegramGroup": "/Telegram_group"
+          }
+        }
+      },
+      "anotherWallet": {
+        "title": "Looks like <0>you</0> logged in from <1>another wallet</1>",
+        "text": "Please use the previous wallet.",
+        "button": "Exit"
+      }
+    },
+    "footer": {
+      "aboutUsButton": "About us"
+    },
+    "notAvailable": {
+      "title": "Currently in development",
+      "text": "Subscribe to our <0>Telegram channel</0> to find out about the current project status."
+    },
+    "errorPage": {
+      "title": "Error!",
+      "button": "Return"
+    }
+  },
+  "createUsername": {
+    "usernameField": "Username",
+    "loginButton": {
+      "text": "Enter"
+    }
+  }
+}

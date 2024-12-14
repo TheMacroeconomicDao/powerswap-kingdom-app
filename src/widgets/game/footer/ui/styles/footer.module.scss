@@ -1,0 +1,20 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 12%;
+  z-index: 50;
+}
+
+.link_active {
+  svg {
+    path {
+      fill: #bfff6e;
+    }
+  }
+}
