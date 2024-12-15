@@ -5,10 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "dev:https": "next dev --experimental-https -H 127.0.0.1 -p 3000",
-    "dev:local": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "start:https": "next start --experimental-https -H 192.168.0.17",
     "prettier": "prettier . --write",
     "lint": "next lint"
   },

@@ -1,16 +1,11 @@
-# Telegram Mini Apps Next.js Template
+# Telegram POWERSWAP GAME - Mini App, Next.js
 
-This template demonstrates how developers can implement a web application on the Telegram Mini Apps
-platform using the following technologies and libraries:
-
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [TON Connect](https://docs.ton.org/develop/dapps/ton-connect/overview)
-- [@telegram-apps SDK](https://docs.telegram-mini-apps.com/packages/telegram-apps-sdk)
-- [Telegram UI](https://github.com/Telegram-Mini-Apps/TelegramUI)
-
-> The template was created using [pnpm](https://pnpm.io/). Therefore, it is required to use it for
-> this project as well. Using other package managers, you will receive a corresponding error.
+PowerSwapMeta is driven by a community that brings together professional miners, traders, engineers,
+enthusiasts, and experts in clean energy and green technologies. This unique collective intelligence
+becomes a source of innovation and sustainability in the crypto industry. The platform goes beyond
+traditional investment tools by creating a community that not only invests but also actively
+participates in developing solutions, from mining strategies to the implementation of green energy
+sources.
 
 ## Install Dependencies
 
@@ -29,6 +24,7 @@ This project contains the following scripts:
 - `dev:https`. Runs the application in development mode using self-signed SSL certificate.
 - `build`. Builds the application for production.
 - `start`. Starts the Next.js server in production mode.
+- `prettier`. Starts format the code.
 - `lint`. Runs [eslint](https://eslint.org/) to ensure the code quality meets the required
   standards.
 
@@ -61,13 +57,13 @@ After this, you will see a similar message in your terminal:
 
 ```bash
 ▲ Next.js 14.2.3
-- Local:        http://localhost:3000
+- Local:        http://127.0.0.1:3000
 
 ✓ Starting...
 ✓ Ready in 2.9s
 ```
 
-To view the application, you need to open the `Local` link (`http://localhost:3000` in this example)
+To view the application, you need to open the `Local` link (`http://127.0.0.1:3000` in this example)
 in your browser.
 
 It is important to note that some libraries in this template, such as `@telegram-apps/sdk`, are not
@@ -94,13 +90,13 @@ To retrieve a link with the HTTPS protocol, consider using the `dev:https` scrip
 $ pnpm run dev:https
 
 ▲ Next.js 14.2.3
-- Local:        https://localhost:3000
+- Local:        https://127.0.0.1:3000
 
 ✓ Starting...
 ✓ Ready in 2.4s
 ```
 
-Visiting the `Local` link (`https://localhost:3000` in this example) in your browser, you will see
+Visiting the `Local` link (`https://127.0.0.1:3000` in this example) in your browser, you will see
 the following warning:
 
 ![SSL Warning](assets/ssl-warning.png)
@@ -109,7 +105,7 @@ This browser warning is normal and can be safely ignored as long as the site is 
 `Proceed to localhost (unsafe)` button to continue and view the application.
 
 Once the application is displayed correctly, submit the link `https://127.0.0.1:3000`
-(`https://localhost:3000` is considered as invalid by BotFather) as the Mini App link to
+(`https://127.0.0.1:3000` is considered as invalid by BotFather) as the Mini App link to
 [@BotFather](https://t.me/botfather). Then, navigate to
 [https://web.telegram.org/k/](https://web.telegram.org/k/), find your bot, and launch the Telegram
 Mini App. This approach provides the full development experience.
