@@ -17,7 +17,7 @@ export const nextApiHost = axios.create({
 });
 
 export const serverApiHost = axios.create({
-  baseURL: `https://devgame.powerswap.io/api/v1/`,
+  baseURL: `/api`,
   headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
