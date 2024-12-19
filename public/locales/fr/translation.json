@@ -25,22 +25,22 @@
       "main": {
         "sections": {
           "header": {
-            "exitButton": "Sortie!"
+            "exitButton": "Exit!"
           },
           "url": {
-            "myUrl": "Mon URL",
-            "copied": "Copié!"
+            "myUrl": "mon lien",
+            "copied": "copié"
           },
           "referralInfo": {
-            "title": "Points PSWMeta"
+            "title": "Points de référence"
           },
           "quests": {
             "inviteQuests": {
-              "title": "Missions",
-              "invite10": "Invitez 10 amis",
-              "invite100": "Invitez 100 amis",
-              "invite150": "Invitez 150 amis",
-              "sideQuestsButton": "Quêtes secondaires",
+              "title": "missions",
+              "invite10": "inviter 10 amis",
+              "invite100": "inviter 100 amis",
+              "invite150": "inviter 150 amis",
+              "sideQuestsButton": "autres quêtes",
               "soon": "Bientôt"
             },
             "sideQuestsTab": {
@@ -48,11 +48,11 @@
               "quests": [
                 {
                   "title": "Abonnez-vous à notre chaîne Telegram",
-                  "reward": "Vous recevrez <0>10.000</0> Tokens"
+                  "reward": "Vous obtiendrez <0>10 000</0> jetons"
                 },
                 {
-                  "title": "Rejoignez notre chat Telegram",
-                  "reward": "Vous recevrez <0>15.000</0> Tokens"
+                  "title": "Inscrivez-vous à notre chat Telegram",
+                  "reward": "Vous obtiendrez <0>15 000</0> jetons"
                 }
               ]
             }
@@ -62,40 +62,45 @@
       "aboutUs": {
         "sections": {
           "mainTitle": {
-            "text": "Bienvenue dans la phase de démarrage du jeu PowerSwap Kingdom! Avec ce bot, vous pouvez obtenir votre <0lien de parrainage</0> et inviter des amis au projet. Pour chaque utilisateur invité, vous recevrez des récompenses qui accéléreront votre développement dans le jeu."
+            "text": "BIENVENUE DANS LA PHASE DE DÉPART DE POWERSWAP KINGDOM! Dans cette application, vous pouvez obtenir votre lien de <0>référence et inviter</0> des amis à rejoindre le projet. Pour chaque ami invité, vous recevrez des récompenses qui accéléreront votre développement dans le jeu."
           },
           "articles": [
             {
-              "title": "PowerSwap est une plateforme qui combine la technologie blockchain avec l'économie réelle.",
-              "text": "Elle comprend plusieurs modules : Mining Swap (investissement dans les fermes de minage), Trading Swap (commerce de cryptomonnaies), Profit Swap (répartition des bénéfices), Energy Swap (fourniture d'énergie verte) et GrowSwap (production d'aliments verts). L'objectif du projet est une croissance durable et une réduction des risques grâce à l'optimisation de l'interaction entre ces modules."
+              "title": "QU'EST-CE QUE POWERSWAP?",
+              "text": "POWERSWAP est une plateforme qui combine la blockchain avec l'économie réelle. Elle comprend plusieurs modules : Mining Swap (investissement dans des fermes de minage), Trading Swap (échange de cryptomonnaies), Profit Swap (répartition des bénéfices), Energy Swap (fourniture d'énergie verte) et GrowSwap (production de produits alimentaires verts). L'objectif du projet est la croissance durable et la réduction des risques grâce à l'optimisation de l'interaction entre ces modules."
             },
             {
-              "title": "Qu'est-ce que PowerSwapMeta?",
-              "text": "PowerSwapMeta est un méta-univers créé autour du projet PowerSwap, montrant comment des personnes connectées dans un environnement numérique peuvent influencer le monde réel et l'économie. Dans ce méta-univers, les serres NFT, les fermes et les fermes de minage ont une existence et une base réelles. PowerSwapMeta intègre tous les aspects de la plateforme, permettant aux participants d'améliorer leurs fermes, d'obtenir des NFTs uniques et de créer une économie durable avec des actifs réels."
+              "title": "QU'EST-CE QUE POWERSWAPMETA?",
+              "text": "POWERSWAPMETA est un métaverse créé autour du projet POWERSWAP, montrant comment les personnes unies dans un environnement numérique peuvent influencer le monde réel et l'économie. Dans ce métaverse, les royaumes NFT - fermes, fermes de minage et centrales solaires sont mis en œuvre dans la réalité et forment la base de l'écosystème POWERSWAP. POWERSWAPMETA intègre tous les aspects de la plateforme, permettant aux participants d'améliorer leurs royaumes, recevoir des NFT uniques et créer une économie durable avec des actifs réels."
             }
           ],
           "socials": {
-            "mainTitle": "Réseaux sociaux",
-            "telegramChannel": "/Chaîne_Telegram",
-            "telegramGroup": "/Groupe_Telegram"
+            "mainTitle": "Socials",
+            "telegramChannel": "/Telegram_channel",
+            "telegramGroup": "/Telegram_group"
           }
         }
       },
       "anotherWallet": {
-        "title": "Il semble que <0>vous</0> vous êtes connecté avec <1>un autre portefeuille</1>",
+        "title": "Il semble que <0>vous</0> vous êtes connecté depuis <1>un autre portefeuille</1>",
         "text": "Veuillez utiliser le portefeuille précédent.",
-        "button": "Sortie"
+        "button": "Se déconnecter"
       }
     },
     "footer": {
-      "aboutUsButton": "À propos de nous"
+      "aboutUsButton": "à propos de nous"
     },
     "notAvailable": {
-      "title": "Actuellement en développement",
-      "text": "Abonnez-vous à notre <0>chaîne Telegram</0> pour connaître l'état actuel du projet."
+      "title": "En développement.",
+      "text": "Abonnez-vous à notre chaîne <0>Telegram pour connaître</0> l'état actuel du projet.",
+      "text2": "<0>Inscrivez-vous en premier!</0> 🎉 Devenez l'un des 1000 joueurs sélectionnés dans notre WhiteList TestNet exclusif et obtenez un accès anticipé à notre projet, ainsi que des bonus et des cadeaux de Noël uniques! 🎁"
+    },
+    "updatesTab": {
+      "title": "Version 1.1",
+      "text": "Miracle de Noël dans < 0 > PowerSwap Kingdom!< / 0> 🎄 Hourra! Nous sommes heureux d'annoncer notre mise à jour de Noël! 🎁 <br / ><br/>Obtenez<1>PSWMeta < /1> points facilement! Maintenant, vous pouvez obtenir des points, il suffit de tapaya sur le trombone dans l'application de référence! <br/> < br/>bonus Et cadeaux! Vous recevrez <1>PSWMeta Points</1> pour chaque tap sur un trombone, en fonction du nombre de vos références! Rejoignez-nous et obtenez vos cadeaux! <br/> < br/>❄️ Joyeux Noël et bonne chance dans le jeu! ❄️"
     },
     "errorPage": {
-      "title": "Erreur!",
+      "title": "Erreur",
       "button": "Retour"
     }
   },

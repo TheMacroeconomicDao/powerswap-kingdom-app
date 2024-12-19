@@ -62,16 +62,16 @@
       "aboutUs": {
         "sections": {
           "mainTitle": {
-            "text": "Welcome to the starting phase of the PowerSwap Kingdom game! With this bot you can get your <0>referral link</0> and invite friends to the project. For each invited user you will get rewards that will speed up your development in the game."
+            "text": "WELCOME TO THE STARTING STAGE OF POWERSWAP KINGDOM! In this app, you can get your <0>referral link</0> and invite friends to the project. For each invited friend, you will receive rewards that will accelerate your development in the game."
           },
           "articles": [
             {
-              "title": "PowerSwap is a platform that combines blockchain technology with the real economy.",
-              "text": "It includes several modules: Mining Swap (investing in mining farms), Trading Swap (trading cryptocurrencies), Profit Swap (profit distribution), Energy Swap (providing green energy) and GrowSwap (producing green food). The goal of the project is sustainable growth and risk reduction through optimizing the interaction between these modules."
+              "title": "What is PowerSwap?",
+              "text": "POWERSWAP is a platform that combines blockchain with the real economy. It includes several modules: Mining Swap (investing in mining farms), Trading Swap (trading cryptocurrencies), Profit Swap (profit distribution), Energy Swap (green energy provision), and GrowSwap (production of green food products). The goal of the project is sustainable growth and risk reduction through optimization of interaction between these modules."
             },
             {
               "title": "What is PowerSwapMeta?",
-              "text": "PowerSwapMeta is a meta-universe created around the PowerSwap project, showing how people connected in a digital environment can influence the real world and economy. In this meta-universe, NFT greenhouses, farms and mining farms have a real existence and basis. PowerSwapMeta integrates all aspects of the platform, allowing participants to improve their farms, obtain unique NFTs, and create a sustainable economy with real assets."
+              "text": "POWERSWAPMETA is a metaverse created around the POWERSWAP project, showing how people united in a digital environment can influence the real world and economy. In this metaverse, NFT kingdoms - farms, mining farms, and solar power plants are implemented in reality and form the basis of the POWERSWAP ecosystem. POWERSWAPMETA integrates all aspects of the platform, allowing participants to improve their kingdoms, receive unique NFTs, and create a sustainable economy with real assets."
             }
           ],
           "socials": {
@@ -81,6 +81,7 @@
           }
         }
       },
+
       "anotherWallet": {
         "title": "Looks like <0>you</0> logged in from <1>another wallet</1>",
         "text": "Please use the previous wallet.",
