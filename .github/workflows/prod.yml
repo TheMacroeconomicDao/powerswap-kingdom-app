@@ -1,0 +1,26 @@
+name: production
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: fifsky/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          user: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          command: |
+              cd ~/${{ secrets.PATH }}
+              eval `ssh-agent -s`
+              ssh-add ~/.ssh/game-frontend
+              git pull
+              cd ..
+              sudo docker compose up -d --build ${{ secrets.NAME_SERVICE }}
