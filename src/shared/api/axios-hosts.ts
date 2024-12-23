@@ -17,7 +17,7 @@ export const nextApiHost = axios.create({
 });
 
 export const serverApiHost = axios.create({
-  baseURL: `/api`,
+  baseURL: `api`,
   headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json',

@@ -6,7 +6,7 @@ import { isAxiosError } from 'axios';
 import { createEffect, createStore, createEvent, sample } from 'effector';
 
 import { $user, $userId } from '../../user';
-import { TapDataType, PostTapParams } from './types';
+import { TapRefDataType, PostTapRefParams } from './types';
 import { tapsChunk } from '@/shared/config/tap';
 import { $points, setPoints } from '@/entities/user/referral_points';
 import { $refs } from '@/entities/referrals';
@@ -20,9 +20,9 @@ import {
 export const referralTap = createEvent<void>();
 export const postReferralTap = createEvent<void>();
 
-export const postReferralTapFx = createEffect(async ({ referralTaps }: PostTapParams) => {
+export const postReferralTapFx = createEffect(async ({ referralTaps }: PostTapRefParams) => {
   try {
-    const res: { data: TapDataType } = await serverApiHost.post('/actions/referral_tap', {
+    const res: { data: TapRefDataType } = await serverApiHost.post('/actions/referral_tap', {
       taps_amount: referralTaps,
     });
 
@@ -61,7 +61,7 @@ sample({
   clock: postReferralTap,
   source: { userId: $userId, referralTaps: $referralTaps },
   filter: ({ userId }) => !!userId,
-  fn: ({ userId, referralTaps }) => ({ userId, referralTaps }) as PostTapParams,
+  fn: ({ userId, referralTaps }) => ({ userId, referralTaps }) as PostTapRefParams,
   target: postReferralTapFx,
 });
 

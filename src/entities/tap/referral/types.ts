@@ -1,9 +1,9 @@
 import { ResultType } from '@/shared/types';
-export type TapDataType = {
+export type TapRefDataType = {
   result: ResultType;
   data: {
     referrals_points: number;
   };
 };
 
-export type PostTapParams = { referralTaps: number };
+export type PostTapRefParams = { referralTaps: number };
