@@ -5,7 +5,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://127.0.0.1:5000/api/v1/:path*', // for local development
+        destination: 'http://frontend_game/api/v1/:path*', // for local development
         // for docker use http://{backend_container}:port/api/v1/:path*
       },
     ];
