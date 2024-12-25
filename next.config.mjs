@@ -1,15 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: 'http://127.0.0.1:5000/api/v1/:path*', // for local development
-        // for docker use http://{backend_container}:port/api/v1/:path*
-      },
-    ];
-  },
   output: 'standalone',
   webpack(config) {
     // Grab the existing rule that handles SVG imports
