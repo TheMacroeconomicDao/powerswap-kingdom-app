@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { referralTap, setRefTab } from '@/entities';
+import { setRefTab } from '@/entities';
 
 import Paperclip from '@/shared/assets/Paperclip.svg';
 import PaperclipBg from '@/shared/assets/Paperclip-bg.svg';
@@ -9,10 +9,8 @@ import PaperclipBg from '@/shared/assets/Paperclip-bg.svg';
 import styles from './styles/mainPageLink.module.css';
 
 export const MainPageLink = () => {
-
   const handleClick = () => {
     setRefTab('none');
-    referralTap();
   };
 
   return (
