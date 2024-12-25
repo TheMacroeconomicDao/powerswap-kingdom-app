@@ -7,3 +7,4 @@ export * from './sidequests';
 export * from './exit-button';
 export * from './goback-button';
 export * from './sidequests';
+export * from './tokens-exchange';

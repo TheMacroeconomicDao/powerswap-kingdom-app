@@ -31,6 +31,9 @@
             "myUrl": "mon lien",
             "copied": "copié"
           },
+          "tokens-exchange": {
+            "buttonText": "Convertir en points PSWMeta"
+          },
           "referralInfo": {
             "title": "Points de référence"
           },

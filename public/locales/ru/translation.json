@@ -31,6 +31,9 @@
             "myUrl": "Моя ссылка",
             "copied": "Скопировано"
           },
+          "tokens-exchange": {
+            "buttonText": "Перевести в PSWMeta Points"
+          },
           "referralInfo": {
             "title": "Реферальные баллы"
           },
