@@ -31,6 +31,9 @@
             "myUrl": "My url",
             "copied": "Copied!"
           },
+          "tokens-exchange": {
+            "buttonText": "Convert to PSWMeta Points"
+          },
           "referralInfo": {
             "title": "PSWMeta points"
           },

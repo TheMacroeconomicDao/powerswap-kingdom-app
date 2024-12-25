@@ -14,11 +14,6 @@ export const CurrentKingdomDisplay = () => {
   };
 
   const kingdom = useUnit($kingdom);
-  const lastOpenedPage = useUnit($lastOpenedPage);
-  const lastActiveResource = useUnit($lastActiveResource);
-
-  console.log(lastOpenedPage);
-  console.log(lastActiveResource);
 
   return (
     <div className={`${kingdom && textColors[kingdom]} flex flex-col gap-1`}>

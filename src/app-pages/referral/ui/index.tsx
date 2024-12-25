@@ -14,6 +14,7 @@ import {
   ReferralInfo,
   LoadingUIMain,
   SideQuestsButton,
+  TokensExchange,
 } from '@/widgets';
 
 export const ReferralUI = () => {
@@ -41,6 +42,7 @@ export const ReferralUI = () => {
         >
           <MainPageLink />
           <CopySection copied={t('sections.url.myUrl')} />
+          <TokensExchange />
           <ReferralInfo refPoints={refPoints} />
           <Missions
             title={t('sections.quests.inviteQuests.title')}
