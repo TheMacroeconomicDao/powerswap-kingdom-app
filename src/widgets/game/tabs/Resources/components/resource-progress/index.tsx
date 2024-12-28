@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 import Image from 'next/image';
 
 import LockFill from './assets/fills/locked.svg?url';
@@ -27,24 +27,27 @@ export interface ResourceProgressProps {
   resource: ResourceWithStateType;
 }
 export const ResourceProgress = ({ progress = 100, resource }: ResourceProgressProps) => {
-  const assets = {
-    crypto: {
-      icon: Crypto,
-      fill: CryptoFill,
-    },
-    heat: {
-      icon: Heat,
-      fill: HeatFill,
-    },
-    food: {
-      icon: Food,
-      fill: FoodFill,
-    },
-    energy: {
-      icon: Energy,
-      fill: EnergyFill,
-    },
-  };
+  const assets = useMemo(
+    () => ({
+      crypto: {
+        icon: Crypto,
+        fill: CryptoFill,
+      },
+      heat: {
+        icon: Heat,
+        fill: HeatFill,
+      },
+      food: {
+        icon: Food,
+        fill: FoodFill,
+      },
+      energy: {
+        icon: Energy,
+        fill: EnergyFill,
+      },
+    }),
+    []
+  );
 
   const getResourceIcon = useCallback(() => {
     switch (resource.state) {
@@ -54,8 +57,10 @@ export const ResourceProgress = ({ progress = 100, resource }: ResourceProgressP
         return LockGreen;
       case 'locked':
         return Lock;
+      default:
+        return null; 
     }
-  }, []);
+  }, [assets, resource.name, resource.state]);
 
   const getResourceFill = useCallback(() => {
     switch (resource.state) {
@@ -64,8 +69,10 @@ export const ResourceProgress = ({ progress = 100, resource }: ResourceProgressP
       case 'available':
       case 'locked':
         return LockFill;
+      default:
+        return null;
     }
-  }, []);
+  }, [assets, resource.name, resource.state]);
 
   const ResourceIcon = getResourceIcon();
   const ResourceFill = getResourceFill();
@@ -73,7 +80,7 @@ export const ResourceProgress = ({ progress = 100, resource }: ResourceProgressP
   return (
     <div className="relative flex items-center gap-0">
       <div className="z-30 min-h-[48px] min-w-[48px] border-[3px] border-white bg-[#0e0e0e] p-2">
-        <ResourceIcon />
+        {ResourceIcon ? <ResourceIcon /> : null}
       </div>
       <div className="w-full">
         <div className="relative w-full">
