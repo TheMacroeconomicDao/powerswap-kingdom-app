@@ -24,6 +24,7 @@ import TraderKingdomTier4 from './assets/kingdoms/trader/tier-4.svg';
 
 import { useUnit } from 'effector-react';
 import { tap, $kingdom } from '@/entities';
+import { StyledWrapper } from './styled';
 
 export const CurrentKingdom = () => {
   const kingdom = useUnit($kingdom);
@@ -43,9 +44,8 @@ export const CurrentKingdom = () => {
 
   return (
     <AnimatePresence>
-      <motion.div
+      <StyledWrapper
         key="kingdom-wrapper"
-        className="mt-8 flex h-fit w-full items-center justify-center"
         initial={{ scale: 1, opacity: 1 }}
         animate={{
           scale: [0.8, 1],
@@ -73,7 +73,7 @@ export const CurrentKingdom = () => {
         >
           <Kingdom preserveAspectRatio="meet" />
         </motion.button>
-      </motion.div>
+      </StyledWrapper>
     </AnimatePresence>
   );
 };

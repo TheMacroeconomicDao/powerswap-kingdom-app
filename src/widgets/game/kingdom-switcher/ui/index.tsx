@@ -4,12 +4,12 @@ import { KingdomSwitchButton } from './kingdom-switch-button';
 
 import { useUnit } from 'effector-react';
 import { $availableKingdoms } from '@/entities/kingdom';
+import { StyledWrapper } from './styled';
 
 export const KingdomSwitcher = () => {
   const kingdoms = useUnit($availableKingdoms);
-
   return (
-    <div className="mt-8 flex w-full items-center justify-center gap-4">
+    <StyledWrapper>
       {kingdoms &&
         kingdoms.length > 0 &&
         kingdoms?.map((kingdom, index) => (
@@ -19,6 +19,6 @@ export const KingdomSwitcher = () => {
             key={`kingdom-switch-button-${index}`}
           />
         ))}
-    </div>
+    </StyledWrapper>
   );
 };

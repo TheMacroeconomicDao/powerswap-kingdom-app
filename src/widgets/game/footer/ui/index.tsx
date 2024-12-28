@@ -6,45 +6,49 @@ import Market from './assets/market.svg';
 
 import { useUnit } from 'effector-react';
 import { $tab, setTab } from '@/entities';
-import styles from './styles/footer.module.css';
+import { IconWrapper, StyledWrapper } from './styled';
 
 export const Footer = () => {
   const tab = useUnit($tab);
 
   return (
-    <footer className={styles.footer}>
+    <StyledWrapper as="footer">
       <button
         onClick={() => {
           setTab(tab !== 'resources' ? 'resources' : 'none');
         }}
-        className={tab === 'resources' ? styles.link_active : ''}
       >
-        <Resources />
+        <IconWrapper $isActive={tab === 'resources'}>
+          <Resources />
+        </IconWrapper>
       </button>
       <button
         onClick={() => {
           setTab(tab !== 'augmentations' ? 'augmentations' : 'none');
         }}
-        className={tab === 'augmentations' ? styles.link_active : ''}
       >
-        <Augmentations />
+        <IconWrapper $isActive={tab === 'augmentations'}>
+          <Augmentations />
+        </IconWrapper>
       </button>
       <button
         onClick={() => {
           setTab(tab !== 'leaderboard' ? 'leaderboard' : 'none');
         }}
-        className={tab === 'leaderboard' ? styles.link_active : ''}
       >
-        <Leaderboard />
+        <IconWrapper $isActive={tab === 'leaderboard'}>
+          <Leaderboard />
+        </IconWrapper>
       </button>
       <button
         onClick={() => {
           setTab(tab !== 'market' ? 'market' : 'none');
         }}
-        className={tab === 'market' ? styles.link_active : ''}
       >
-        <Market />
+        <IconWrapper $isActive={tab === 'market'}>
+          <Market />
+        </IconWrapper>
       </button>
-    </footer>
+    </StyledWrapper>
   );
 };

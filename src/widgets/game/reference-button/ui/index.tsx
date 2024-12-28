@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 import QuestionMark from './assets/question.svg';
 import ReferenceBorder from './assets/reference-border.svg';
+import { Block, Button, Text, Wrapper } from './styled';
 
 export const ReferenceButton = ({
   reference,
@@ -17,19 +18,18 @@ export const ReferenceButton = ({
   const [referenceShown, setReferenceShown] = useState<boolean>(false);
 
   return (
-    <div className="relative">
-      <button
+    <Wrapper>
+      <Button
         onClick={(e: React.PointerEvent<HTMLButtonElement>) => {
           e.preventDefault();
           setReferenceShown(!referenceShown);
         }}
-        className="flex items-center justify-center border-[3px] border-white p-1"
       >
         <QuestionMark />
-      </button>
+      </Button>
       <AnimatePresence>
         {referenceShown && (
-          <motion.div
+          <Block
             initial={{
               opacity: 0,
               scale: 0,
@@ -51,17 +51,14 @@ export const ReferenceButton = ({
             transition={{
               duration: 0.15,
             }}
-            className="absolute right-0 top-8 z-[100]"
           >
-            <div className="relative">
+            <Wrapper>
               <ReferenceBorder />
-              <p className="absolute left-0 top-0 size-full text-balance break-words p-6">
-                {reference}
-              </p>
-            </div>
-          </motion.div>
+              <Text>{reference}</Text>
+            </Wrapper>
+          </Block>
         )}
       </AnimatePresence>
-    </div>
+    </Wrapper>
   );
 };

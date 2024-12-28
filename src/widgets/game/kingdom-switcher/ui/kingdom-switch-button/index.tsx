@@ -17,6 +17,7 @@ import {
   pickKingdom as pickKingdomEvent,
 } from '@/entities';
 import { useUnit } from 'effector-react';
+import { Button } from './styled';
 
 interface KingdomSwitchButtonProps {
   kingdomType: KingdomType;
@@ -71,7 +72,7 @@ export const KingdomSwitchButton: React.FC<KingdomSwitchButtonProps> = ({
   };
 
   return (
-    <motion.button
+    <Button
       initial={{ scale: 1, opacity: 1 }}
       whileTap={{
         scale: 0.9,
@@ -82,10 +83,9 @@ export const KingdomSwitchButton: React.FC<KingdomSwitchButtonProps> = ({
           bounce: 0.6,
         },
       }}
-      className="flex max-h-[55px] min-h-[55px] min-w-[55px] max-w-[55px] flex-grow items-center justify-center border-[3px] border-white p-1"
       onClick={handleClick}
     >
       {getIcon()}
-    </motion.button>
+    </Button>
   );
 };

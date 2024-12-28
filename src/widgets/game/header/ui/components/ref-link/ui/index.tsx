@@ -2,10 +2,10 @@
 
 import { useRouter } from 'next/navigation';
 
-import Paperclip from '../../assets/paperclip.svg';
-import Message from '../../assets/message.svg';
+import Paperclip from '../../../../assets/paperclip.svg';
+import Message from '../../../../assets/message.svg';
 
-import styles from '../../styles/header.module.css';
+import { LinkButton } from '../../../styled';
 
 import { useUnit } from 'effector-react';
 import { $refs, setLastOpenedPage } from '@/entities';
@@ -22,10 +22,7 @@ export const RefLink = () => {
   };
 
   return (
-    <button
-      onClick={handleClick}
-      className={`${styles.header_link} relative`}
-    >
+    <LinkButton onClick={handleClick}>
       <Paperclip />
       {!!refs && refs.referrals_count > 0 && (
         <div className="absolute left-[38px] top-[-8px] size-max">
@@ -37,6 +34,6 @@ export const RefLink = () => {
           </div>
         </div>
       )}
-    </button>
+    </LinkButton>
   );
 };

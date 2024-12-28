@@ -1,12 +1,11 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
 import PaperclipBig from '@/shared/assets/Paperclip-big.svg';
+import { StyledWrapper } from './styled';
 
 export const LoadingUIMain = () => {
   return (
-    <motion.div
+    <StyledWrapper
       initial={{ opacity: 0.6, scale: 1 }}
       animate={{
         opacity: [0.6, 1],
@@ -15,9 +14,8 @@ export const LoadingUIMain = () => {
       }}
       exit={{ opacity: 0, scale: 10 }}
       transition={{ duration: 0.5 }}
-      className="flex h-[calc(100vh-80px)] w-[100vw] items-center justify-center"
     >
       <PaperclipBig />
-    </motion.div>
+    </StyledWrapper>
   );
 };
