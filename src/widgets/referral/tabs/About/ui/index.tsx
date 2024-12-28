@@ -4,11 +4,11 @@ import { mainFont, fallbackFont } from '@/fonts';
 
 import styles from '@/shared/ui/styles/referall-tab/referral.module.css';
 
-import Queen from './assets/mystical-queen-card.svg';
+import Queen from '../assets/mystical-queen-card.svg';
 
 import { GoBackButton, TabAnimatedReferral } from '@/widgets';
-import { SocialLinks } from './social-links/ui';
-import { TextSection } from './text/ui';
+import { SocialLinks } from './social-links';
+import { TextSection } from './text';
 
 import { useTranslation, Trans } from 'react-i18next';
 
