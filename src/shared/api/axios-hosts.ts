@@ -13,6 +13,8 @@ export const nextApiHost = axios.create({
   },
 });
 
+// #test
+
 export const serverApiHost = axios.create({
   baseURL: `api/v1`,
   headers: {
