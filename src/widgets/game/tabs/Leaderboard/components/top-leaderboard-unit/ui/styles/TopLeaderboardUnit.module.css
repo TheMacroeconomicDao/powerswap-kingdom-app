@@ -1,0 +1,30 @@
+.first {
+  position: relative;
+  color: transparent;
+  background: linear-gradient(90deg, #7aff87 0%, #e479ff 49.65%, #ff4158 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.first::before {
+  content: "";
+  width: 100%;
+  height: 10%;
+  top: 45%;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(90deg, #7aff87 0%, #e479ff 49.65%, #ff4158 100%);
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.second {
+  color: #ff9b3f;
+  filter: drop-shadow(0 0 1px #ff9b3f);
+}
+
+.third {
+  color: #71f6ff;
+  filter: drop-shadow(0 0 1px #71f6ff);
+}/*# sourceMappingURL=TopLeaderboardUnit.module.css.map */

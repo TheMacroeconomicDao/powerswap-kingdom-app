@@ -2,6 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
+  rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'http://devgame.powerswap.io:3460/api/v1/:path*',
+      },
+    ];
+  },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find(rule => rule.test?.test?.('.svg'));

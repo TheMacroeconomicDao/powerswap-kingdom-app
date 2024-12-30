@@ -18,6 +18,29 @@
       "augmentations": {
         "buyButton": "Buy"
       }
+    },
+    "kingdom-pick": {
+      "kingdoms": {
+        "food": {
+          "title": "The Grower Kingdom",
+          "subtitle": "The World's Food Factory"
+        },
+        "crypto": {
+          "title": "The Crypto Kingdom",
+          "subtitle": "The World's First Crypto Producer"
+        }
+      },
+      "production": {
+        "-": "- Consumes",
+        "+": "+ Produces"
+      },
+      "resources": {
+        "food": "Food",
+        "energy": "Energy",
+        "heat": "Heat",
+        "crypto": "Crypto"
+      },
+      "button": "Submit!"
     }
   },
   "referral": {

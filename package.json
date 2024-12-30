@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@effector/next": "^0.7.0",
+    "@emotion/styled": "^11.14.0",
     "@tanstack/react-query": "^5.52.1",
     "@telegram-apps/react-router-integration": "^1.0.0",
     "@telegram-apps/sdk": "^1.1.3",
