@@ -18,6 +18,29 @@
       "augmentations": {
         "buyButton": "Kaufen"
       }
+    },
+    "kingdom-pick": {
+      "kingdoms": {
+        "food": {
+          "title": "Das Anbauer-Königreich",
+          "subtitle": "Die Weltweite Nahrungsfabrik"
+        },
+        "crypto": {
+          "title": "Das Krypto-Königreich",
+          "subtitle": "Der Weltweit Erste Krypto-Produzent"
+        }
+      },
+      "production": {
+        "-": "- Verbraucht",
+        "+": "+ Produziert"
+      },
+      "resources": {
+        "food": "Nahrung",
+        "energy": "Energie",
+        "heat": "Wärme",
+        "crypto": "Krypto"
+      },
+      "button": "Bestätigen!"
     }
   },
   "referral": {

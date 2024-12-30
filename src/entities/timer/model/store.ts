@@ -7,7 +7,10 @@ import { resourcePoolModel } from '@/entities/resources-pool';
 const $startTime = combine(resourcePoolModel.$resourcePool, pool => pool?.start_reset_time ?? 0);
 const $endTime = combine(resourcePoolModel.$resourcePool, pool => pool?.end_reset_time ?? 0);
 export const $totalTime = combine($startTime, $endTime, (start, end) =>
-  Math.floor((end - start) / 1000)
+  Math.floor(
+    end - start
+    // / 1000 UNCOMMENT IF THIS GOES IN ms
+  )
 );
 
 export const $estimatedTime = createStore<number>(0);
@@ -38,8 +41,8 @@ sample({
   filter: end => !!end,
   // @ts-ignore
   fn: end =>
-    Math.floor((end - new Date().getTime()) / 1000) >= 0
-      ? Math.floor((end - new Date().getTime()) / 1000)
+    Math.floor(end - new Date().getTime() / 1000) >= 0
+      ? Math.floor(end - new Date().getTime() / 1000)
       : 0,
   target: $estimatedTime,
 });

@@ -2,7 +2,7 @@
 
 import { createEffect, createEvent, createStore, sample } from 'effector';
 import { AvailableKingdomsDataType, KingdomType } from './types';
-import { serverApiHost, nextApiHost } from '@/shared/api/axios-hosts';
+import { serverApiHost } from '@/shared/api/axios-hosts';
 import { loggedIn } from '../auth';
 
 // logic for picking a kingdom
