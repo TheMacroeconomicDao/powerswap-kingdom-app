@@ -18,6 +18,29 @@
       "augmentations": {
         "buyButton": "Kaufen"
       }
+    },
+    "kingdom-pick": {
+      "kingdoms": {
+        "food": {
+          "title": "Das Anbauer-Königreich",
+          "subtitle": "Die Weltweite Nahrungsfabrik"
+        },
+        "crypto": {
+          "title": "Das Krypto-Königreich",
+          "subtitle": "Der Weltweit Erste Krypto-Produzent"
+        }
+      },
+      "production": {
+        "-": "- Verbraucht",
+        "+": "+ Produziert"
+      },
+      "resources": {
+        "food": "Nahrung",
+        "energy": "Energie",
+        "heat": "Wärme",
+        "crypto": "Krypto"
+      },
+      "button": "Bestätigen!"
     }
   },
   "referral": {
@@ -30,6 +53,9 @@
           "url": {
             "myUrl": "Meine URL",
             "copied": "Kopiert!"
+          },
+          "tokens-exchange": {
+            "buttonText": "Umrechnung in PSWMeta-Punkte"
           },
           "referralInfo": {
             "title": "PSWMeta-Punkte"
@@ -62,29 +88,29 @@
       "aboutUs": {
         "sections": {
           "mainTitle": {
-            "text": "Willkommen in der Anfangsphase des PowerSwap Kingdom Spiels! Mit diesem Bot kannst du deinen <0>Empfehlungslink</0> erhalten und Freunde zum Projekt einladen. Für jeden eingeladenen Benutzer erhältst du Belohnungen, die deine Entwicklung im Spiel beschleunigen."
+            "text": "WILLKOMMEN IN DER STARTPHASE VON POWERSWAP KINGDOM GAME! In dieser Anwendung kannst du deinen <0>Empfehlungslink</0> bekommen und Freunde zu dem Projekt einladen. Für jeden eingeladenen Freund erhältst du Belohnungen, die deine Entwicklung im Spiel beschleunigen werden."
           },
           "articles": [
             {
-              "title": "PowerSwap ist eine Plattform, die Blockchain-Technologie mit der realen Wirtschaft verbindet.",
-              "text": "Es umfasst mehrere Module: Mining Swap (Investition in Mining-Farmen), Trading Swap (Handel mit Kryptowährungen), Profit Swap (Gewinnverteilung), Energy Swap (Bereitstellung von grüner Energie) und GrowSwap (Produktion von grünen Lebensmitteln). Das Ziel des Projekts ist nachhaltiges Wachstum und Risikominderung durch Optimierung der Interaktion zwischen diesen Modulen."
+              "title": "Was ist das PowerSwap-Projekt?",
+              "text": "POWERSWAP ist eine Plattform, die Blockchain mit der Realwirtschaft verbindet. Sie umfasst mehrere Module: Mining Swap (Investitionen in Mining-Farmen), Trading Swap (Handel mit Kryptowährungen), Profit Swap (Gewinnausschüttung), Energy Swap (Bereitstellung grüner Energie) und GrowSwap (Produktion grüner Lebensmittel). Das Ziel des Projekts ist nachhaltiges Wachstum und Risikominderung durch die Optimierung der Interaktion zwischen diesen Modulen."
             },
             {
               "title": "Was ist PowerSwapMeta?",
-              "text": "PowerSwapMeta ist ein Meta-Universum, das rund um das PowerSwap-Projekt geschaffen wurde und zeigt, wie Menschen, die in einer digitalen Umgebung verbunden sind, die reale Welt und Wirtschaft beeinflussen können. In diesem Meta-Universum haben NFT-Gewächshäuser, Farmen und Mining-Farmen eine reale Existenz und Grundlage. PowerSwapMeta integriert alle Aspekte der Plattform und ermöglicht es den Teilnehmern, ihre Farmen zu verbessern, einzigartige NFTs zu erhalten und eine nachhaltige Wirtschaft mit realen Vermögenswerten zu schaffen."
+              "text": "POWERSWAPMETA ist ein Meta-Universum, das rund um das POWERSWAP-Projekt geschaffen wurde und zeigt, wie Menschen, die sich in einer digitalen Umgebung zusammenschließen, die reale Welt und die Wirtschaft beeinflussen können. In diesem Meta-Universum werden NFT-Königreiche - Bauernhöfe, Bergbau-Farmen und Solarkraftwerke - in die Realität umgesetzt und bilden die Grundlage des POWERSWAP-Ökosystems. POWERSWAPMETA integriert alle Aspekte der Plattform und ermöglicht es den Teilnehmern, ihre Königreiche zu verbessern, einzigartige NFTs zu erhalten und eine nachhaltige Wirtschaft mit realen Werten zu schaffen."
             }
           ],
           "socials": {
-            "mainTitle": "Soziales",
-            "telegramChannel": "/Telegram_Kanal",
-            "telegramGroup": "/Telegram_Gruppe"
+            "mainTitle": "Socials",
+            "telegramChannel": "/Telegram_channel",
+            "telegramGroup": "/Telegram_group"
           }
         }
       },
       "anotherWallet": {
-        "title": "Sieht so aus, als ob <0>du</0> dich mit <1>einer anderen Brieftasche</1> angemeldet hast",
-        "text": "Bitte benutze die vorherige Brieftasche.",
-        "button": "Beenden"
+        "title": "Sieht so aus, als ob <0>Sie</0> sich über <1>eine andere Wallet</1> angemeldet haben",
+        "text": "Bitte verwenden Sie das bisherige Wallet.",
+        "button": "Abmelden"
       }
     },
     "footer": {

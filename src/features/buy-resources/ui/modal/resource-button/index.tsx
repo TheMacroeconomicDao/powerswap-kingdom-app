@@ -1,17 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
 import { ResourceType } from '@/entities';
-
 import Heat from '@/shared/ui/icons/resources/heat.svg';
 import Food from '@/shared/ui/icons/resources/food.svg';
 import Crypto from '@/shared/ui/icons/resources/crypto.svg';
 import Energy from '@/shared/ui/icons/resources/energy.svg';
-
 import Lock from '@/shared/assets/ResourceLock.svg';
 import LockGreen from '@/shared/assets/Lock-green.svg';
-
 import { useUnit } from 'effector-react';
 import { buyResourcesModelInputs } from '../../../model';
 import { useCallback } from 'react';
@@ -32,16 +28,16 @@ export const ResourceButton = ({
     setChosenResourceKey(resource.name);
   };
 
-  const icons: {
-    [resourceKey in ResourceType]: React.FC<React.SVGProps<SVGElement>>;
-  } = {
-    crypto: Crypto,
-    heat: Heat,
-    food: Food,
-    energy: Energy,
-  };
-
   const getIcon = useCallback(() => {
+    const icons: {
+      [resourceKey in ResourceType]: React.FC<React.SVGProps<SVGElement>>;
+    } = {
+      crypto: Crypto,
+      heat: Heat,
+      food: Food,
+      energy: Energy,
+    };
+
     switch (resource.state) {
       case 'opened':
         return icons[resource.name];
@@ -49,9 +45,13 @@ export const ResourceButton = ({
         return LockGreen;
       case 'locked':
         return Lock;
+      default:
+        return null;
     }
-  }, []);
+  }, [resource.name, resource.state]);
+
   const Icon = getIcon();
+
   return (
     <motion.button
       initial={{
@@ -78,7 +78,7 @@ export const ResourceButton = ({
       onClick={handleClick}
       disabled={resource.state !== 'opened'}
     >
-      <Icon />
+      {Icon ? <Icon /> : null}
     </motion.button>
   );
 };

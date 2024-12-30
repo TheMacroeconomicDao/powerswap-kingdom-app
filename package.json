@@ -5,15 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "dev:https": "next dev --experimental-https -H 127.0.0.1 -p 3000",
-    "dev:local": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "start:https": "next start --experimental-https -H 192.168.0.17",
     "prettier": "prettier . --write",
     "lint": "next lint"
   },
   "dependencies": {
     "@effector/next": "^0.7.0",
+    "@emotion/styled": "^11.14.0",
     "@tanstack/react-query": "^5.52.1",
     "@telegram-apps/react-router-integration": "^1.0.0",
     "@telegram-apps/sdk": "^1.1.3",
