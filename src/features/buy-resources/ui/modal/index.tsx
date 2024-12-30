@@ -5,15 +5,14 @@ import { motion } from 'framer-motion';
 
 import { useEffect, useRef, useCallback } from 'react';
 
-import { ResourceBuySlider } from '../slider';
-import { ResourcesPrice } from './resources-price';
-import { ResourcesAmount } from './resources-amount';
+import { ResourceBuySlider } from '../Slider';
+import { ResourcesPrice } from './ResourcesPrice';
+import { ResourcesAmount } from './ResourcesAmount';
 
 import { useUnit } from 'effector-react';
 import { buyResourcesModelInputs } from '../../model';
-import { ResourcesList } from './resources-list';
-import { ResourceBuyButton } from './buy-button';
-
+import { ResourcesList } from './ResourcesList';
+import { ResourceBuyButton } from './BuyButton';
 export const BuyResourceModal = () => {
   const buyResourceAmount = useUnit(buyResourcesModelInputs.$buyResourceAmount);
   const chosenResourceKey = useUnit(buyResourcesModelInputs.$chosenResourceKey);

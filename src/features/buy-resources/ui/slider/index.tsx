@@ -4,7 +4,6 @@ import { useUnit } from 'effector-react';
 import { buyResourcesModelInputs, buyResourcesModelChosenResource } from '../../model';
 
 import styles from './styles/sliderInput.module.css';
-
 export const ResourceBuySlider = () => {
   const buyResourceAmount = useUnit(buyResourcesModelInputs.$buyResourceAmount);
   const setResourceBuyAmount = useUnit(buyResourcesModelInputs.setResourceBuyAmount);

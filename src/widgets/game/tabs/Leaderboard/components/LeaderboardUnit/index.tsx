@@ -1,5 +1,4 @@
 import { formatNumber } from '@/shared/utils/formatNumber';
-
 export const LeaderboardUnit = ({
   username = 'unknown',
   tokens = 999999999,

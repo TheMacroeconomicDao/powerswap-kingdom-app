@@ -1,5 +1,6 @@
 import Trophy from '../../assets/trophy.svg';
 import UserRatingBorder from '../../assets/user-rating-border.svg';
+import Coin from '@/shared/assets/coin.svg';
 
 export const UserRating = ({ username, tokens }: { username: string; tokens: number }) => {
   return (
@@ -11,13 +12,15 @@ export const UserRating = ({ username, tokens }: { username: string; tokens: num
         <div className="h-[45px] w-[200px]">
           <UserRatingBorder />
         </div>
-        <div className="absolute left-0 top-1 flex size-full flex-col items-center uppercase">
+        <div className="absolute left-0 top-[2.5px] flex size-full flex-col items-center uppercase">
           <h6 className="max-w-[80%] overflow-clip text-center text-[13px]">
             {username && username.length > 0 ? username : 'UNKNOWN'}
           </h6>
-          <p className="text-[13px] text-green-400">
-            {tokens} <span className="text-yellow-200">24h</span>
-          </p>
+          <div className="flex items-center gap-1">
+            <p className="text-[13px] text-green-400">{tokens}</p>
+            <Coin className="mt-[-3px] scale-[0.8]" />
+            <p className="text-yellow-200">24h</p>
+          </div>
         </div>
       </div>
     </div>

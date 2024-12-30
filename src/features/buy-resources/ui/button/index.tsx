@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { useUnit } from 'effector-react';
 import { buyResourcesModelInputs } from '../../model';
 import { useTranslation } from 'react-i18next';
-
 export const ToggleResourceMenuButton = () => {
   const modalShown = useUnit(buyResourcesModelInputs.$modalShown);
   const setModalShown = useUnit(buyResourcesModelInputs.setModalShown);

@@ -9,7 +9,7 @@ import { UserType, resourcePoolModel, PoolResourcesDataType } from '@/entities';
 import { setTokens, $user, $userId } from '@/entities/user';
 
 import { BuyResourcesFromPoolParams, BuyResourcesFromPoolDataType } from './types';
-import { $buyResourceAmount, $chosenResourceKey } from './inputs';
+import { $buyResourceAmount, $chosenResourceKey, resetInputs } from './inputs';
 
 export const buyResourcesFromPool = createEvent<void>();
 export const buyResourcesFromPoolFx = createEffect<
@@ -92,4 +92,9 @@ sample({
       end_reset_time: data?.end_reset_time,
     }) as PoolResourcesDataType['data'],
   target: resourcePoolModel.$resourcePool,
+});
+
+sample({
+  clock: buyResourcesFromPoolFx.done,
+  target: resetInputs,
 });

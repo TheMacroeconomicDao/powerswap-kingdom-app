@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
-import { Root } from '@/components/Root/Root';
+import { Root } from '@/shared/ui/components/Root/ui';
 
 import '../shared/i18n';
 
@@ -20,7 +20,7 @@ export default function MainLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body
-        className="no-user-drag h-[100dvh]"
+        className="h-[100dvh] no-user-drag"
         style={{
           color: 'white',
           backgroundColor: '#0e0e0e',

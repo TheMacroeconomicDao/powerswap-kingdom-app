@@ -1,3 +1,3 @@
-export * from './button';
-export * from './modal';
-export * from './slider';
+export * from './Button';
+export * from './Modal';
+export * from './Slider';

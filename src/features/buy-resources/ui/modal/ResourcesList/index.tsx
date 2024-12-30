@@ -1,6 +1,6 @@
 'use client';
 
-import { ResourceButton } from '../resource-button';
+import { ResourceButton } from '../ResourceButton';
 
 import { useUnit } from 'effector-react';
 import { $availableKingdoms, resourcePoolModel } from '@/entities';
