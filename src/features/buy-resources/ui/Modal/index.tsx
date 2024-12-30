@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import { useEffect, useRef, useCallback } from 'react';
 
-import { ResourceBuySlider } from '../Slider_';
+import { ResourceBuySlider } from '../Slider';
 import { ResourcesPrice } from './ResourcesPrice';
 import { ResourcesAmount } from './ResourcesAmount';
 
