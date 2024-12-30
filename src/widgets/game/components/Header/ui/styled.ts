@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const StyledHeader = styled(Wrapper)`
   position: sticky;
   z-index: 50;
-  margin: 0 27px;
+  margin: 0 27px 15px 27px;
   left: 0px;
   gap: 5rem;
   width: auto;

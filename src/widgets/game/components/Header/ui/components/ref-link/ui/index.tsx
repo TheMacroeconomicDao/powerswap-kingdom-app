@@ -25,7 +25,7 @@ export const RefLink = () => {
     <LinkButton onClick={handleClick}>
       <Paperclip />
       {!!refs && refs.referrals_count > 0 && (
-        <div className="absolute left-[38px] top-[-8px] size-max">
+        <div className="absolute left-[38px] top-[-2px] size-max">
           <div className="relative h-[24px] w-[24px]">
             <Message />
             <small className="absolute left-0 top-0 size-full text-center text-white">
