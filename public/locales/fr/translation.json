@@ -18,6 +18,29 @@
       "augmentations": {
         "buyButton": "Acheter"
       }
+    },
+    "kingdom-pick": {
+      "kingdoms": {
+        "food": {
+          "title": "Le Royaume des Cultivateurs",
+          "subtitle": "L'Usine Alimentaire Mondiale"
+        },
+        "crypto": {
+          "title": "Le Royaume Crypto",
+          "subtitle": "Le Premier Producteur Mondial de Crypto"
+        }
+      },
+      "production": {
+        "-": "- Consomme",
+        "+": "+ Produit"
+      },
+      "resources": {
+        "food": "Nourriture",
+        "energy": "Énergie",
+        "heat": "Chaleur",
+        "crypto": "Crypto"
+      },
+      "button": "Soumettre!"
     }
   },
   "referral": {
