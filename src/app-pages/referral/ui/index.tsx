@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useUnit } from 'effector-react';
-import { $refs, getRefs } from '@/entities';
+import { $refs, getRefs, setRefTab } from '@/entities';
 import { $points } from '@/entities/user/referral_points';
 
 import {
@@ -28,6 +28,7 @@ export const ReferralUI = () => {
 
   useEffect(() => {
     getReferrals();
+    setRefTab('update-tab');
   }, [getReferrals]);
 
   return (
