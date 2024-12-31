@@ -12,8 +12,8 @@ export const KingdomPickStats: React.FC<KingdomPickStatsProps> = ({ stats }) => 
   const { t } = useTranslation('translation', { keyPrefix: 'game.kingdom-pick.production' });
   return (
     <KingdomPickStatsStyled>
-      {stats?.map(stat => (
-        <KingdomPickStatStyled>
+      {stats?.map((stat, index) => (
+        <KingdomPickStatStyled key={index}>
           <KingdomPickStatItemStyled $production={stat.production}>
             {t(stat.production ?? '+')}
           </KingdomPickStatItemStyled>
