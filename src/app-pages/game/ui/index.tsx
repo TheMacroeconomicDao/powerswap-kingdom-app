@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 import { useRouter } from 'next/navigation';
 
-import { $kingdom, $user } from '@/entities';
+import { $kingdom, $user, getRefs } from '@/entities';
 import { CurrentKingdomDisplay, KingdomSwitcher, LoadingFallback } from '@/widgets';
 
 import { useUnit } from 'effector-react';
@@ -14,7 +14,7 @@ import { GameStyled } from './styled';
 
 export const GameUI = () => {
   const router = useRouter();
-
+  const getReferrals = useUnit(getRefs);
   const availableKingdoms = useUnit(kingdomsModel.$availableKingdoms);
   const kingdom = useUnit($kingdom);
   const user = useUnit($user);
@@ -26,7 +26,8 @@ export const GameUI = () => {
     if (!user) {
       router.push('/');
     }
-  }, [user, router]);
+    getReferrals();
+  }, [user, router, getReferrals]);
 
   return (
     <GameStyled>

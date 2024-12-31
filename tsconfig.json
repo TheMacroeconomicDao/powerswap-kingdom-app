@@ -24,6 +24,13 @@
       "@/fonts": ["./src/shared/ui/fonts.ts"]
     }
   },
-  "include": ["svgr.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "svgr.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/widgets/referral/tabs/Update/ui/index.tsx"
+  ],
   "exclude": ["node_modules"]
 }
