@@ -6,10 +6,11 @@ export const Overlay = styled(motion.div)`
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 120px;
+  top: 0;
   left: 0;
   right: 0;
   width: 350px;
+  height: 100dvh;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
@@ -25,7 +26,7 @@ export const ModalContainer = styled(motion.div)`
   border: 1px solid white;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  height: 350px;
+  height: 65%;
   z-index: 1;
 
   button {
