@@ -59,7 +59,7 @@ sample({
     source !== null &&
     source.length > 0 &&
     clock.length > 0 &&
-    source.filter(item => item.name === clock)[0].state === 'available',
+    source.find((item) => item.name === clock)?.state === 'available',
   fn: (_, clock) => clock,
   target: pickKingdomFx,
 });
