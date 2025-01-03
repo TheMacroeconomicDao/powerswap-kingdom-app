@@ -56,7 +56,11 @@
           },
           "tokens-exchange": {
             "buttonText": "In Spielmünzen umwandeln",
-            "confirmedMessage": "Sind Sie sicher, dass Sie Ihre Token übertragen möchten? 🤔 Bitte beachten Sie: Das Empfehlungsprogramm wird nach der Übertragung deaktiviert! 🚫"
+            "confirm": {
+              "message": "<0>Sind Sie sicher, dass Sie Ihre Token umwandeln wollen? 🤔</0><br/><1>Hinweis:</1> Das Empfehlungsprogramm wird nach der Übertragung deaktiviert! 🚫",
+              "confirmText": "Ja",
+              "cancelText": "Nein"
+            }
           },
           "referralInfo": {
             "title": "Verweisungspunkte"
