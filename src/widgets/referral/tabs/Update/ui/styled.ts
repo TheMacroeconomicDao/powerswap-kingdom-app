@@ -12,7 +12,6 @@ export const Overlay = styled(motion.div)`
   width: 350px;
   height: 100dvh;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
 `;
 

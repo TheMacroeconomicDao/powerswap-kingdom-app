@@ -1,3 +1,5 @@
+'use client';
+
 import GyberLogoGreen from './assets/gyber-logo-green.svg';
 
 import { TabAnimatedGame } from '@/widgets';
@@ -5,7 +7,12 @@ import { TabAnimatedGame } from '@/widgets';
 import styles from '../../styles/currentTab.module.css';
 
 import tabStyles from './styles/AboutTab.module.css';
+import { Trans } from 'react-i18next';
+
 export const AboutTab = () => {
+  // const { t } = useTranslation('translation', {
+  //   keyPrefix: '',
+  // });
   return (
     <TabAnimatedGame className={`${styles.tab_wrapper} flex flex-col gap-1`}>
       <div className={`${styles.section_with_border} flex flex-col items-center`}>
@@ -13,16 +20,14 @@ export const AboutTab = () => {
           <GyberLogoGreen />
         </div>
         <div
-          className={`${tabStyles.about_text} mt-6 max-h-[calc(100%-170px)] w-full flex-grow overflow-y-scroll break-words`}
+          className={`${tabStyles.about_text} mt-6 h-auto max-h-[280px] w-full overflow-y-scroll break-words`}
         >
-          <p className="text-center text-[14px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ut facere
-            reprehenderit voluptas, nemo magnam magni minima recusandae soluta. Eos nulla nihil hic
-            itaque modi quas repudiandae placeat tempore esse. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Expedita nam at hic, quasi aut nihil pariatur incidunt
-            consequuntur fugit amet cupiditate eum voluptatibus ipsa. Ipsam distinctio consequuntur
-            iusto a quibusdam.
-          </p>
+          <Trans i18nKey="game.tabs.about.text">
+            <span className="text-[#e479ff]"></span>
+            <span className="text-[#73c7ff]"></span>
+            <span className="text-[#73ff83]"></span>
+            <span className="text-[#faff5a]"></span>
+          </Trans>
         </div>
       </div>
     </TabAnimatedGame>

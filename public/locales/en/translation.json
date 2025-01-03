@@ -17,6 +17,9 @@
       },
       "augmentations": {
         "buyButton": "Buy"
+      },
+      "about": {
+        "text": "<0>Gybernaty is a community of intusiastic researchers and developers who create innovative applications based on the technology stack.<br/>One of the key projects is <0>PowerSwapMeta, a metaverse where digital actions affect the real world.<br/><1>The PowerSwapKingdom mini-game is part of the PowerSwapMeta ecosystem.</1> <2><br/>Players build<2> their own kingdoms, <2>participate in token trading</2> and interact with each other as part of <2>unique gameplay.</2> All funds from the sale of <0>NFTs</0> and in-game assets are directed to support real projects such as <3>mining</3> and <2>green energy.</2><br/><1>PowerSwapMeta combines the virtual world</1> with the real economy, creating a new format <3>of digital interaction.</3>"
       }
     },
     "kingdom-pick": {
