@@ -11,8 +11,8 @@ export const $chosenResourceData = combine(
   (pool, chosenResource) => pool?.entities.find(res => res.name === chosenResource) ?? null
 );
 
-export const $chosenResourceBuyMax = combine($chosenResourceData, $tokens, (res, tokens) =>
-  res?.cost ? Math.floor(tokens / res.cost) : 0
+export const $chosenResourceBuyMax = combine($chosenResourceData, $tokens, (data, tokens) =>
+  data?.cost ? Math.floor(tokens / data.cost) : 0
 );
 
 export const $chosenResourceTotalPrice = combine(

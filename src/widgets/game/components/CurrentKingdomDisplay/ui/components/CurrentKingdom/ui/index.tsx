@@ -37,10 +37,7 @@ export const CurrentKingdom = () => {
   };
 
   // @TODO: change this shit to fetchable tier
-  const Kingdom =
-    kingdom && kingdoms[kingdom] && kingdoms[kingdom].length > 1
-      ? kingdoms[kingdom][1]
-      : () => <></>;
+  const Kingdom = kingdom && kingdoms[kingdom] ? kingdoms[kingdom][0] : () => <></>;
 
   return (
     <AnimatePresence>

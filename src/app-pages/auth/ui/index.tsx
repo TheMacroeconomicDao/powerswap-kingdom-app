@@ -46,7 +46,7 @@ export const AuthPageUI = () => {
   }, [initDataRaw, login]);
 
   useEffect(() => {
-    if (!!isAuth && !!user) {
+    if (isAuth && user) {
       router.push(`/${lastPage ?? 'game'}`);
     }
   }, [isAuth, user, router, lastPage]);

@@ -15,7 +15,7 @@ export const ResourceBuyButton = () => {
 
   return (
     <button
-      className="mx-auto flex items-center justify-center border-[2px] border-white px-4 py-2 text-lg uppercase text-white"
+      className="mx-auto flex items-center justify-center border-[2px] border-white bg-green-500 px-4 py-2 text-lg uppercase text-white active:opacity-60"
       onClick={handleClick}
     >
       Take order
