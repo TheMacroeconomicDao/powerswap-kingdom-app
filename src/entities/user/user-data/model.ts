@@ -10,6 +10,7 @@ import { $userId, $username } from '../tg-data';
 import { setTokens } from '../tokens';
 
 import { UserType, UpdateUserParams } from './types';
+import { setReferralStatus } from '../referral_status';
 
 export const getUserFx = createEffect(async () => {
   // const res = await authHost.get<UserType>(`/users/get_user`);
@@ -70,4 +71,11 @@ sample({
   fn: user => user?.tokens_amount,
   filter: user => !!user?.tokens_amount,
   target: setTokens,
+});
+
+sample({
+  source: $user,
+  fn: user => user?.state.referral_enabled,
+  filter: user => !!user?.state.referral_enabled,
+  target: setReferralStatus,
 });

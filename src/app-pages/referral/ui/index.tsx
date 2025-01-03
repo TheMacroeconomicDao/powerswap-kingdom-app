@@ -16,11 +16,13 @@ import {
   SideQuestsButton,
   TokensExchange,
 } from '@/widgets';
+import { $referralStatus } from '@/entities/user/referral_status';
 
 export const ReferralUI = () => {
   const refs = useUnit($refs);
   const refPoints = useUnit($points);
   const getReferrals = useUnit(getRefs);
+  const referralStatus = useUnit($referralStatus);
 
   const { t } = useTranslation('translation', {
     keyPrefix: 'referral.pages.main',
@@ -43,8 +45,11 @@ export const ReferralUI = () => {
         >
           <MainPageLink />
           <CopySection copied={t('sections.url.myUrl')} />
-          <TokensExchange />
-          <ReferralInfo refPoints={refPoints} />
+          <TokensExchange referralStatus={referralStatus} />
+          <ReferralInfo
+            refPoints={refPoints}
+            refStatus={referralStatus}
+          />
           <Missions
             title={t('sections.quests.inviteQuests.title')}
             refs={refs}

@@ -33,6 +33,7 @@ export type UserType = {
     state: {
       last_active_resource: LastActiveResourceType;
       last_opened_page: LastOpenedPageType;
+      referral_enabled: boolean;
     };
   };
 };

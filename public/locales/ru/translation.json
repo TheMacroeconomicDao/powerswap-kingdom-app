@@ -55,10 +55,10 @@
             "copied": "Скопировано"
           },
           "tokens-exchange": {
-            "buttonText": "Перевести в PSWMeta Points"
+            "buttonText": "Конвертировать в Игровые токены"
           },
           "referralInfo": {
-            "title": "Реферальные баллы"
+            "title": "Реферальные очки"
           },
           "quests": {
             "inviteQuests": {

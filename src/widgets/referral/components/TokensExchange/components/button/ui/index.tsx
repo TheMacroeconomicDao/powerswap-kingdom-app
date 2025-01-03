@@ -1,27 +1,23 @@
-// src/features/tokenExchangeFeature/ui/Button.js
-
 'use client';
 
 import { useTranslation } from 'react-i18next';
 import { StyledButton } from './styled';
 import { exchangeTokensFx } from '../../../model';
-import { useState } from 'react';
+import { setReferralStatus } from '@/entities/user/referral_status';
 
-export const Button = () => {
-  const [isHidden, setHidden] = useState(false);
-
+export const Button = ({ referralStatus }: { referralStatus: boolean }) => {
   const { t } = useTranslation('translation', {
     keyPrefix: 'referral.pages.main.sections.tokens-exchange',
   });
 
   const handleClick = () => {
     exchangeTokensFx();
-    setHidden(true);
+    setReferralStatus(false);
   };
 
   return (
     <>
-      {!isHidden && (
+      {referralStatus && (
         <StyledButton
           onClick={handleClick}
           whileTap={{ scale: 0.7 }}
