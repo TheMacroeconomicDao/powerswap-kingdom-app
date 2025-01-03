@@ -45,7 +45,10 @@ export const ReferralUI = () => {
         >
           <MainPageLink />
           <CopySection copied={t('sections.url.myUrl')} />
-          <TokensExchange referralStatus={referralStatus} />
+          <TokensExchange
+            refPoints={refPoints}
+            referralStatus={referralStatus}
+          />
           <ReferralInfo
             refPoints={refPoints}
             refStatus={referralStatus}

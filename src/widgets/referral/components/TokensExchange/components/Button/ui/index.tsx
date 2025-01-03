@@ -7,7 +7,13 @@ import { exchangeTokensFx } from '../../../model';
 import { setReferralStatus } from '@/entities/user/referral_status';
 import { ConfirmModal } from '../../ConfirmModal';
 
-export const Button = ({ referralStatus }: { referralStatus: boolean }) => {
+export const Button = ({
+  refPoints = 0,
+  referralStatus,
+}: {
+  refPoints: number;
+  referralStatus: boolean;
+}) => {
   const { t } = useTranslation('translation', {
     keyPrefix: 'referral.pages.main.sections.tokens-exchange',
   });
@@ -22,7 +28,7 @@ export const Button = ({ referralStatus }: { referralStatus: boolean }) => {
 
   return (
     <>
-      {referralStatus && (
+      {referralStatus && refPoints >= 30000 && (
         <>
           <StyledButton
             onClick={() => setIsModalOpen(true)}
