@@ -19,9 +19,8 @@ export const Overlay = styled(motion.div)`
 export const ModalContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
   flex-grow: 1;
-  gap: 4px;
+  justify-content: space-between;
   background-color: rgba(10, 0, 0, 0.8);
   border: 1px solid white;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
@@ -32,6 +31,12 @@ export const ModalContainer = styled(motion.div)`
   button {
     margin-left: auto;
   }
+`;
+
+export const TextBox = styled.p`
+  height: 80%;
+  overflow-y: auto;
+  line-height: 1.5;
 `;
 
 export const Title = styled.h2`
