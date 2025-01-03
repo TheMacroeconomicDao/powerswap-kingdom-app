@@ -55,7 +55,8 @@
             "copied": "Kopiert!"
           },
           "tokens-exchange": {
-            "buttonText": "In Spielmünzen umwandeln"
+            "buttonText": "In Spielmünzen umwandeln",
+            "confirmedMessage": "Sind Sie sicher, dass Sie Ihre Token übertragen möchten? 🤔 Bitte beachten Sie: Das Empfehlungsprogramm wird nach der Übertragung deaktiviert! 🚫"
           },
           "referralInfo": {
             "title": "Verweisungspunkte"

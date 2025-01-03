@@ -11,8 +11,11 @@ export const Button = ({ referralStatus }: { referralStatus: boolean }) => {
   });
 
   const handleClick = () => {
-    exchangeTokensFx();
-    setReferralStatus(false);
+    const confirmed = window.confirm(t('confirmedMessage'));
+    if (confirmed) {
+      exchangeTokensFx();
+      setReferralStatus(false);
+    }
   };
 
   return (

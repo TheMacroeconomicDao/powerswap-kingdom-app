@@ -55,7 +55,8 @@
             "copied": "Copied!"
           },
           "tokens-exchange": {
-            "buttonText": "Convert to Game Tokens"
+            "buttonText": "Convert to Game Tokens",
+            "confirmedMessage": "Are you sure you want to transfer your tokens? 🤔 Please note: the referral program will be deactivated after the transfer! 🚫"
           },
           "referralInfo": {
             "title": "Referral points"

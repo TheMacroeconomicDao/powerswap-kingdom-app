@@ -55,7 +55,8 @@
             "copied": "copié"
           },
           "tokens-exchange": {
-            "buttonText": "Convertir en jetons de jeu"
+            "buttonText": "Convertir en jetons de jeu",
+            "confirmedMessage": "Êtes-vous sûr de vouloir transférer vos jetons ? 🤔 Attention : le programme de parrainage sera désactivé après le transfert ! 🚫"
           },
           "referralInfo": {
             "title": "Points de référence"
