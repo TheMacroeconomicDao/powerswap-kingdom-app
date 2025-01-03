@@ -2,7 +2,7 @@
 
 import { createStore, createEvent, sample } from 'effector';
 
-import { ResourceType, $tab } from '@/entities';
+import { ResourceType, $tab, $lastActiveResource } from '@/entities';
 
 export const resetInputs = createEvent<void>();
 
@@ -17,7 +17,7 @@ export const $buyResourceAmount = createStore<number>(0)
   .reset(resetInputs);
 
 export const setChosenResourceKey = createEvent<ResourceType>();
-export const $chosenResourceKey = createStore<ResourceType | 'crypto'>('crypto')
+export const $chosenResourceKey = createStore<ResourceType | null>(null)
   .on(setChosenResourceKey, (_, resource) => resource)
   .reset(resetInputs);
 
@@ -25,4 +25,13 @@ export const $chosenResourceKey = createStore<ResourceType | 'crypto'>('crypto')
 sample({
   clock: $tab,
   target: resetInputs,
+});
+
+// set chosen resource key on $lastActiveResource set
+sample({
+  clock: setModalShown,
+  source: $lastActiveResource,
+  filter: (resource, modalShown) => !!modalShown && !!resource,
+  fn: res => res!,
+  target: setChosenResourceKey,
 });

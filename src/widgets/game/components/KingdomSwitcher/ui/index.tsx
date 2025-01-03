@@ -12,7 +12,7 @@ export const KingdomSwitcher = () => {
     <StyledWrapper>
       {kingdoms &&
         kingdoms.length > 0 &&
-        kingdoms?.map((kingdom, index) => (
+        kingdoms.map((kingdom, index) => (
           <KingdomSwitchButton
             kingdomType={kingdom.name}
             kingdomState={kingdom.state}

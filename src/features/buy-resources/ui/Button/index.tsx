@@ -7,10 +7,10 @@ import { useUnit } from 'effector-react';
 import { buyResourcesModelInputs } from '../../model';
 import { useTranslation } from 'react-i18next';
 export const ToggleResourceMenuButton = () => {
+  const { t } = useTranslation('translation', { keyPrefix: 'game.tabs.resources' });
+
   const modalShown = useUnit(buyResourcesModelInputs.$modalShown);
   const setModalShown = useUnit(buyResourcesModelInputs.setModalShown);
-
-  const { t } = useTranslation('translation', { keyPrefix: 'game.tabs.resources' });
 
   return (
     <button

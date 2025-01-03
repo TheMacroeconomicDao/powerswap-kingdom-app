@@ -8,8 +8,6 @@ import TraderIcon from '@/shared/ui/icons/kingdoms/trader.svg';
 import Lock from '@/shared/assets/Lock.svg';
 import LockGreen from '@/shared/assets/Lock-green.svg';
 
-import { motion } from 'framer-motion';
-
 import {
   KingdomType,
   KingdomStateUnitType,

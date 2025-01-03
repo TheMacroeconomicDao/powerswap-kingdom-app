@@ -6,8 +6,8 @@ import { serverApiHost } from '@/shared/api/axios-hosts';
 import { loggedIn } from '../auth';
 
 // logic for picking a kingdom
-export const pickKingdom = createEvent<string>();
-export const pickKingdomFx = createEffect<string, AvailableKingdomsDataType['data']>(
+export const pickKingdom = createEvent<KingdomType>();
+export const pickKingdomFx = createEffect<KingdomType, AvailableKingdomsDataType['data']>(
   async (kingdom: string) => {
     const res = await serverApiHost.post<AvailableKingdomsDataType>(`/kingdom/pick/${kingdom}`);
     return res.data.data;
@@ -59,7 +59,7 @@ sample({
     source !== null &&
     source.length > 0 &&
     clock.length > 0 &&
-    source.find((item) => item.name === clock)?.state === 'available',
+    source.find(item => item.name === clock)?.state === 'available',
   fn: (_, clock) => clock,
   target: pickKingdomFx,
 });

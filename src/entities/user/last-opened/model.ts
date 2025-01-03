@@ -4,7 +4,7 @@ import { serverApiHost } from '@/shared/api/axios-hosts';
 
 import { createEffect, sample, createStore, createEvent } from 'effector';
 
-import { $kingdom, KingdomType, KingdomTypeArray } from '@/entities';
+import { $kingdom, KingdomType, KingdomTypeArray, pickKingdom } from '@/entities';
 import { $user } from '../user-data';
 import { $userId } from '../tg-data';
 import { UpdateStateType, UpdateStateProps, LastOpenedPageType } from './types';
@@ -62,6 +62,13 @@ sample({
 // write last opened res
 sample({
   source: $kingdom,
+  filter: kingdom => !!kingdom,
+  target: $lastActiveResource,
+});
+
+// write last opened res on pickKingdom
+sample({
+  clock: pickKingdom,
   filter: kingdom => !!kingdom,
   target: $lastActiveResource,
 });

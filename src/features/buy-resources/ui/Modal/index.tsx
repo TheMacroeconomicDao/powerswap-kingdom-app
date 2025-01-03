@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useRef } from 'react';
 
 import { ResourceBuySlider } from '../Slider';
 import { ResourcesPrice } from './ResourcesPrice';
@@ -14,29 +14,9 @@ import { buyResourcesModelInputs } from '../../model';
 import { ResourcesList } from './ResourcesList';
 import { ResourceBuyButton } from './BuyButton';
 export const BuyResourceModal = () => {
-  const buyResourceAmount = useUnit(buyResourcesModelInputs.$buyResourceAmount);
   const chosenResourceKey = useUnit(buyResourcesModelInputs.$chosenResourceKey);
-  const setModalShown = useUnit(buyResourcesModelInputs.setModalShown);
 
   const modalRef = useRef<HTMLDivElement | null>(null);
-
-  // useEffect(() => {
-  //   const handleClick = (e: MouseEvent) => {
-  //     if (modalRef?.current?.contains(e.target as Node)) {
-  //       setModalShown(false);
-  //     }
-  //   };
-  //   modalRef?.current?.addEventListener('click', handleClick);
-
-  //   return () => {
-  //     modalRef?.current?.removeEventListener('click', handleClick);
-  //   };
-  // }, []);
-
-  // for debug only
-  useEffect(() => {
-    console.debug(buyResourceAmount, chosenResourceKey);
-  }, [buyResourceAmount, chosenResourceKey]);
 
   return (
     <motion.div
