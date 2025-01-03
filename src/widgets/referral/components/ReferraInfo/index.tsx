@@ -19,7 +19,7 @@ export const ReferralInfo = ({
   });
   return (
     <div className="mt-1 flex flex-col items-center gap-2">
-      {!refStatus && <h6 className="text-[1.4rem]">{t('title')}</h6>}
+      {!refStatus || refPoints <= 0 ? <h6 className="text-[1.4rem]">{t('title')}</h6> : null}
       <h4 className="text-[1.4rem] font-black text-white">{formatNumber(refPoints)}</h4>
     </div>
   );
