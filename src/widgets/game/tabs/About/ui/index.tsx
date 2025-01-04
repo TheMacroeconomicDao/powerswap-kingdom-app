@@ -10,9 +10,6 @@ import tabStyles from './styles/AboutTab.module.css';
 import { Trans } from 'react-i18next';
 
 export const AboutTab = () => {
-  // const { t } = useTranslation('translation', {
-  //   keyPrefix: '',
-  // });
   return (
     <TabAnimatedGame className={`${styles.tab_wrapper} flex flex-col gap-1`}>
       <div className={`${styles.section_with_border} flex flex-col items-center`}>
