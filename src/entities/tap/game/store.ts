@@ -57,7 +57,7 @@ sample({
 
 sample({
   clock: tap,
-  fn: () => setTimeout(postTap, 500),
+  fn: () => setTimeout(postTap, 2000),
   target: $tapTimeoutId,
 });
 
