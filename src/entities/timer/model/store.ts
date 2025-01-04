@@ -5,7 +5,10 @@ import { combine, createStore, createEffect, createEvent, sample } from 'effecto
 import { resourcePoolModel } from '@/entities/resources-pool';
 
 const $startTime = combine(resourcePoolModel.$resourcePool, pool => pool?.start_reset_time ?? 0);
-const $endTime = combine(resourcePoolModel.$resourcePool, pool => pool?.end_reset_time ?? 0);
+const $endTime = combine(resourcePoolModel.$resourcePool, pool => {
+  return (pool?.end_reset_time ?? 0) + 30;
+});
+
 export const $totalTime = combine($startTime, $endTime, (start, end) =>
   Math.floor(
     end - start
