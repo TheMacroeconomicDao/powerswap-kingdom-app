@@ -19,9 +19,7 @@ export const AboutTab = () => {
         <div className="mt-4">
           <GyberLogoGreen />
         </div>
-        <div
-          className={`${tabStyles.about_text} mt-6 h-auto max-h-[280px] w-full overflow-y-scroll break-words`}
-        >
+        <div className={`${tabStyles.about_text} mt-6 h-[100dvh] overflow-y-scroll break-words`}>
           <Trans i18nKey="game.tabs.about.text">
             <span className="text-[#e479ff]"></span>
             <span className="text-[#73c7ff]"></span>
