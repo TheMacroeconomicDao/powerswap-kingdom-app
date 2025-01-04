@@ -22,6 +22,7 @@ export const AboutTab = () => {
             <span className="text-[#73c7ff]"></span>
             <span className="text-[#73ff83]"></span>
             <span className="text-[#faff5a]"></span>
+            <span className="font-bold text-[#73c7ff]"></span>
           </Trans>
         </div>
       </div>
