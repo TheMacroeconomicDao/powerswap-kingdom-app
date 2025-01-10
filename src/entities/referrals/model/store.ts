@@ -12,10 +12,8 @@ import { setPoints } from '@/entities/user/referral_points';
 export const getRefs = createEvent<void>();
 
 export const getRefsFx = createEffect<number, RefsApiData['data'] | undefined, AxiosError>(
-  async (userId: number) => {
-    const res: { data: RefsApiData } = await serverApiHost.get(
-      `/referrals/get_referrals/${userId}`
-    );
+  async () => {
+    const res: { data: RefsApiData } = await serverApiHost.get(`/referrals/get_referrals`);
     const referralData = res.data.data;
 
     setPoints(referralData.referrals_points);
