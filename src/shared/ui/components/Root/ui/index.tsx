@@ -18,8 +18,8 @@ import { postEvent } from '@telegram-apps/sdk';
 
 import { ErrorBoundary } from '@/shared/ui/components/ErrorBoundary';
 import { ErrorPage } from '@/shared/ui/components/ErrorPage';
-import { useTelegramMock } from '@/hooks/useTelegramMock';
-import { useDidMount } from '@/hooks/useDidMount';
+import { useTelegramMock } from '@/shared/hooks/useTelegramMock';
+import { useDidMount } from '@/shared/hooks/useDidMount';
 
 import './styles.css';
 
