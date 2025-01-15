@@ -20,7 +20,6 @@ export const LeaderboardTab = () => {
   const places: Array<'first' | 'second' | 'third'> = ['first', 'second', 'third'];
 
   const leaders = useUnit($leaderboard);
-  console.log(leaders);
   const user = useUnit($user);
   const tokens = useUnit($tokens);
 
