@@ -5,7 +5,7 @@ import { isAxiosError } from 'axios';
 
 export async function GET() {
   try {
-    const res = await serverApiHost.get<LeaderboardDataType>('/users/get_leaders?limit=100');
+    const res = await serverApiHost.get<LeaderboardDataType>('/users/get_leaders');
 
     console.log(res);
 
