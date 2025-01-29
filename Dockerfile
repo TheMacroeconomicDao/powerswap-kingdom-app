@@ -62,3 +62,5 @@ USER nextjs
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output
 CMD ["node", "server.js"]
 
+
+
