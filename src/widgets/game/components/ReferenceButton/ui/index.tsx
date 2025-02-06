@@ -10,7 +10,7 @@ import { Block, Button, Text, Wrapper } from './styled';
 
 export const ReferenceButton = ({
   reference,
-  direction = 'fromLeft',
+  direction = 'fromRight',
 }: {
   reference: string;
   direction: 'fromLeft' | 'fromRight';
@@ -30,10 +30,12 @@ export const ReferenceButton = ({
       <AnimatePresence>
         {referenceShown && (
           <Block
+            direction = {direction}
             initial={{
               opacity: 0,
               scale: 0,
-              translateX: '50%',
+              translateX: direction === 'fromLeft' ? '-50%' : '50%',
+              // translateX: '-50%',
               translateY: '-50%',
             }}
             animate={{
@@ -45,7 +47,8 @@ export const ReferenceButton = ({
             exit={{
               opacity: 0,
               scale: 0,
-              translateX: '50%',
+              translateX: direction === 'fromLeft' ? '-50%' : '50%',
+              // translateX: '-50%',
               translateY: '-50%',
             }}
             transition={{

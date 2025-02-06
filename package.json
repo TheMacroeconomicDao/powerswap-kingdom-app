@@ -25,6 +25,7 @@
     "effector-react": "^23.2.1",
     "eruda": "^3.0.1",
     "framer-motion": "^11.5.4",
+    "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.6.1",
     "jose": "^5.7.0",

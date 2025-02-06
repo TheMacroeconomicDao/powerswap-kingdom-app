@@ -16,6 +16,7 @@
         }
       },
       "augmentations": {
+        "title": "Улучшить",
         "buyButton": "Kaufen"
       },
       "about": {
@@ -29,7 +30,7 @@
           "subtitle": "Die Weltweite Nahrungsfabrik"
         },
         "crypto": {
-          "title": "Das Krypto-Königreich",
+          "title": "Das Miner-Königreich",
           "subtitle": "Der Weltweit Erste Krypto-Produzent"
         }
       },

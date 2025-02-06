@@ -16,6 +16,7 @@
         }
       },
       "augmentations": {
+        "title": "Upgrade",
         "buyButton": "Acheter"
       },
       "about": {
@@ -29,7 +30,7 @@
           "subtitle": "L'Usine Alimentaire Mondiale"
         },
         "crypto": {
-          "title": "Le Royaume Crypto",
+          "title": "Le Royaume Mineurs",
           "subtitle": "Le Premier Producteur Mondial de Crypto"
         }
       },
