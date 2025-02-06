@@ -1,15 +1,13 @@
 'use client'
-import { StyledContainer, Corner, StyledProgress } from "../../styles/styled"
+import { StyledContainer, StyledProgress } from "../../styles/styled"
 
 export const AugmentationProgress = () => {
     return(
         <>
             <StyledContainer>
-                <Corner />
-                <Corner />
-                <Corner />
-                <Corner />
-                <StyledProgress />
+                <div className="w-full h-full">
+                    <StyledProgress />
+                </div>
             </StyledContainer>
         </>
     )

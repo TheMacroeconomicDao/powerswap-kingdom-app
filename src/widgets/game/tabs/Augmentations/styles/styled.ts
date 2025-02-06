@@ -6,46 +6,76 @@ export const StyledContainer = styled.div`
   position: relative;
   border: 2px solid white;
   background-color: #0e0e0e;
-`;
 
-export const Corner = styled.div`
-  position: absolute;
-  width: 10px;
-  height: 5px;
-  background-color: #0e0e0e;
-  z-index: 10;
-
-  &:nth-child(1) {
-    top: -1.9px;
-    left: -1.9px;
-    border-bottom:2px solid white;  
-    border-right:2px solid white; 
+  & > div::before,
+  & > div::after,
+  &::after,
+  &::before{
+    content:"";
+    position:absolute;
+    width:10px;
+    height:5px ;
+    background-color:red;
+    z-index:4;
+    background-color: #0e0e0e;
+    
   }
-
-  &:nth-child(2) {
-    top: -1.9px;
-    right: -1.9px;
-    border-bottom:2px solid white; 
-    border-left:2px solid white;
+  &::before{
+    top: -1.7px;
+    left: -1.7px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 0.1px solid #0e0e0e;
+    border-left: 0.1px solid #0e0e0e;
   }
-
-  &:nth-child(3) {
-    bottom: -1.9px;
-    left: -1.9px;
-    border-top:2px solid white;
-    border-right:2px solid white;
+  &::after{
+    top: -1.7px;
+    right: -1.7px;
+    border-bottom: 2px solid white;
+    border-right: 0.1px solid #0e0e0e;
+    border-top: 0.1px solid #0e0e0e;
+    border-left: 2px solid white;
   }
-
-  &:nth-child(4) {
-    bottom: -1.9px;
-    right: -1.9px;
-    border-left:2px solid white;
-    border-top:2px solid white;
+  & > div::before{
+    bottom: -1.7px; 
+    left: -1.7px;
+    border-bottom: 0.1px solid #0e0e0e;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-left: 0.1px solid #0e0e0e;
   }
-`;
+  & > div::after{
+    bottom: -1.7px; 
+    right: -1.7px; 
+    border-bottom: 0.1px solid #0e0e0e;
+    border-right: 0.1px solid #0e0e0e;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+  }`;
 
 export const StyledProgress = styled.div`
-    width: calc(33%);
-    border-right: 8px solid #0e0e0e;
-    border-top: 12px solid #acff85;
-`;
+  height:100%;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  overflow: hidden;
+  position: relative;
+  &::before{
+    content: "";
+    background-color: #ACFF85;
+    justify-content: flex-end;
+    align-items: center;
+    border-right: 3px solid #0e0e0e;
+    width: 100%;
+    height: 100%;
+  }
+  &::after{
+    content: "";
+    margin-left: -5px;
+    background-color: #0e0e0e;
+    height: 100px;
+    width: 11px;
+    border-left: 2px solid white;
+    border-right: 2px solid #0e0e0e;
+    transform: rotate(23deg);  
+  }`
