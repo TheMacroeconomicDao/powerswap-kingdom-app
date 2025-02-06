@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-
+interface BlockProps {
+  direction: 'fromLeft' | 'fromRight';
+}
 export const Wrapper = styled.section`
   position: relative;
 `;
@@ -9,13 +11,17 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid white;
+  border: 4px solid white;
   padding: 0.25rem;
+  > svg{
+    scale: 1.3;
+  }
 `;
 
-export const Block = styled(motion.div)`
+export const Block = styled(motion.div)<BlockProps>`
   position: absolute;
-  left: -15rem;
+  /* left:  -15rem; */
+  left: ${({ direction }) => (direction === 'fromLeft' ? '-0.7rem;' : '-15rem')};
   top: 2.2rem;
   z-index: 100;
 `;

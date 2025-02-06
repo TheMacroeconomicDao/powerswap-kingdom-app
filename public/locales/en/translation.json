@@ -16,6 +16,7 @@
         }
       },
       "augmentations": {
+        "title": "Upgrade",
         "buyButton": "Buy"
       },
       "about": {
@@ -29,7 +30,7 @@
           "subtitle": "The World's Food Factory"
         },
         "crypto": {
-          "title": "The Crypto Kingdom",
+          "title": "The Miner Kingdom",
           "subtitle": "The World's First Crypto Producer"
         }
       },

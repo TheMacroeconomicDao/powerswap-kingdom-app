@@ -3,12 +3,11 @@
 import { useEffect } from 'react';
 
 import { ResourcePool, UpdatePoolProgress, ResourcesProgress } from './components';
-import { ToggleResourceMenuButton, BuyResourceModal } from '@/features/buy-resources';
+import { ToggleResourceMenuButton, BuyResourceModal, buyResourcesModelInputs } from '@/features/buy-resources';
 import { ReferenceButton, LoadingFallback, TabAnimatedGame } from '@/widgets';
 
 import { useUnit } from 'effector-react';
 import { resourcePoolModel } from '@/entities/resources-pool';
-import { buyResourcesModelInputs } from '@/features/buy-resources';
 
 import styles from '../styles/currentTab.module.css';
 import { AnimatePresence } from 'framer-motion';
@@ -19,7 +18,8 @@ export const ResourcesTab = () => {
   const modalShown = useUnit(buyResourcesModelInputs.$modalShown);
 
   const getResourcePool = useUnit(resourcePoolModel.getResourcePool);
-
+  console.log(resources);
+  
   useEffect(() => {
     getResourcePool();
   }, [getResourcePool]);
