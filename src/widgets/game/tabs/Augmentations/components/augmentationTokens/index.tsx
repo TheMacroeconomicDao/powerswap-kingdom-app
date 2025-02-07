@@ -7,7 +7,7 @@ export const AugmentationTokens = ({isLocked}:{isLocked:boolean}) => {
           <span 
             className={`text-[15px] mt-1 ${isLocked ? "text-[#717171]" : "text-[#63FF2D]"}`}
             >
-            {isLocked ? "?????" : "12 903"}
+            {isLocked ? "?????" : "120 903 000"}
         </span>
             <Coin />
         </div>

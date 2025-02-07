@@ -21,7 +21,7 @@ export const Augmentation = ({isLocked}: {isLocked: boolean}) => {
         </div>
         <div className="flex justify-between">
             <AugmentationDescription />
-            <AugmentationTokens isLocked/>
+            <AugmentationTokens isLocked={isLocked} />
         </div>
     </div>
 )
