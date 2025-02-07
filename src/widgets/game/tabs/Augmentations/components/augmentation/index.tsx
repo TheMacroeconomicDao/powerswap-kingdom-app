@@ -1,11 +1,9 @@
 'use client'
 import { ReferenceButton } from "@/widgets"
-import Image from "next/image"
-import Fire from '@/shared/ui/icons/augmentation/fire.svg?url'
 import { Button } from "@/features/augmentationBuy"
-import { AugmentationDescription, AugmentationTokens, AugmentationProgress } from "@/widgets"
+import { AugmentationDescription, AugmentationTokens, AugmentationProgress, AugmentationImage } from "@/widgets"
 
-export const Augmentation = () => {
+export const Augmentation = ({isLocked}: {isLocked: boolean}) => {
     return(
     <div className="w-full">
         <div className="relative top-[3px]">
@@ -14,20 +12,16 @@ export const Augmentation = () => {
                 reference="These are augmentations. They can quickly increase your mining speed. You can buy them once you have enough coins."
             /> 
         </div>
-        <div className="border-[4px] border-white relative">
-            <div className="absolute top-[-8px] border-[4px] border-white w-[19vw] left-[20vw]"></div>
-            <div className="absolute top-[-8px] border-[4px] border-white w-[19vw] left-[52vw]"></div>
+        <div className="relative border-[4px] border-white before:absolute before:top-[-8px] before:border-[4px] before:border-white before:w-[19vw] before:left-[20vw] after:absolute after:top-[-8px] after:border-[4px] after:border-white after:w-[19vw] after:left-[52vw]">
             <div className="pr-[8px] pl-[12px] pt-[6px] justify-between pb-[4px] flex items-center gap-[5vw]">
-                <div className="min-h-[42px] min-w-[42px] border-[4px] border-white flex items-center justify-center">
-                    <Image width={31} height={31} src={Fire} alt={'augmentation'} />
-                </div>
-                    <AugmentationProgress />
-                    <Button />
+                <AugmentationImage isLocked={isLocked} />
+                <AugmentationProgress isLocked={isLocked} />
+                <Button isLocked={isLocked} />
             </div>
         </div>
         <div className="flex justify-between">
             <AugmentationDescription />
-            <AugmentationTokens/>
+            <AugmentationTokens isLocked/>
         </div>
     </div>
 )
