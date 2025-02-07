@@ -1,12 +1,13 @@
 'use client'
 import { StyledContainer, StyledProgress } from "../../styles/styled"
 
-export const AugmentationProgress = () => {
+
+export const AugmentationProgress = ({isLocked}: {isLocked: boolean}) => {
     return(
-        <div className="relative overflow-hidden h-[15px] w-full ">
+        <div className="relative overflow-hidden h-[13px] w-full ">
             <StyledContainer>
                 <div className="w-full h-full">
-                    <StyledProgress />
+                    <StyledProgress isLocked={isLocked} />
                 </div>
             </StyledContainer>
         </div>

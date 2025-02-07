@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+interface StyledProps {
+  isLocked: boolean;
+}
 
 export const StyledContainer = styled.div`
   width: 100%;
@@ -53,7 +56,7 @@ export const StyledContainer = styled.div`
     border-left: 2px solid white;
   }`;
 
-export const StyledProgress = styled.div`
+export const StyledProgress = styled.div<StyledProps>`
   height:100%;
   width: 100%;
   display: flex;
@@ -62,11 +65,11 @@ export const StyledProgress = styled.div`
   position: relative;
   &::before{
     content: "" ;
-    background-color: #ACFF85;
+    background-color: ${({ isLocked }) => (isLocked ? "#717171" : "#BFFF6E")};
     justify-content: flex-end;
     align-items: center;
     border-right: 3px solid #0e0e0e;
-    width: 100%;
+    width: 34%;
     height: 100%;
   }
   &::after{

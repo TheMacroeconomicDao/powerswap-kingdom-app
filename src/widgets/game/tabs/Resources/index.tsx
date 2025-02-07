@@ -18,7 +18,6 @@ export const ResourcesTab = () => {
   const modalShown = useUnit(buyResourcesModelInputs.$modalShown);
 
   const getResourcePool = useUnit(resourcePoolModel.getResourcePool);
-  console.log(resources);
   
   useEffect(() => {
     getResourcePool();
