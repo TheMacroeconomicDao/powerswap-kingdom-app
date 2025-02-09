@@ -3,6 +3,22 @@
     "header": {
       "about": "Über uns"
     },
+    "home":{
+      "navbar":{
+        "friends":{
+          "text":"FREUNDE"
+        },
+        "home":{
+          "text":"STARTSEITE"
+        }
+      },
+      "pswTokens": {
+        "title": "PSW TOKEN"
+      },
+      "kingdomResource": {
+        "text": "KÖNIGREICHSRESSOURCE"
+      }
+    },
     "tabs": {
       "resources": {
         "resourcePool": {

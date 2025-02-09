@@ -81,7 +81,9 @@ export const ResourceProgress = ({ progress = 100, resource }: ResourceProgressP
       <div className="z-30 min-h-[48px] min-w-[48px] border-[3px] border-white bg-[#0e0e0e] p-2">
         {ResourceIcon ? <ResourceIcon /> : null}
       </div>
-      <div className="w-full">
+      
+      <div className="relative w-full">
+      <h6 className='absolute right-0 mt-[-20px] text-[15px]'>{progress}%</h6>
         <div className="relative w-full">
           <Image
             className="relative z-20"
