@@ -25,8 +25,7 @@ export const RefLink = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'game.home.navbar' });
   
   return (
-    <div className='relative'>
-      <LinkButton onClick={handleClick}>
+      <LinkButton className='relative' onClick={handleClick}>
         <Paperclip />
         {!!refs && refs.referrals_count > 0 && (
           <div className="absolute left-[38px] top-[-2px] size-max">
@@ -38,8 +37,7 @@ export const RefLink = () => {
             </div>
           </div>
         )}
+        <h6 className='absolute bottom-[-20px] text-[14px] mx-auto left-0 right-0 w-fit'>{t('friends.text')}</h6>
       </LinkButton>
-        <h6 className='absolute text-[14px] mx-auto left-0 right-0 w-fit'>{t('friends.text')}</h6>
-    </div>
   );
 };
