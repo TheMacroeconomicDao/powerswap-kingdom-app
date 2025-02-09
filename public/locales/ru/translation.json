@@ -3,6 +3,22 @@
     "header": {
       "about": "О нас"
     },
+    "home":{
+      "navbar":{
+        "friends":{
+          "text":"ДРУЗЬЯ"
+        },
+        "home":{
+          "text":"ДОМ"
+        }
+      },
+      "pswTokens": {
+        "title": "PSW ТОКЕНЫ"
+      },
+      "kingdomResource": {
+        "text": "РЕСУРС КОРОЛЕВСТВА"
+      }
+    },
     "tabs": {
       "resources": {
         "resourcePool": {

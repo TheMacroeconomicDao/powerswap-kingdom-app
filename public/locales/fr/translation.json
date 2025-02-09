@@ -3,6 +3,22 @@
     "header": {
       "about": "À propos de nous"
     },
+    "home":{
+      "navbar":{
+        "friends":{
+          "text":"AMIS"
+        },
+        "home":{
+          "text":"ACCUEIL"
+        }
+      },
+      "pswTokens": {
+        "title": "JETONS PSW"
+      },
+      "kingdomResource": {
+        "text": "KÖNIGREICHSRESSOURCE"
+      }
+    },
     "tabs": {
       "resources": {
         "resourcePool": {

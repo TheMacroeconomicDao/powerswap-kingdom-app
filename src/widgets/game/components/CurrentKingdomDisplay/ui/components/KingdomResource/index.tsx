@@ -11,6 +11,7 @@ import { useUnit } from 'effector-react';
 import { KingdomType, ResourceType, $resources, UserResourceType, $kingdom } from '@/entities';
 
 import { formatNumber } from '@/shared/utils/formatNumber';
+import { useTranslation } from 'react-i18next';
 
 export const KingdomResource = () => {
   const kingdom = useUnit($kingdom);
@@ -44,17 +45,22 @@ export const KingdomResource = () => {
     }
   }, [kingdom, resources, resourceKey]);
 
+  const { t } = useTranslation('translation', { keyPrefix: 'game.home' });
+
   return (
-    <div className="mx-auto flex size-fit items-center justify-center gap-[10px] border-[1px] border-white px-3 py-1">
-      <h6 className="text-[16px]">{resource ? formatNumber(resource.current) : 'ERR'}</h6>
-      <div className="flex size-[18px] items-center justify-center">
-        {Resource && resource ? (
-          <Resource
-            height={18}
-            width={18}
-          />
-        ) : null}
+    <>
+      <div className="mx-auto flex size-fit items-center justify-center gap-[10px] border-[1px] border-white px-3 py-1">
+        <h6 className="text-[16px]">{resource ? formatNumber(resource.current) : 'ERR'}</h6>
+        <div className="flex size-[18px] items-center justify-center">
+          {Resource && resource ? (
+            <Resource
+              height={18}
+              width={18}
+            />
+          ) : null}
+        </div>
       </div>
-    </div>
+      <h6 className="text-center text-[18px] text-white tracking-[1.7px]">{t('kingdomResource.text')}</h6>
+    </>
   );
 };
