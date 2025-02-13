@@ -23,7 +23,7 @@ export const TokensDisplay = () => {
         <h6 className="font-normal">{formatNumber(tokens)}</h6>
         <Coin />
       </div>
-      <h6 className="text-center text-[18px] text-white tracking-[1.7px]">{t('pswTokens.title')}</h6>
+      <h6 className="text-center text-[14px] text-white tracking-[1.7px]">{t('pswTokens.title')}</h6>
     </div>
   );
 };

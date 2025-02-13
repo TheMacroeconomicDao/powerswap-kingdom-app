@@ -28,30 +28,22 @@ export const StyledContainer = styled.div`
     left: -2.5px;
     border-bottom: 2px solid white;
     border-right: 2px solid white;
-    /* border-top: 0.1px solid #0e0e0e; */
-    /* border-left: 0.1px solid #0e0e0e; */
   }
   &::after{
     top: -2.5px;
     right: -2.5px;
     border-bottom: 2px solid white;
-    /* border-right: 0.1px solid #0e0e0e; */
-    /* border-top: 0.1px solid #0e0e0e; */
     border-left: 2px solid white;
   }
   & > div::before{
     bottom: -2.5px;
     left: -2.5px;
-    /* border-bottom: 0.1px solid #0e0e0e; */
     border-right: 2px solid white;
     border-top: 2px solid white;
-    /* border-left: 0.1px solid #0e0e0e; */
   }
   & > div::after{
     bottom: -2.5px;
     right: -2.5px;
-    /* border-bottom: 0.1px solid #0e0e0e; */
-    /* border-right: 0.1px solid #0e0e0e; */
     border-top: 2px solid white;
     border-left: 2px solid white;
   }`;

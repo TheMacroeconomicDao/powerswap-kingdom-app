@@ -22,7 +22,7 @@ export const HomeButton = () => {
         <div className="size-[72px]">
           <Queen />
         </div>
-        <h6 className='absolute bottom-[-20px] text-[14px] mx-auto left-0 right-0 w-fit'>{t('home.text')}</h6>
+        <h6 className='absolute bottom-[-20px] text-[10px] mx-auto left-0 right-0 w-fit'>{t('home.text')}</h6>
       </LinkButton>
   );
 };

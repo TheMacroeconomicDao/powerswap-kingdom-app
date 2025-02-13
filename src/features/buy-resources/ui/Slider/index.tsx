@@ -15,7 +15,7 @@ export const ResourceBuySlider = () => {
   };
 
   return (
-    <div className="mx-auto min-h-fit w-[calc(100%-72px)]">
+    <div className="mx-auto min-h-fit w-full">
       <input
         className={styles.slider}
         onInput={handleInput}

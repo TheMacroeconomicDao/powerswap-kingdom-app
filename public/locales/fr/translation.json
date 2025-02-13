@@ -29,6 +29,12 @@
         },
         "buyResource": {
           "text": "Acheter une ressource"
+        },
+        "referenceDescription":{
+          "text": "Achetez des ressources directement auprès de la Reine ! Les prix dans le pool sont dynamiques et varient selon la demande. La quantité de ressources est limitée — si elles viennent à manquer, vous devrez les chercher en bourse auprès d'autres joueurs"
+        },
+        "modalSubmit":{
+          "text":"PRENDRE MAINTENANT!"
         }
       },
       "augmentations": {

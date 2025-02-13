@@ -34,21 +34,19 @@ export const ResourcesAmount = () => {
   const Icon = icons[chosenResKey ?? 'food'];
 
   return (
-    <div className="relative flex min-w-[50%] max-w-[90%] flex-shrink items-center gap-2 border-[2px] border-white px-2 py-1">
-      <h6
-        className="flex size-full items-center justify-center text-lg"
-        style={{
-          color: textColors[chosenResKey ?? 'food'],
-        }}
-      >
-        {formatNumber(buyResAmount)}
+    <div className='mt-7 flex w-full items-center gap-2 justify-end'>
+        <h6
+          className="text-[15px] mt-1"
+          style={{
+            color: textColors[chosenResKey ?? 'food'],
+          }}
+        >
+          {formatNumber(buyResAmount)}
       </h6>
-      <div className="absolute right-2 top-0 flex h-full items-center justify-center">
         <Icon
-          height={24}
-          width={24}
+          height={12}
+          width={12}
         />
-      </div>
     </div>
   );
 };

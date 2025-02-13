@@ -37,7 +37,7 @@ export const RefLink = () => {
             </div>
           </div>
         )}
-        <h6 className='absolute bottom-[-20px] text-[14px] mx-auto left-0 right-0 w-fit'>{t('friends.text')}</h6>
+        <h6 className='absolute bottom-[-10px] text-[10px] mx-auto left-0 right-0 w-fit'>{t('friends.text')}</h6>
       </LinkButton>
   );
 };
