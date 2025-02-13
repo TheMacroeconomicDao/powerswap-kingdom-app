@@ -17,23 +17,13 @@ export const ResourcesPrice = () => {
   // console.log(amount);
 
   return (
-    <div className="relative flex min-w-[50%] max-w-[90%] flex-shrink items-center gap-2 border-[2px] border-white px-2 py-1">
-      <h6
-        className="flex size-full items-center justify-center text-lg"
-        style={{
-          background: 'linear-gradient(90deg, #9EFFBF 0%, #C0FBFF 50.77%, #96FF65 100%)',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}
-      >
+    <div className='mt-6 flex items-center justify-center flex-col gap-4'>
+      <div className='scale-[2]'>
+        <Coin />
+      </div>
+      <h6 className="text-[15px]">
         {price !== undefined && formatNumber(price)}
       </h6>
-      <div className="absolute right-2 top-0 flex h-full items-center justify-center">
-        <Coin
-          height={24}
-          width={24}
-        />
-      </div>
     </div>
   );
 };

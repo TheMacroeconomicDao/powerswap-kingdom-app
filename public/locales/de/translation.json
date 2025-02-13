@@ -29,6 +29,12 @@
         },
         "buyResource": {
           "text": "Ressource kaufen"
+        },
+        "referenceDescription":{
+          "text": "Kaufen Sie Ressourcen direkt von der Königin! Die Preise im Pool sind dynamisch und ändern sich je nach Nachfrage. Die Menge der Ressourcen ist begrenzt — wenn sie ausgehen, müssen Sie sie an der Börse von anderen Spielern erwerben."
+        },
+        "modalSubmit":{
+          "text":"JETZT ABHOLEN!"
         }
       },
       "augmentations": {

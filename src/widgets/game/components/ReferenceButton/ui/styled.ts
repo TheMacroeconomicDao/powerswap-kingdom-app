@@ -35,4 +35,5 @@ export const Text = styled.p`
   height: 100%;
   padding: 1.5rem;
   overflow-wrap: break-word;
+  font-size: 13px;
 `;

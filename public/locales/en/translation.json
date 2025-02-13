@@ -29,6 +29,12 @@
         },
         "buyResource": {
           "text": "Buy Resource"
+        },
+        "referenceDescription":{
+          "text": "Purchase resources directly from the Queen! Prices in the pool are dynamic and change based on demand. The amount of resources is limited — if they run out, you'll have to find them on the exchange from other players."
+        },
+        "modalSubmit":{
+          "text":"TAKE NOW!"
         }
       },
       "augmentations": {
