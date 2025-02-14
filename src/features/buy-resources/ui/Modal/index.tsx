@@ -37,8 +37,8 @@ export const BuyResourceModal = () => {
       <motion.div
         ref={modalRef}
         initial={{ translateY: '-100%' }}
-        animate={{ translateY: ['-100%', 0], scale: [1.3, 1] }}
-        exit={{ translateY: [0, '-100%'], scale: [1, 1.3] }}
+        animate={{ translateY: ['-100%', 0], opacity: [0, 1],  scale: [1.3, 1] }}
+        exit={{ translateY: [0, '-100%'], opacity: [1, 0], scale: [1, 1.3] }}
         transition={{
           duration: 0.4,
           type: 'spring',

@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-interface StyledProps {
-  isLocked: boolean;
-}
 
 export const StyledContainer = styled.div`
   width: 100%;
@@ -48,7 +45,7 @@ export const StyledContainer = styled.div`
     border-left: 2px solid white;
   }`;
 
-export const StyledProgress = styled.div<StyledProps>`
+export const StyledProgress = styled.div<{ isLocked?: boolean }>`
   height:100%;
   width: 100%;
   display: flex;

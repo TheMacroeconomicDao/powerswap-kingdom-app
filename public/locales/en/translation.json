@@ -21,6 +21,7 @@
     },
     "tabs": {
       "resources": {
+        "title": "RESOURCES",
         "resourcePool": {
           "title": "Resource pool"
         },

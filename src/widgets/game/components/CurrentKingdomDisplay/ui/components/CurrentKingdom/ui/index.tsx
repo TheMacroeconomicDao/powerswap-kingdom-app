@@ -25,13 +25,12 @@ import TraderKingdomTier4 from './assets/kingdoms/trader/tier-4.svg';
 import { useUnit } from 'effector-react';
 import { tap, $kingdom } from '@/entities';
 import { StyledWrapper } from './styled';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { TapTapMe } from '@/features/TapTapMe';
 
 export const CurrentKingdom = () => {
-  const [texts, setTexts] = useState<{ text: string; x: string; y: string; id: number }[]>([]);
-  const [id, setId] = useState(0);
-
   const kingdom = useUnit($kingdom);
+  const [tapTrigger, setTapTrigger] = useState(0);
 
   const kingdoms = {
     crypto: [MinerKingdomTier1, MinerKingdomTier2, MinerKingdomTier3, MinerKingdomTier4],
@@ -43,32 +42,10 @@ export const CurrentKingdom = () => {
   // @TODO: change this shit to fetchable tier
   const Kingdom = kingdom && kingdoms[kingdom] ? kingdoms[kingdom][0] : () => <></>;
 
-    const handleClick = () => {
-    const randomX = Math.random() * 70 + 15;
-    const randomY = Math.random() * 70 + 15; 
-
-    setTexts((prevTexts) => [
-      ...prevTexts,
-      { text: "tap tap me!", x: `${randomX}%`, y: `${randomY}%`, id: id }
-    ]);
-
-    setId((prevId) => prevId + 1);
+  const handleClick = () => {
+    tap();
+    setTapTrigger((prev) => prev + 1); // Увеличиваем значение, чтобы `useEffect` в TapTapMe отработал
   };
-
-  useEffect(() => {
-    if (texts.length > 0) {
-      const lastText = texts[texts.length - 1]; 
-
-      const timer = setTimeout(() => {
-        setTexts((prevTexts) =>
-          prevTexts.filter((text) => text.id !== lastText.id) 
-        );
-      }, 1500);
-
-      return () => clearTimeout(timer);
-    } 
-  }, [texts]);
-
 
   return (
     <AnimatePresence>
@@ -96,38 +73,13 @@ export const CurrentKingdom = () => {
             opacity: 0.9,
             transition: { duration: 0.03, ease: 'easeInOut' },
           }}
-          onClick={() => { tap(); handleClick(); }}
+          onClick={handleClick}
           className="h-[220px] max-h-[220px] w-auto"
         >
           <Kingdom preserveAspectRatio="meet" />
         </motion.button>
       </StyledWrapper>
-      <div className='absolute z-[-1] w-full h-[160px]'>
-      {texts.map((showText) => (
-        <motion.div
-          key={showText.id}
-          initial={{ opacity: 1, y: 20 }}
-          animate={{
-            opacity: 0,
-            y: -20,
-            transition: { duration: 1.5, ease: 'easeOut' },
-          }}
-          exit={{ opacity: 0, y: 20, transition: { duration: 0.5 } }}
-          style={{
-            opacity:'1',
-            position: 'absolute',
-            left: showText.x,
-            top: showText.y,
-            pointerEvents: 'none',
-            color: 'white',
-            fontSize: '16px',
-            fontWeight: 'bold',
-          }}
-        >
-          {showText.text}
-        </motion.div>
-      ))}
-      </div>
+      <TapTapMe onTap={() => setTapTrigger((prev) => prev + 1)} />
     </AnimatePresence>
   );
 };
