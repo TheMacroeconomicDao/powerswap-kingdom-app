@@ -22,7 +22,7 @@ export const ResourceBuyButton = () => {
       onClick={handleClick}
     >
       <Market />
-      <span className='border border-white min-w-20 p-[1px] pr-[2px] pt-[2px] text-[12px] mt-2'>{t('modalSubmit.text')}</span>
+      <span className='border border-white min-w-20 p-[1px] pl-[4px] pr-[4px] pt-[2px] text-[12px] mt-2'>{t('modalSubmit.text')}</span>
     </button>
   );
 }; 
