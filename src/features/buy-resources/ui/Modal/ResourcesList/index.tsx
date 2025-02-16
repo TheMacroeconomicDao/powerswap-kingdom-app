@@ -25,7 +25,7 @@ export const ResourcesList = () => {
       .toSorted((a, b) => +(b.state === 'opened') - +(a.state === 'opened')) ?? [];
 
   return (
-    <div className="mx-auto mt-2 flex size-fit items-center justify-center gap-4 border-[3px] border-white p-2">
+    <div className="mt-2 mx-auto flex h-[35px] size-fit items-center justify-center gap-4 border-[3px] border-white p-2">
       {resourcesWithState.map((resource, idx) => (
         <ResourceButton
           key={`resource-button-${idx}`}

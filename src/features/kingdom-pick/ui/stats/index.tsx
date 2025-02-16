@@ -13,7 +13,7 @@ export const KingdomPickStats: React.FC<KingdomPickStatsProps> = ({ stats }) => 
   return (
     <KingdomPickStatsStyled>
       {stats?.map((stat, index) => (
-        <KingdomPickStatStyled key={index}>
+        <KingdomPickStatStyled key={`kingdom-pick-stat-${index}`}>
           <KingdomPickStatItemStyled $production={stat.production}>
             {t(stat.production ?? '+')}
           </KingdomPickStatItemStyled>

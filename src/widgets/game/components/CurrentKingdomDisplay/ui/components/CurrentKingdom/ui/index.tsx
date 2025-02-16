@@ -25,9 +25,12 @@ import TraderKingdomTier4 from './assets/kingdoms/trader/tier-4.svg';
 import { useUnit } from 'effector-react';
 import { tap, $kingdom } from '@/entities';
 import { StyledWrapper } from './styled';
+import { useState } from 'react';
+// import { TapTapMe } from '@/features/TapTapMe';
 
 export const CurrentKingdom = () => {
   const kingdom = useUnit($kingdom);
+  // const [tapTrigger, setTapTrigger] = useState(0);
 
   const kingdoms = {
     crypto: [MinerKingdomTier1, MinerKingdomTier2, MinerKingdomTier3, MinerKingdomTier4],
@@ -38,6 +41,11 @@ export const CurrentKingdom = () => {
 
   // @TODO: change this shit to fetchable tier
   const Kingdom = kingdom && kingdoms[kingdom] ? kingdoms[kingdom][0] : () => <></>;
+
+  const handleClick = () => {
+    tap();
+    // setTapTrigger((prev) => prev + 1); // Увеличиваем значение, чтобы `useEffect` в TapTapMe отработал
+  };
 
   return (
     <AnimatePresence>
@@ -65,12 +73,13 @@ export const CurrentKingdom = () => {
             opacity: 0.9,
             transition: { duration: 0.03, ease: 'easeInOut' },
           }}
-          onClick={() => tap()}
+          onClick={handleClick}
           className="h-[220px] max-h-[220px] w-auto"
         >
           <Kingdom preserveAspectRatio="meet" />
         </motion.button>
       </StyledWrapper>
+      {/* <TapTapMe onTap={() => setTapTrigger((prev) => prev + 1)} /> */}
     </AnimatePresence>
   );
 };
