@@ -1,4 +1,4 @@
-.first {
+/* .first {
   position: relative;
   color: transparent;
   background: linear-gradient(90deg, #7aff87 0%, #e479ff 49.65%, #ff4158 100%);
@@ -17,14 +17,19 @@
   background: linear-gradient(90deg, #7aff87 0%, #e479ff 49.65%, #ff4158 100%);
   filter: blur(5px);
   z-index: -1;
+} */
+
+.first{
+  color: #FFB342;
+  filter: drop-shadow(0 0 0.5px #ffbf5f);
 }
 
 .second {
-  color: #ff9b3f;
-  filter: drop-shadow(0 0 1px #ff9b3f);
+  color: #7D50FF;
+  filter: drop-shadow(0 0 0.5px #a081ff);
 }
 
 .third {
-  color: #71f6ff;
-  filter: drop-shadow(0 0 1px #71f6ff);
+  color: #FF3263;
+  filter: drop-shadow(0 0 0.5px #ff688b);
 }/*# sourceMappingURL=TopLeaderboardUnit.module.css.map */
