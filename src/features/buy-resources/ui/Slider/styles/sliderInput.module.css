@@ -3,7 +3,6 @@
   cursor: pointer;
   background: transparent;
   outline: none;
-  position: relative;
 }
 
 .slider::-webkit-slider-runnable-track {
@@ -23,21 +22,12 @@
   -webkit-appearance: none;
   appearance: none;
   margin-top: -9px;
-  border-radius: 10px;
+  border-radius: 0;
   border: none;
   background-color: white;
   height: 30px;
   width: 8px;
-}
-.slider::before{
-  content: "";
-  position: absolute;
-  margin-top: -9px;
   border-radius: 10px;
-  border: none;
-  opacity: 0;
-  height: 30px;
-  width: 100%;
 }
 
 .slider::-moz-range-thumb {
