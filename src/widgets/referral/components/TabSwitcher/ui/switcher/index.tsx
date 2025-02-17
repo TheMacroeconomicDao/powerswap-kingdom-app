@@ -16,8 +16,8 @@ export const RefTabSwitcher = () => {
         return <ReferralAboutTab />;
       // case 'side-quests':
       //   return <SideQuests />;
-      case "update-tab":
-        return <UpdateModal/>      
+      // case "update-tab":
+      //   return <UpdateModal/>
       case 'none':
         return null;
       default:

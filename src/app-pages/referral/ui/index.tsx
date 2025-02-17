@@ -30,7 +30,7 @@ export const ReferralUI = () => {
 
   useEffect(() => {
     getReferrals();
-    setRefTab('update-tab');
+    // setRefTab('update-tab');
   }, [getReferrals]);
 
   return (
@@ -40,7 +40,7 @@ export const ReferralUI = () => {
           key="mainui"
           initial={{ opacity: 0, scale: 0.95, translateY: 10 }}
           animate={{ opacity: 1, scale: 1, translateY: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-col items-center justify-center"
         >
           <MainPageLink />
