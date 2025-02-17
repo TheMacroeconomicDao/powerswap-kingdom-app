@@ -44,7 +44,7 @@ export const CurrentKingdom = () => {
 
   const handleClick = () => {
     tap();
-    setTapTrigger((prev) => prev + 1); // Увеличиваем значение, чтобы `useEffect` в TapTapMe отработал
+    setTapTrigger((prev) => prev + 1); // Увеличиваем значение, чтобы `useEffect` в TapTapMe отработал 
   };
 
   return (
@@ -79,7 +79,7 @@ export const CurrentKingdom = () => {
           <Kingdom preserveAspectRatio="meet" />
         </motion.button>
       </StyledWrapper>
-      <TapTapMe onTap={() => setTapTrigger((prev) => prev + 1)} />
+      {tapTrigger != 0 && <TapTapMe onTap={tapTrigger} />}
     </AnimatePresence>
   );
 };
