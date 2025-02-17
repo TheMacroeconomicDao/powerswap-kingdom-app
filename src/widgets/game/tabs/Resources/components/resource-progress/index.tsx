@@ -83,7 +83,7 @@ export const ResourceProgress = ({ progress = 100, resource }: ResourceProgressP
       </div>
       
       <div className="relative w-full">
-      <h6 className='absolute right-0 mt-[-20px] text-[15px]'>{progress}%</h6>
+      <h6 className='absolute right-0 mt-[-20px] text-[15px]'>{Math.round(progress * 100) / 100}%</h6>
         <div className="relative w-full">
           <Image
             className="relative z-20"
