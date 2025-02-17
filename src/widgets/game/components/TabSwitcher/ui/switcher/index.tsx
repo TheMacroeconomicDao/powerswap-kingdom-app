@@ -1,6 +1,6 @@
 'use client';
 
-import { ResourcesTab, AboutTab, LeaderboardTab, InDevelopmentTab, MarketTab, AugmentationsTab } from '@/widgets';
+import { ResourcesTab, AboutTab, LeaderboardTab, InDevelopmentTab, MarketTab, AugmentationsTab, UpdateModal } from '@/widgets';
 
 import { useUnit } from 'effector-react';
 import { $tab } from '@/entities';
@@ -20,6 +20,8 @@ export const TabSwitcher = () => {
         return <AboutTab />;
       // case 'augmentations':
       //   return <AugmentationsTab />;
+      case 'update-tab':
+        return <UpdateModal/>
       case 'none':
         return null;
       default:
