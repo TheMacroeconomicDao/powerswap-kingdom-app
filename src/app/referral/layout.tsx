@@ -13,6 +13,7 @@ import 'normalize.css/normalize.css';
 import { useRouter } from 'next/navigation';
 import { setLastOpenedPage } from '@/entities';
 import { useUnit } from 'effector-react';
+import { useTranslation } from 'react-i18next';
 
 export default function ReferralLayout({ children }: PropsWithChildren) {
   const router = useRouter();
@@ -22,6 +23,10 @@ export default function ReferralLayout({ children }: PropsWithChildren) {
     router.push('/game');
     setLastPage('game');
   };
+
+  const { t } = useTranslation('translation', {
+    keyPrefix: 'game.home.navbar.game',
+  });
 
   return (
     <main className="relative h-[100vh] w-[100vw] overflow-hidden text-white">
@@ -38,9 +43,10 @@ export default function ReferralLayout({ children }: PropsWithChildren) {
       </div>
       <button
         onClick={handleClick}
-        className="fixed left-8 top-7 z-50 size-[64px]"
+        className="fixed left-8 top-7 z-50 size-[64px] active:scale-90 duration-[150ms] ease-in-out"
       >
         <Queen />
+        <h6 className='mt-1 text-[10px]'>{t('title')}</h6>
       </button>
       <div className="fixed right-8 top-7 z-50 flex w-full flex-row-reverse">
         <ExitButton />

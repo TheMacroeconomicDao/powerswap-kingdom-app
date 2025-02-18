@@ -10,6 +10,9 @@
         },
         "home":{
           "text":"ACCUEIL"
+        },
+        "game":{
+          "title":"JEU"
         }
       },
       "pswTokens": {
@@ -124,6 +127,12 @@
                 }
               ]
             }
+          },
+          "blockedPage": {
+            "title": "LE PROGRAMME DE PARRAINAGE EST VERROUILLÉ!",
+            "description": "appuyez ci-dessous pour déverrouiller",
+            "button":"ACTIVER",
+            "commingSoon":"arrive bientôt"
           }
         }
       },

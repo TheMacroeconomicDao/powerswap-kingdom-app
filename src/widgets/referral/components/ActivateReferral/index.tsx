@@ -1,6 +1,7 @@
 'use client'
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 
 export const ActivateReferral = () => {
@@ -8,12 +9,19 @@ export const ActivateReferral = () => {
     const [glitch, setGlitch] = useState(false);
 
     useEffect(() => {
-      const interval = setInterval(() => {
-        setGlitch((prev) => !prev);
-      }, 1000); 
-  
-      return () => clearInterval(interval);
-    }, []);
+        if (!isVisible) {
+          const interval = setInterval(() => {
+            setGlitch((prev) => !prev);
+          }, 1000);
+    
+          return () => clearInterval(interval);
+        }
+    }, [isVisible]);
+      
+    const { t } = useTranslation('translation', {
+    keyPrefix: 'referral.pages.main.blockedPage',
+    });
+
     return(
         <AnimatePresence mode="wait">
             <div className='absolute backdrop-blur-lg z-50 w-full h-full flex items-center justify-center flex-col p-1'> 
@@ -22,9 +30,9 @@ export const ActivateReferral = () => {
                     initial={{ opacity: 0, scale: 0.95, translateY: 100 }}
                     animate={{ opacity: 1, scale: 1, translateY: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className='h-[369px] bg-black border p-5 sm:p-10'>
-                    <h6 className='text-red-500 justify-self-center'>РЕФЕРАЛЬНАЯ ПРОГРАММА ЗАБЛОКИРОВАНА!</h6>
-                    <h5 className='mt-16'>для разблокировки нажмите ниже</h5>
+                    className='min-h-[369px] bg-black border p-5 sm:p-10'>
+                    <h6 className='text-red-500 justify-self-center'>{t('title')}</h6>
+                    <h5 className='mt-16'>{t('description')} </h5>
                         {isVisible ? (
                             <motion.button
                             key="button"
@@ -35,7 +43,7 @@ export const ActivateReferral = () => {
                             transition={{ duration: 0.3 }}
                             onClick={() => setIsVisible(false)}
                             >
-                            Активировать
+                            {t('button')}
                             </motion.button>
                         ) : (
                             <motion.p
@@ -56,7 +64,7 @@ export const ActivateReferral = () => {
                                 }}
                                 className="mt-20 text-[#ffe350] text-[24px] font-bold"
                                 >
-                                comming soon
+                                {t('commingSoon')}
                             </motion.p>
                         )}
                 </motion.div>
