@@ -10,6 +10,9 @@
         },
         "home":{
           "text":"HOME"
+        },
+        "game":{
+          "title":"GAME"
         }
       },
       "pswTokens": {
@@ -124,6 +127,12 @@
                 }
               ]
             }
+          },
+          "blockedPage": {
+            "title": "REFERRAL PROGRAM IS LOCKED!",
+            "description": "press below to unlock",
+            "button":"ACTIVATE",
+            "commingSoon":"comming soon"
           }
         }
       },

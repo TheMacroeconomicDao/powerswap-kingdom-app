@@ -64,7 +64,9 @@ export const ReferralUI = () => {
           <ActivateReferral />
         </> 
   ) : (
+      <div className='absolute'>
         <LoadingUIMain key="loading" />
+      </div>
       )}
     </AnimatePresence>
   );
