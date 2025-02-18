@@ -2,10 +2,12 @@
 
 import GoBack from './assets/go-back.svg';
 import { setTab } from '@/entities';
+import { setRefTab } from '@/entities';
 
 export const GoBackButton = () => {
   const handleClick = () => {
     setTab('none');
+    setRefTab('none')
   };
 
   return (
