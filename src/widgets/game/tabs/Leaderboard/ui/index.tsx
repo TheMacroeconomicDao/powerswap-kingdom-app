@@ -49,7 +49,7 @@ export const LeaderboardTab = () => {
             {leaders?.slice(0, 3).map((leader, idx) => (
                 <TopLeaderboardUnit
                   key={`top-leader-${idx}`}
-                  username={leader.user_name.length > 0 ? leader.user_name : 'UNKNOWN'}
+                  username={leader.user_name.length > 0 && leader.user_name && leader.user_name.length ? leader.user_name : 'UNKNOWN'}
                   tokens={leader.tokens_amount}
                   place={places[idx]}
                 />
@@ -60,7 +60,7 @@ export const LeaderboardTab = () => {
               {leaders?.slice(3, 100).map((leader, idx) => (
                   <LeaderboardUnit
                   key={`leader-${idx}`}
-                  username={leader.user_name.length > 0 ? leader.user_name : 'UNKNOWN'}
+                  username={leader.user_name.length > 0 && leader.user_name && leader.user_name.length ? leader.user_name : 'UNKNOWN'}
                   tokens={leader.tokens_amount}
                 />
               ))}
