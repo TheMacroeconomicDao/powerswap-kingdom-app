@@ -39,9 +39,8 @@ export const ResourcesTab = () => {
             </div>
           </div>
           <div className={`${styles.section_with_border} relative overflow-clip`}>
-            <Scaler height={800}>
               {resources ? (
-                <>
+                <Scaler height={800}>
                   <ResourcePool
                     sharedResources={resources?.shared_resources}
                     sharedTotalResouces={resources?.shared_total_resources}
@@ -51,12 +50,10 @@ export const ResourcesTab = () => {
                     <UpdatePoolProgress />
                     <ToggleResourceMenuButton />
                   </div>
-                  
-                </>
+                </Scaler>
               ) : (
                 <LoadingFallback />
               )}
-            </Scaler>
           </div>
         </TabAnimatedGame>
         <AnimatePresence mode="wait">
