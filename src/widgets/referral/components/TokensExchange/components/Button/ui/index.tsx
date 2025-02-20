@@ -28,22 +28,17 @@ export const Button = ({
 
   return (
     <>
-      {referralStatus && refPoints >= 30000 && (
-        <>
-          <StyledButton
-            onClick={() => setIsModalOpen(true)}
-            whileTap={{ scale: 0.7 }}
-          >
-            {t('buttonText')}
-          </StyledButton>
-
-          <ConfirmModal
-            isOpen={isModalOpen}
-            onConfirm={handleConfirm}
-            onCancel={() => setIsModalOpen(false)}
-          />
-        </>
-      )}
+      <StyledButton
+        onClick={() => setIsModalOpen(true)}
+        whileTap={{ scale: 0.7 }}
+      >
+        {t('buttonText')}
+      </StyledButton>
+      <ConfirmModal
+        isOpen={isModalOpen}
+        onConfirm={handleConfirm}
+        onCancel={() => setIsModalOpen(false)}
+      />
     </>
   );
 };

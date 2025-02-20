@@ -9,10 +9,12 @@ export const Overlay = styled(motion.div)`
   top: 0;
   left: 0;
   right: 0;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   height: 100dvh;
   margin: auto;
   backdrop-filter: blur(15px);
+  padding: 10px;
 `;
 
 export const ModalContainer = styled(motion.div)`

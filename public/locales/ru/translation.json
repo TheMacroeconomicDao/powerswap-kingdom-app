@@ -10,10 +10,13 @@
         },
         "home":{
           "text":"ДОМ"
+        },
+        "game":{
+          "title":"ИГРА"
         }
       },
       "pswTokens": {
-        "title": "PSW ТОКЕНЫ"
+        "title": "PSWMeta ТОКЕНЫ"
       },
       "kingdomResource": {
         "text": "РЕСУРС КОРОЛЕВСТВА"
@@ -125,6 +128,12 @@
               ]
             }
           }
+        },
+        "blockedPage": {
+          "title": "РЕФЕРАЛЬНАЯ ПРОГРАММА ЗАБЛОКИРОВАНА!",
+          "description": "для разблокировки нажмите ниже",
+          "button":"АКТИВИРОВАТЬ",
+          "commingSoon":"скоро"
         }
       },
       "aboutUs": {

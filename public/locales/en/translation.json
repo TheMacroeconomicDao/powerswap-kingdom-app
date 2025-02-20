@@ -10,10 +10,13 @@
         },
         "home":{
           "text":"HOME"
+        },
+        "game":{
+          "title":"GAME"
         }
       },
       "pswTokens": {
-        "title": "PSW TOKENS"
+        "title": "PSWMeta TOKENS"
       },
       "kingdomResource": {
         "text": "KINGDOM RESOURCE"
@@ -124,6 +127,12 @@
                 }
               ]
             }
+          },
+          "blockedPage": {
+            "title": "REFERRAL PROGRAM IS LOCKED!",
+            "description": "press below to unlock",
+            "button":"ACTIVATE",
+            "commingSoon":"comming soon"
           }
         }
       },
@@ -166,7 +175,7 @@
 
     "updatesTab": {
       "title": "Версия 1.2",
-      "text": "Happy New Year from the <0>PowerSwapKingdom!</0><br/> <1>We are excited to announce</1> the launch of the first stage of the game! 🎮<br/> Now, those who actively participated in the referral program can exchange their accumulated points for <2>unique gaming advantages</2> to become even stronger and more influential in their kingdom.<br/> Please note that the referral program is temporarily deactivated, but don't worry — it will return in a completely new, cool format, ready to provide you with new opportunities for growth! 🚀<br/><3>This is just the beginning — in the future, you can expect many exciting updates</3>, incredible surprises, and new ways to strengthen your position in the game!<br/><1>Don't miss out</1>, stay tuned for our news and be ready for new heights that we will conquer together! 🏔️<br/> <1>We congratulate you on the New Year 🎄 and wish you bright victories and successes both in the game and in life! 🥳 </1>"
+      "text": "<0>PowerSwapKingdom!</0><br/> <1>We are excited to announce</1> the launch of the first stage of the game! 🎮<br/> Now, those who actively participated in the referral program can exchange their accumulated points for <2>unique gaming advantages</2> to become even stronger and more influential in their kingdom.<br/> Please note that the referral program is temporarily deactivated, but don't worry — it will return in a completely new, cool format, ready to provide you with new opportunities for growth! 🚀<br/><3>This is just the beginning — in the future, you can expect many exciting updates</3>, incredible surprises, and new ways to strengthen your position in the game!<br/><1>Don't miss out</1>, stay tuned for our news and be ready for new heights that we will conquer together! 🏔️<br/>"
     },
 
     "errorPage": {

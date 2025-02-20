@@ -10,10 +10,13 @@
         },
         "home":{
           "text":"STARTSEITE"
+        },
+        "game":{
+          "title":"SPIEL"
         }
       },
       "pswTokens": {
-        "title": "PSW TOKEN"
+        "title": "PSWMeta TOKEN"
       },
       "kingdomResource": {
         "text": "KÖNIGREICHSRESSOURCE"
@@ -122,6 +125,12 @@
                 }
               ]
             }
+          },
+          "blockedPage": {
+            "title": "DAS REFERRAL-PROGRAMM IST GESPERRT!",
+            "description": "drücken Sie unten, um zu entsperren",
+            "button":"AKTIVIEREN",
+            "commingSoon":"kommt bald"
           }
         }
       },
@@ -163,7 +172,7 @@
 
     "updatesTab": {
       "title": "Версия 1.2",
-      "text": "Frohes neues Jahr vom <0>PowerSwapKingdom!</0><br/> <1>Wir freuen uns, anzukündigen</1>, dass die erste Phase des Spiels gestartet wird! 🎮<br/> Jetzt können diejenigen, die aktiv am Empfehlungsprogramm teilgenommen haben, ihre gesammelten Punkte gegen <2>einzigartige Spielvorteile</2> eintauschen, um noch stärker und einflussreicher in ihrem Königreich zu werden.<br/> Bitte beachten Sie, dass das Empfehlungsprogramm vorübergehend deaktiviert ist, aber keine Sorge — es wird in einem völlig neuen, coolen Format zurückkehren und Ihnen neue Wachstumschancen bieten! 🚀<br/><3>Das ist erst der Anfang — in Zukunft erwarten Sie viele aufregende Updates</3>, unglaubliche Überraschungen und neue Möglichkeiten, Ihre Position im Spiel zu stärken!<br/><1>Verpassen Sie es nicht</1>, bleiben Sie auf dem Laufenden über unsere Nachrichten und seien Sie bereit für neue Höhen, die wir gemeinsam erobern werden! 🏔️<br/> <1>Wir gratulieren Ihnen zum neuen Jahr 🎄 und wünschen Ihnen strahlende Siege und Erfolge sowohl im Spiel als auch im Leben! 🥳 </1>"
+      "text": "<br/> <1>Wir freuen uns, anzukündigen</1>, dass die erste Phase des Spiels gestartet wird! 🎮<br/> Jetzt können diejenigen, die aktiv am Empfehlungsprogramm teilgenommen haben, ihre gesammelten Punkte gegen <2>einzigartige Spielvorteile</2> eintauschen, um noch stärker und einflussreicher in ihrem Königreich zu werden.<br/> Bitte beachten Sie, dass das Empfehlungsprogramm vorübergehend deaktiviert ist, aber keine Sorge — es wird in einem völlig neuen, coolen Format zurückkehren und Ihnen neue Wachstumschancen bieten! 🚀<br/><3>Das ist erst der Anfang — in Zukunft erwarten Sie viele aufregende Updates</3>, unglaubliche Überraschungen und neue Möglichkeiten, Ihre Position im Spiel zu stärken!<br/><1>Verpassen Sie es nicht</1>, bleiben Sie auf dem Laufenden über unsere Nachrichten und seien Sie bereit für neue Höhen, die wir gemeinsam erobern werden! 🏔️<br/>"
     },
 
     "errorPage": {

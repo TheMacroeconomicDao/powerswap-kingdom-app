@@ -5,4 +5,5 @@ export type TabType =
   | 'market'
   | 'about'
   | 'refs'
+  |  'update-tab'
   | 'none';
