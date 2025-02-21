@@ -79,7 +79,7 @@ export const CurrentKingdom = () => {
           <Kingdom preserveAspectRatio="meet" />
         </motion.button>
       </StyledWrapper>
-      <TapTapMe onTap={() => setTapTrigger((prev) => prev + 1)} />
+      <TapTapMe onTap={tapTrigger} />
     </AnimatePresence>
   );
 };
