@@ -81,3 +81,11 @@ sample({
   fn: ({ resource }) => resource,
   target: $kingdom,
 });
+
+// временно
+sample({
+  source: $user,
+  filter: user => !!user && user.state.last_opened_page === 'referral',
+  fn: () => 'game' as LastOpenedPageType,
+  target: $lastOpenedPage,
+});
