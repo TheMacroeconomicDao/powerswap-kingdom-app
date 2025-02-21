@@ -29,6 +29,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-block: 16px;
+  padding-block: 0;
   z-index: 10;
+  background-color: #0e0e0e;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=LeaderboardTab.module.css.map */

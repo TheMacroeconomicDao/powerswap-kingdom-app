@@ -43,11 +43,10 @@ export const LeaderboardTab = () => {
             tokens={tokens}
           />
         </div>
-
         {leaders ? (
           <>
-            <div className="mx-auto mt-4 flex w-full flex-col gap-3">
-              {leaders?.slice(0, 3).map((leader, idx) => (
+            <div className="mx-auto mt-0 flex w-full flex-col gap-3">
+            {leaders?.slice(0, 3).map((leader, idx) => (
                 <TopLeaderboardUnit
                   key={`top-leader-${idx}`}
                   username={leader.user_name?.length ? leader.user_name : 'UNKNOWN'}
@@ -58,7 +57,7 @@ export const LeaderboardTab = () => {
             </div>
             <div className={tabStyles.leaders}>
               <div className="mt-4 flex w-full flex-col gap-3">
-                {leaders?.slice(3, 100).map((leader, idx) => (
+              {leaders?.slice(3, 100).map((leader, idx) => (
                   <LeaderboardUnit
                   key={`leader-${idx}`}
                   username={leader.user_name?.length ? leader.user_name : 'UNKNOWN'}
