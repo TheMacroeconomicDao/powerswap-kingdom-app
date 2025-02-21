@@ -12,13 +12,13 @@ export const UserRating = ({ username, tokens }: { username: string; tokens: num
         <div className="h-[45px] w-[200px]">
           <UserRatingBorder />
         </div>
-        <div className="absolute left-0 top-[8px] flex size-full flex-col items-center uppercase">
+        <div className="absolute left-0 top-[2.5px] flex size-full flex-col items-center uppercase">
           <h6 className="max-w-[80%] overflow-clip text-center text-[13px]">
             {username && username.length > 0 ? username : 'UNKNOWN'}
           </h6>
-          <div className="flex mt-[-3px] items-center gap-1">
+          <div className="flex items-center gap-1">
             <p className="text-[13px] text-green-400">{tokens}</p>
-            {/* <Coin className="mt-[-3px] scale-[0.8]" /> */}
+            <Coin className="mt-[-3px] scale-[0.8]" />
             <p className="text-yellow-200">24h</p>
           </div>
         </div>

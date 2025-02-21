@@ -19,7 +19,7 @@ export const RefLink = () => {
 
   const handleClick = () => {
     router.push('/referral');
-    setLastPage('referral');
+    // setLastPage('referral');
   };
 
   const { t } = useTranslation('translation', { keyPrefix: 'game.home.navbar' });
