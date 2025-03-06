@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useUnit } from "effector-react";
 import { LastOpenedPageType, setLastOpenedPage } from "@/entities";
@@ -9,36 +9,42 @@ interface AnimatedRoutingButtonProps {
   href: string;
   setLastPageProp: LastOpenedPageType;
   className?: string;
-}
-
-function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  move: "left" | "right";
 }
 
 export const AnimatedRoutingButton: React.FC<AnimatedRoutingButtonProps> = ({
   children,
   href,
   className,
-  setLastPageProp
+  move,
+  setLastPageProp,
 }) => {
-   const setLastPage = useUnit(setLastOpenedPage);
+  const setLastPage = useUnit(setLastOpenedPage);
   const router = useRouter();
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleTransition = async () => {
-    const body = document.querySelector("body");
+    if (isTransitioning) return;
+    setIsTransitioning(true);
 
-    body?.classList.add("page-transition");
-    
-    await sleep(700);
+    if (typeof document !== "undefined") {
+      document.body.classList.add(`page-transition-${move}`);
+    }
+
+    await new Promise((resolve) => setTimeout(resolve, 700));
 
     router.push(href);
     setLastPage(setLastPageProp);
 
-    body?.classList.remove("page-transition");
+    if (typeof document !== "undefined") {
+      document.body.classList.remove(`page-transition-${move}`);
+    }
+
+    setIsTransitioning(false);
   };
 
   return (
-    <button className={className} onClick={handleTransition}>
+    <button className={className} onClick={handleTransition} disabled={isTransitioning}>
       {children}
     </button>
   );

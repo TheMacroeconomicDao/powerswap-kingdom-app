@@ -19,11 +19,10 @@ export default function ReferralLayout({ children }: PropsWithChildren) {
   return (
     <motion.div 
         key='refui'
-        initial={{ translateX: '-100vw' }} 
+        initial={{  translateX: '-100vw' }} 
         animate={{ translateX: 0 }}      
         transition={{ 
           duration: 0.7, 
-          delay: 0.7,
           ease: 'easeInOut'}} 
         className="relative h-[100vh] w-[100vw] overflow-hidden text-white">
       <Scaler height={800}>
@@ -37,7 +36,7 @@ export default function ReferralLayout({ children }: PropsWithChildren) {
       <div className="fixed bottom-0 left-0 z-50 flex h-[80px] w-full items-center justify-center rounded-t-[20px] border-t-[1px] border-[#dcdcdce6] bg-[#0e0e0e]">
         <AboutUs />
       </div>
-      <AnimatedRoutingButton href={'/game'} setLastPageProp={'game'}>
+      <AnimatedRoutingButton href={'/game'} setLastPageProp={'game'} move={'left'}>
         <button
           className="fixed left-8 top-7 z-50 size-[64px] active:scale-90 duration-[150ms] ease-in-out"
         >

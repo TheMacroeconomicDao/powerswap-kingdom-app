@@ -1,23 +1,13 @@
 'use client'
-import { setLastOpenedPage } from "@/entities";
 import { AnimatedRoutingButton } from "@/shared/ui/components";
-import { useUnit } from "effector-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useRouter } from 'next/navigation';
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export const ActivateReferral = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [glitch, setGlitch] = useState(false);
-    const router = useRouter();
-    const setLastPage = useUnit(setLastOpenedPage);
-  
-    const handleClick = () => {
-      router.push('/game');
-      setLastPage('game');
-    };
-    
+
     useEffect(() => {
         if (!isVisible) {
           const interval = setInterval(() => {
@@ -34,7 +24,7 @@ export const ActivateReferral = () => {
 
     return(
         <>
-            <AnimatedRoutingButton className='hover:cursor-auto absolute backdrop-blur-lg z-50 w-full h-full' href={"/game"} setLastPageProp={"game"}> 
+            <AnimatedRoutingButton className='hover:cursor-auto absolute backdrop-blur-lg z-50 w-full h-full' href={"/game"} setLastPageProp={"game"} move={"left"}> 
             </AnimatedRoutingButton>
             <motion.div
                 key="activateui"
