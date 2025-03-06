@@ -13,6 +13,7 @@ export default function GameLayout({ children }: PropsWithChildren) {
       animate={{ translateX: 0 }}      
       transition={{ 
       duration: 0.7, 
+      delay: 0.7,
       ease: 'easeInOut'}} 
       className="relative max-h-screen min-h-screen overflow-hidden text-white"
     >
