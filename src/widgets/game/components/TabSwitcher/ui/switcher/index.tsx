@@ -18,10 +18,10 @@ export const TabSwitcher = () => {
         return <LeaderboardTab />;
       case 'about':
         return <AboutTab />;
-      case 'augmentations':
-        return <AugmentationsTab />;
+      // case 'augmentations':
+      //   return <AugmentationsTab />;
       case 'update-tab':
-        return <UpdateModal/>
+        return <UpdateModal />
       case 'none':
         return null;
       default:

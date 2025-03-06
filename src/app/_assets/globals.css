@@ -37,3 +37,18 @@ p {
 small {
   font-size: 0.75rem;
 }
+
+body {
+  transition-property: opacity, transform, filter, background;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+  overflow: hidden;
+}
+
+.page-transition {
+  opacity: 0;
+  background: black;
+  transform: translateY(40px);
+  filter: blur(12px);
+  overflow: hidden;
+}

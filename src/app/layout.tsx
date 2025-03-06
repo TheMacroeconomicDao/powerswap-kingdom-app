@@ -27,7 +27,9 @@ export default function MainLayout({ children }: PropsWithChildren) {
           fontFamily: `${mainFont.style.fontFamily}, ${fallbackFont.style.fontFamily}`,
         }}
       >
-        <Root>{children}</Root>
+        <Root>
+            {children}
+        </Root>
       </body>
     </html>
   );

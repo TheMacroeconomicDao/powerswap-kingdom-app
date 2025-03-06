@@ -15,7 +15,7 @@ export const StyledHeader = styled(Wrapper)`
 export const LinkButton = styled(motion.button)`
   display: flex;
   width: 100px;
-  height: auto;
+  height: auto; 
   justify-content: center;
 `;
 
