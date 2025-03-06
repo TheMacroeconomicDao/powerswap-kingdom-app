@@ -43,13 +43,13 @@ body {
 }
 
 .page-transition-left {
-  transition: transform 0.7s ease-in-out, opacity 0.7s;
+  transition: transform 0.7s ease-in-out, opacity 0s ease-in-out 0.7s;
   transform: translateX(-100vw);
   opacity: 0;
 }
 
 .page-transition-right {
-  transition: transform 0.7s ease-in-out, opacity 0.7s;
+  transition: transform 0.7s ease-in-out, opacity 0s ease-in-out 0.7s;
   transform: translateX(100vw);
   opacity: 0;
 }
