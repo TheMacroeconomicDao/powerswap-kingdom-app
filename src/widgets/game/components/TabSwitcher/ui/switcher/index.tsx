@@ -21,7 +21,7 @@ export const TabSwitcher = () => {
       // case 'augmentations':
       //   return <AugmentationsTab />;
       case 'update-tab':
-        return <UpdateModal/>
+        return <UpdateModal />
       case 'none':
         return null;
       default:

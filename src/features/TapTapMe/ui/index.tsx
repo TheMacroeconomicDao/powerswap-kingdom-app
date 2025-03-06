@@ -54,7 +54,7 @@ export const TapTapMe = ({ onTap }: TapTapMeProps) => {
     
     return(
       <div className='absolute z-[-1] w-full h-[160px]'>
-          {(onTap === 1 ? texts.slice(1) : texts).map((showText, index) => (
+          {(onTap === 0 ? texts.slice(1) : texts).map((showText, index) => (
             <motion.div
             key={`tap-tap-me-${index}`}
             initial={{ opacity: 1, y: 20 }}
