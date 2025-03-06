@@ -39,18 +39,13 @@ small {
 }
 
 body {
-  transition-property: opacity, transform, filter;
+  transition-property: transform;
   transition-timing-function: ease-in-out;
   transition-duration: 400ms;
   overflow: hidden;
 }
 
 .page-transition {
-  opacity: 0;
   transform: translateY(40px);
   overflow: hidden;
-}
-
-.page-transition *{
-  filter: blur(0) !important;
 }
