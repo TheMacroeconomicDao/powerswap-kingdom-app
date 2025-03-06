@@ -1,5 +1,6 @@
 'use client'
 import { setLastOpenedPage } from "@/entities";
+import { AnimatedRoutingButton } from "@/shared/ui/components";
 import { useUnit } from "effector-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from 'next/navigation';
@@ -33,8 +34,8 @@ export const ActivateReferral = () => {
 
     return(
         <>
-            <button onClick={handleClick} className='hover:cursor-auto absolute backdrop-blur-lg z-50 w-full h-full'> 
-            </button>
+            <AnimatedRoutingButton className='hover:cursor-auto absolute backdrop-blur-lg z-50 w-full h-full' href={"/game"} setLastPageProp={"game"}> 
+            </AnimatedRoutingButton>
             <motion.div
                 key="activateui"
                 initial={{ opacity: 0, scale: 0.95, translateY: 100 }}
