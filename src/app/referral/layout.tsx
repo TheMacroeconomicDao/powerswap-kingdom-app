@@ -22,7 +22,7 @@ export default function ReferralLayout({ children }: PropsWithChildren) {
         initial={{  translateX: '-100vw' }} 
         animate={{ translateX: 0 }}      
         transition={{ 
-          duration: 0.7, 
+          duration: 0.7,
           ease: 'easeInOut'}} 
         className="relative h-[100vh] w-[100vw] overflow-hidden text-white">
       <Scaler height={800}>
