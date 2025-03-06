@@ -42,17 +42,14 @@ body {
   overflow: hidden;
 }
 
-
 .page-transition-left {
+  transition: transform 0.7s ease-in-out, opacity 0.7s;
   transform: translateX(-100vw);
-  transition-property: transform;
-  transition-timing-function: ease-in-out;
-  transition-duration: 700ms;
+  opacity: 0;
 }
 
 .page-transition-right {
-  transition-property: transform;
-  transition-timing-function: ease-in-out;
-  transition-duration: 700ms;
+  transition: transform 0.7s ease-in-out, opacity 0.7s;
   transform: translateX(100vw);
+  opacity: 0;
 }
