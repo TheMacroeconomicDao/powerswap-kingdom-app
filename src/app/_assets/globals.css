@@ -39,14 +39,20 @@ small {
 }
 
 body {
+  overflow: hidden;
+}
+
+
+.page-transition-left {
+  transform: translateX(-100vw);
   transition-property: transform;
   transition-timing-function: ease-in-out;
-  transition-duration: 500ms;
-  overflow: hidden;
+  transition-duration: 700ms;
 }
 
-.page-transition {
-  transform: translateY(40px);
-  overflow: hidden;
+.page-transition-right {
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 700ms;
+  transform: translateX(100vw);
 }
-
