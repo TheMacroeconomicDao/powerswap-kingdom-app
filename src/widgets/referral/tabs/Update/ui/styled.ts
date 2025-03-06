@@ -3,11 +3,20 @@ import { motion } from 'framer-motion';
 
 export const OverlayButton = styled(motion.button)`
   position: absolute;
+  display: flex;
+  align-items: center;
   top: 0;
   width: 100%;
   height: 100%;
   cursor: default;
-  backdrop-filter: blur(15px);
+  z-index: 51;
+  overflow: hidden;
+  &::after{
+    content: '';
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 80%;
+  }
 `;
 
 export const Overlay = styled(motion.div)`
@@ -23,6 +32,7 @@ export const Overlay = styled(motion.div)`
   height: 65%;
   margin: auto;
   padding: 10px;
+  z-index: 52;
 `;
 
 export const ModalContainer = styled(motion.div)`
@@ -37,7 +47,7 @@ export const ModalContainer = styled(motion.div)`
   height: 100%;
   z-index: 1;
   width: 100%;
-
+  z-index: 53;
   button {
     margin-left: auto;
   }
