@@ -11,11 +11,12 @@ export const OverlayButton = styled(motion.button)`
   cursor: default;
   z-index: 51;
   overflow: hidden;
+  padding: 100px 0;
   &::after{
     content: '';
     backdrop-filter: blur(15px);
     width: 100%;
-    height: 80%;
+    height: 100%;
   }
 `;
 

@@ -5,7 +5,7 @@ import { useUnit } from "effector-react";
 import { LastOpenedPageType, setLastOpenedPage } from "@/entities";
 
 interface AnimatedRoutingButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   href: string;
   setLastPageProp: LastOpenedPageType;
   className?: string;
