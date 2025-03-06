@@ -47,8 +47,11 @@ body {
 
 .page-transition {
   opacity: 0;
-  /* background: black; */
+  background: black;
   transform: translateY(40px);
-  /* filter: blur(12px); */
   overflow: hidden;
+}
+
+.page-transition *{
+  filter: blur(0) !important;
 }
