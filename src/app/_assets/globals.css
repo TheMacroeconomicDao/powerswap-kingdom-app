@@ -41,7 +41,7 @@ small {
 body {
   transition-property: transform;
   transition-timing-function: ease-in-out;
-  transition-duration: 400ms;
+  transition-duration: 500ms;
   overflow: hidden;
 }
 
@@ -49,3 +49,4 @@ body {
   transform: translateY(40px);
   overflow: hidden;
 }
+
