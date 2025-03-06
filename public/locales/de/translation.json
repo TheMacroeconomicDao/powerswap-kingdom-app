@@ -125,13 +125,13 @@
                 }
               ]
             }
-          },
-          "blockedPage": {
-            "title": "DAS REFERRAL-PROGRAMM IST GESPERRT!",
-            "description": "drücken Sie unten, um zu entsperren",
-            "button":"AKTIVIEREN",
-            "commingSoon":"kommt bald"
           }
+        },
+        "blockedPage": {
+          "title": "DAS REFERRAL-PROGRAMM IST GESPERRT!",
+          "description": "drücken Sie unten, um zu entsperren",
+          "button":"AKTIVIEREN",
+          "commingSoon":"kommt bald"
         }
       },
       "aboutUs": {
