@@ -29,7 +29,7 @@ export const AnimatedRoutingButton: React.FC<AnimatedRoutingButtonProps> = ({
 
     body?.classList.add("page-transition");
     
-    await sleep(500);
+    await sleep(700);
 
     router.push(href);
     setLastPage(setLastPageProp);
