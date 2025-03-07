@@ -2,8 +2,6 @@
 
 import { motion } from 'framer-motion';
 
-import { useUnit } from 'effector-react';
-
 export const TabAnimatedGame = (props: { children?: React.ReactNode; className: string }) => {
   return (
     <motion.div

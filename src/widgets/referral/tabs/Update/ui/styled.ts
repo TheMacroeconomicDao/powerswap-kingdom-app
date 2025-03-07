@@ -2,22 +2,9 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const OverlayButton = styled(motion.button)`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 0;
+  backdrop-filter: blur(15px);
   width: 100%;
   height: 100%;
-  cursor: default;
-  z-index: 51;
-  overflow: hidden;
-  padding: 100px 0;
-  &::after{
-    content: '';
-    backdrop-filter: blur(15px);
-    width: 100%;
-    height: 100%;
-  }
 `;
 
 export const Overlay = styled(motion.div)`
