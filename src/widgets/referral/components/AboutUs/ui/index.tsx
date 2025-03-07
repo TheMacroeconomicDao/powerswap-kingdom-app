@@ -27,6 +27,7 @@ export const AboutUs = () => {
       transition={{ duration: 0.05 }}
       className="h-full w-fit px-16"
       onClick={handleClick}
+      
     >
       <h6 className={`${styles.about_us} text-base font-normal uppercase`}>{t('aboutUsButton')}</h6>
     </motion.button>

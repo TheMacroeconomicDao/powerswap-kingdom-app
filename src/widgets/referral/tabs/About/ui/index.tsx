@@ -11,14 +11,60 @@ import { SocialLinks } from './social-links';
 import { TextSection } from './text';
 
 import { useTranslation, Trans } from 'react-i18next';
+import { motion, PanInfo } from 'framer-motion';
+import { setRefTab, setTab } from '@/entities';
+import { useState } from 'react';
 
 export const ReferralAboutTab = () => {
   const { t } = useTranslation('translation', {
     keyPrefix: 'referral.pages.aboutUs.sections',
   });
+  
+const [dragDirection, setDragDirection] = useState<'left' | 'right' | 'bottom' | 'none'>('none');
 
-  return (
-    <TabAnimatedReferral className={`${styles.tab_wrapper} flex flex-col items-center`}>
+const handleClick = () => {
+  setTab('none');
+  setRefTab('none');
+};
+
+return (
+  <>
+    <button className="absolute w-full h-full top-0" onClick={handleClick}></button>
+    <motion.div
+      key="tabrefabout"
+      initial={{ translateY: '100%' }}
+      animate={{ translateY: ['100%', 0], opacity: [0.4, 1], scale: [1.3, 1] }}
+      exit={{
+        opacity: [1, 0], 
+        scale: [1, 1.3],
+        x: dragDirection === 'right' ? 200 : dragDirection === 'left' ? -200 : 0,
+        y: '100%',
+        transition: { 
+          duration: dragDirection === 'none' ? 0.35 : 0.25,
+        },
+      }}
+      transition={{
+        duration: 0.4, 
+        type: 'spring',
+        bounce: 0.15,
+      }}
+
+      drag={true}
+      dragConstraints={{ right: 0, left: 0, top: 0, bottom: 0 }}
+      dragElastic={{ top: 0, bottom: 0.2, left: 0.07, right: 0.07 }}
+      onDragEnd={(_, info: PanInfo) => {
+        if (info.offset.x > 200) {
+          setDragDirection('right');
+          handleClick();
+        } else if (info.offset.x < -200) {
+          setDragDirection('left');
+          handleClick();
+        } else if (info.offset.y > 200) {
+          setDragDirection('bottom');
+          handleClick();
+        }
+      }}
+      className={`${styles.tab_wrapper} flex flex-col items-center`}>
       <div className="my-3 flex w-full justify-center">
         <Queen />
       </div>
@@ -53,6 +99,7 @@ export const ReferralAboutTab = () => {
           </div>
         </div>
       </div>
-    </TabAnimatedReferral>
+    </motion.div>
+    </>
   );
 };
