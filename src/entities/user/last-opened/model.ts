@@ -82,7 +82,7 @@ sample({
   target: $kingdom,
 });
 
-// временно
+// временно что бы каждый последний открытый окно не работал на рефералку
 sample({
   source: $user,
   filter: user => !!user && user.state.last_opened_page === 'referral',

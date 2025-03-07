@@ -9,13 +9,12 @@ import styles from '../../styles/currentTab.module.css';
 import tabStyles from './styles/AboutTab.module.css';
 import { Trans } from 'react-i18next';
 import { useUnit } from 'effector-react';
-import { $tab, setRefTab, setTab } from '@/entities';
+import { setRefTab, setTab } from '@/entities';
 import { motion, PanInfo } from 'framer-motion';
 import { useState } from 'react';
 
 
 export const AboutTab = () => {
-  const tab = useUnit($tab);
   
   const [dragDirection, setDragDirection] = useState<'left' | 'right' | 'none'>('none');
   

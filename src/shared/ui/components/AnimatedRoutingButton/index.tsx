@@ -31,12 +31,12 @@ export const AnimatedRoutingButton: React.FC<AnimatedRoutingButtonProps> = ({
       document.body.classList.add(`page-transition-${move}`);
     }
 
-    await new Promise((resolve) => setTimeout(resolve, 700));
+    await new Promise((resolve) => setTimeout(resolve, 600));
     
     router.push(href);
     setLastPage(setLastPageProp);
     
-    await new Promise((resolve) => setTimeout(resolve, 150));
+    await new Promise((resolve) => setTimeout(resolve, 300));
     if (typeof document !== "undefined") {
       document.body.classList.remove(`page-transition-${move}`);
     }
