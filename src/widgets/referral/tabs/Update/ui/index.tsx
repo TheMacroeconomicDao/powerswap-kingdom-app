@@ -16,7 +16,7 @@ export const UpdateModal = () => {
   const [dragDirection, setDragDirection] = useState<'left' | 'right' | 'none'>('none');
   const [isOpen, setIsOpen] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
-      const savedState = sessionStorage.getItem('modalState');
+      const savedState = localStorage.getItem('modalState');
       return savedState === 'true';
     }
     return false;
@@ -32,7 +32,7 @@ export const UpdateModal = () => {
   
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      sessionStorage.setItem('modalState', String(isOpen));
+      localStorage.setItem('modalState', String(isOpen));
     }
   }, [isOpen]);
 
