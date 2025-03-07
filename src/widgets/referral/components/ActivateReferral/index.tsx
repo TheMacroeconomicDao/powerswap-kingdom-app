@@ -32,7 +32,7 @@ export const ActivateReferral = () => {
                 animate={{ opacity: 1, scale: 1, translateY: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className='z-50 absolute top-[30%] w-[90%] min-w-[280px] max-w-[350px] h-[300px] flex flex-col justify-around items-center bg-black border p-7'>
-                <h6 className='text-[#DE2B2B] justify-self-center text-[18px]'>{t('title')}</h6>
+                <h6 className='text-[#FEF164] justify-self-center text-[18px]'>{t('title')}</h6>
                 <h5 className='text-[18px]'>{t('description')} </h5>
                 <div className="h-5">
                     <AnimatePresence mode="wait">
