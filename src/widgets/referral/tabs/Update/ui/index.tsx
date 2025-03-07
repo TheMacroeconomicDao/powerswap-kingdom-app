@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { ModalContainer, Overlay, OverlayButton, Text, TextBox, Title } from './styled';
 import { GoBackButton } from '@/widgets/referral';
 import { setRefTab, setTab } from '@/entities';
-import { AnimatePresence, motion, PanInfo } from 'framer-motion';
+import { PanInfo } from 'framer-motion';
 
 
 export const UpdateModal = () => {
@@ -14,11 +14,32 @@ export const UpdateModal = () => {
   });
   
   const [dragDirection, setDragDirection] = useState<'left' | 'right' | 'none'>('none');
+  const [isOpen, setIsOpen] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const savedState = sessionStorage.getItem('modalState');
+      return savedState === 'true';
+    }
+    return false;
+  });
+
   const handleClick = () => {
     setTab('none');
     setRefTab('none');
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 1000);
   };
   
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('modalState', String(isOpen));
+    }
+  }, [isOpen]);
+
+  if (isOpen) {
+      return <></>
+  }
+
   return (
     <>
       <div
