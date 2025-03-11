@@ -1,31 +1,21 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-
 import Paperclip from '../../../../assets/paperclip.svg';
 import Message from '../../../../assets/message.svg';
 
-import { LinkButton } from '../../../styled';
-
 import { useUnit } from 'effector-react';
-import { $refs, setLastOpenedPage } from '@/entities';
+import { $refs } from '@/entities';
 import { useTranslation } from 'react-i18next';
+import { AnimatedRoutingButton } from '@/shared/ui/components';
 
 export const RefLink = () => {
-  const router = useRouter();
-  const setLastPage = useUnit(setLastOpenedPage);
 
   const refs = useUnit($refs);
-
-  const handleClick = () => {
-    router.push('/referral');
-    // setLastPage('referral');
-  };
 
   const { t } = useTranslation('translation', { keyPrefix: 'game.home.navbar' });
   
   return (
-      <LinkButton className='relative  active:scale-95 duration-[150ms] ease-in-out' onClick={handleClick}>
+      <AnimatedRoutingButton className='relative  active:scale-95 duration-[150ms] ease-in-out' href={'/referral'} setLastPageProp={'game'} move={'right'}>
         <Paperclip />
         {!!refs && refs.referrals_count > 0 && (
           <div className="absolute left-[38px] top-[-2px] size-max">
@@ -38,6 +28,6 @@ export const RefLink = () => {
           </div>
         )}
         <h6 className='absolute bottom-[-10px] text-[10px] mx-auto left-0 right-0 w-fit'>{t('friends.text')}</h6>
-      </LinkButton>
+      </AnimatedRoutingButton>
   );
 };
