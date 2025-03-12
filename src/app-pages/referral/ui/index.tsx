@@ -61,7 +61,9 @@ export const ReferralUI = () => {
             />
             <SideQuestsButton />
           </motion.div>
-          <ActivateReferral />
+            {!referralStatus && (
+              <ActivateReferral /> 
+            )}
         </> 
   ) : (
       <div className='absolute'>

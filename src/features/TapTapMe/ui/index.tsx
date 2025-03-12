@@ -13,7 +13,7 @@ export const TapTapMe = ({ onTap }: TapTapMeProps) => {
   const [id, setId] = useState(0);
   const [isTapTo, setIsTapTo] = useState(true); // Чередуем состояния
   const kingdom = useUnit($kingdom);
-
+   
   const kingdomsTapTexts = {
     crypto: "mine!",
     heat: "generate!",
