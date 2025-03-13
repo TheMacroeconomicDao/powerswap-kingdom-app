@@ -8,7 +8,7 @@ import "../shared/i18n";
 import "@telegram-apps/telegram-ui/dist/styles.css";
 import "normalize.css";
 import "./_assets/globals.css";
-
+import { TelegramScript } from "@/shared/scripts";
 import { mainFont, fallbackFont } from "@/shared/ui/fonts";
 
 export const metadata: Metadata = {
@@ -27,6 +27,7 @@ export default function MainLayout({ children }: PropsWithChildren) {
           fontFamily: `${mainFont.style.fontFamily}, ${fallbackFont.style.fontFamily}`,
         }}
       >
+        <TelegramScript />
         <Root>{children}</Root>
       </body>
     </html>
