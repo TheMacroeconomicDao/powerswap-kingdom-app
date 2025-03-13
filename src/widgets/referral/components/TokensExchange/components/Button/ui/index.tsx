@@ -29,7 +29,7 @@ export const Button = ({
 
   return (
     <>
-    {referralStatus && refPoints >= 30000 && (
+    {referralStatus && refPoints >= 500000 && (
         <>
         <StyledButton
           onClick={() => setIsModalOpen(true)}

@@ -23,7 +23,7 @@ export const BuyResourceModal = () => {
   return (
     <>
       <motion.div 
-        ref={modalRef}
+        ref={`first-${modalRef}`}
         initial={{ translateY: '-100%' }}
         animate={{ translateY: ['-100%', 0], opacity: [0.4, 0.95]}}
         exit={{ translateY: [0, '-100%'], opacity: [0.95, 0] }}
@@ -35,7 +35,7 @@ export const BuyResourceModal = () => {
         className="fixed inset-0 z-50 bg-[#0e0e0e]"
       />
       <motion.div
-        ref={modalRef}
+        ref={`second-${modalRef}`}
         initial={{ translateY: '-100%' }}
         animate={{ translateY: ['-100%', 0], opacity: [0, 1],  scale: [1.3, 1] }}
         exit={{ translateY: [0, '-100%'], opacity: [1, 0], scale: [1, 1.3] }}

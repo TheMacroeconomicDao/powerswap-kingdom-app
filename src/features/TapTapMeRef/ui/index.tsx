@@ -48,7 +48,7 @@ export const TapTapMeRef = ({ onTap }: TapTapMeProps) => {
     <div className='absolute z-[-1] w-[60%] ml-[-40px] h-[160px] top-0'>
       {(onTap === 0 ? texts.slice(1) : texts).map((showText, index) => (
         <motion.div
-          key={`tap-tap-me-${index}`}
+          key={`tap-tap-me-ref-${index}`}
           initial={{ opacity: 1, y: 20 }}
           animate={{
             opacity: 0,
