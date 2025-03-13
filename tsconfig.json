@@ -30,7 +30,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/widgets/referral/tabs/Update/ui/index.tsx"
+    "src/widgets/referral/tabs/Update/ui/index.tsx",
+    "src", "src/shared/types"
   ],
   "exclude": ["node_modules"]
 }
