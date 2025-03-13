@@ -47,7 +47,7 @@ export const CurrentKingdom = () => {
     setTapTrigger((prev) => prev + 1);
   
     if (window.Telegram?.WebApp?.HapticFeedback?.impactOccurred) {
-      window.Telegram.WebApp.HapticFeedback.impactOccurred('medium');
+      window.Telegram.WebApp.HapticFeedback.impactOccurred('heavy');
       
     } else {
       console.warn("HapticFeedback недоступен");
