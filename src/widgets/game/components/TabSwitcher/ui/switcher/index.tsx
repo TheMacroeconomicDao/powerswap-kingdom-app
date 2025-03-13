@@ -19,7 +19,7 @@ export const TabSwitcher = () => {
       case 'about':
         return <AboutTab />;
       // case 'augmentations':
-      //   return <AugmentationsTab />;
+        // return <AugmentationsTab />;
       case 'update-tab':
         return <UpdateModal />
       case 'none':

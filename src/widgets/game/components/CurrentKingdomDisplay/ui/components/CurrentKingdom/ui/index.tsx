@@ -65,8 +65,8 @@ export const CurrentKingdom = () => {
           transition: { duration: 0.6, ease: 'circInOut' },
         }}
       >
-        <button onClick={handleClick} >
-          <Kingdom className="h-[220px] max-h-[220px] transition-transform duration-75 active:scale-90 active:opacity-90" preserveAspectRatio="meet" />
+        <button onClick={handleClick}>
+          <Kingdom preserveAspectRatio="meet" className="h-[220px] max-h-[220px] transition-transform duration-75 active:scale-90 active:opacity-90"/>
         </button>
       </StyledWrapper>
       <TapTapMe onTap={tapTrigger} />

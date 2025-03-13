@@ -6,8 +6,7 @@ import { StyledButton } from './styled';
 import { exchangeTokensFx } from '../../../model';
 import { setReferralStatus } from '@/entities/user/referral_status';
 import { ConfirmModal } from '../../ConfirmModal';
-import { motion } from 'framer-motion';
-
+import { AnimatePresence, motion } from 'framer-motion';
 export const Button = ({
   refPoints = 0,
   referralStatus,
@@ -58,11 +57,11 @@ export const Button = ({
           {t('buttonText')}
         </motion.p>
         </StyledButton>
-        <ConfirmModal
-          isOpen={isModalOpen}
-          onConfirm={handleConfirm}
-          onCancel={() => setIsModalOpen(false)}
-          />
+          <ConfirmModal
+            isOpen={isModalOpen}
+            onConfirm={handleConfirm}
+            onCancel={() => setIsModalOpen(false)}
+            />
       </>
       )}
     </>
