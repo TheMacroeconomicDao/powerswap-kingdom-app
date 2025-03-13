@@ -13,7 +13,7 @@ export const TapTapMe = ({ onTap }: TapTapMeProps) => {
   const [id, setId] = useState(0);
   const [isTapTo, setIsTapTo] = useState(true); // Чередуем состояния
   const kingdom = useUnit($kingdom);
-
+   
   const kingdomsTapTexts = {
     crypto: "mine!",
     heat: "generate!",
@@ -53,7 +53,7 @@ export const TapTapMe = ({ onTap }: TapTapMeProps) => {
     }, [onTap]);
     
     return(
-      <div className='absolute z-[-1] w-full h-[160px]'>
+      <div className='absolute z-[-1] w-full max-w-lg justify-self-center left-0 right-0 h-[160px]'>
           {(onTap === 0 ? texts.slice(1) : texts).map((showText, index) => (
             <motion.div
             key={`tap-tap-me-${index}`}

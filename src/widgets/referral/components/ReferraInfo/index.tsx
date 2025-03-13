@@ -18,7 +18,7 @@ export const ReferralInfo = ({
     keyPrefix: 'referral.pages.main.sections.referralInfo',
   });
   return (
-    <div className="mt-1 flex flex-col items-center gap-2">
+    <div className="mt-5 flex flex-col items-center gap-2">
       {!refStatus || (refPoints <= 0 && !refStatus) || refPoints <= 0 ? (
         <h6 className="text-[1.4rem]">{t('title')}</h6>
       ) : null}

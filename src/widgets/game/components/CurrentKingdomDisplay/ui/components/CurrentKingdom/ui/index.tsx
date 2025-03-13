@@ -65,19 +65,9 @@ export const CurrentKingdom = () => {
           transition: { duration: 0.6, ease: 'circInOut' },
         }}
       >
-        <motion.button
-          key="kingdom"
-          initial={{ scale: 1, opacity: 1 }}
-          whileTap={{
-            scale: 0.9,
-            opacity: 0.9,
-            transition: { duration: 0.03, ease: 'easeInOut' },
-          }}
-          onClick={handleClick}
-          className="h-[220px] max-h-[220px] w-auto"
-        >
-          <Kingdom preserveAspectRatio="meet" />
-        </motion.button>
+        <button onClick={handleClick}>
+          <Kingdom preserveAspectRatio="meet" className="h-[220px] max-h-[220px] transition-transform duration-75 active:scale-90 active:opacity-90"/>
+        </button>
       </StyledWrapper>
       <TapTapMe onTap={tapTrigger} />
     </AnimatePresence>
