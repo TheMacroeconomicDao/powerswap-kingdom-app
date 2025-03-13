@@ -45,6 +45,11 @@ export const CurrentKingdom = () => {
   const handleClick = () => {
     tap();
     setTapTrigger((prev) => prev + 1);
+  
+    // Проверяем, поддерживается ли вибрация
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+      navigator.vibrate(50); // Вибрация 50 мс
+    }
   };
 
   return (
