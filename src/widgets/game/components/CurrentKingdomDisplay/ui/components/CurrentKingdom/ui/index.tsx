@@ -25,7 +25,7 @@ import TraderKingdomTier4 from './assets/kingdoms/trader/tier-4.svg';
 import { useUnit } from 'effector-react';
 import { tap, $kingdom } from '@/entities';
 import { StyledWrapper } from './styled';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TapTapMe } from '@/features/TapTapMe';
 
 export const CurrentKingdom = () => {
@@ -44,11 +44,10 @@ export const CurrentKingdom = () => {
 
   const handleClick = () => {
     tap();
-    setTapTrigger((prev) => prev + 1); // Увеличиваем значение, чтобы `useEffect` в TapTapMe отработал
+    setTapTrigger((prev) => prev + 1);
   
-    if (navigator.vibrate) {
-      // Вибрация на 50 мс
-      navigator.vibrate(50);
+    if (window.Telegram?.WebApp?.HapticFeedback?.impactOccurred) {
+      window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
     }
   };
 
