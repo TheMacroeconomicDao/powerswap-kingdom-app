@@ -37,6 +37,7 @@ export const ReferenceButton = ({
             setReferenceShown(!referenceShown);
            }} className='absolute cursor-default w-[100vw] h-[100vh] top-[-14vh] right-0 z-50'></button>
             <Block
+              key='quest-description'
               direction = {direction}
               initial={{
                 opacity: 0,

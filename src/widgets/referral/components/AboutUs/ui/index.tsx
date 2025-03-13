@@ -22,6 +22,7 @@ export const AboutUs = () => {
 
   return (
     <motion.button
+      key='about-us-btn'
       initial={{ scale: 1 }}
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.05 }}

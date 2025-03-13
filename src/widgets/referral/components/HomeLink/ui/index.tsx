@@ -22,6 +22,7 @@ export const MainPageLink = () => {
     <AnimatePresence>
       <div className="relative mx-auto mt-[32px] h-[120px] w-[120px]">
         <motion.button
+          key='ref-tap'
           initial={{ scale: 1 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.05 }}

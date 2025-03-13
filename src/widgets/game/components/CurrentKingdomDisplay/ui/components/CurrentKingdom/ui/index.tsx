@@ -45,10 +45,6 @@ export const CurrentKingdom = () => {
   const handleClick = () => {
     tap();
     setTapTrigger((prev) => prev + 1);
-  
-    if (window.Telegram?.WebApp?.HapticFeedback?.impactOccurred) {
-      window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
-    }
   };
 
   return (
@@ -70,18 +66,7 @@ export const CurrentKingdom = () => {
         }}
       >
         <button onClick={handleClick} >
-          <motion.div
-            key="kingdom"
-            initial={{ scale: 1, opacity: 1 }}
-            whileTap={{
-              scale: 0.9,
-              opacity: 0.9,
-              transition: { duration: 0.03, ease: 'easeInOut' },
-            }}
-            className='max-h-[220px] h-[220px] flex items-center'
-          >
-            <Kingdom preserveAspectRatio="meet" />
-          </motion.div>
+          <Kingdom className="h-[220px] max-h-[220px] transition-transform duration-75 active:scale-90 active:opacity-90" preserveAspectRatio="meet" />
         </button>
       </StyledWrapper>
       <TapTapMe onTap={tapTrigger} />
