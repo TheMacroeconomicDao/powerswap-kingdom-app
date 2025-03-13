@@ -45,7 +45,7 @@ export const CurrentKingdom = () => {
   return (
     <AnimatePresence>
       <StyledWrapper
-        key="kingdom-wrapper"
+        key="kingdom-wrapper-old"
         initial={{ scale: 1, opacity: 1 }}
         animate={{
           scale: [0.8, 1],

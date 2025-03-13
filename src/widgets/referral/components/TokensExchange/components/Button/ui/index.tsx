@@ -7,7 +7,6 @@ import { exchangeTokensFx } from '../../../model';
 import { setReferralStatus } from '@/entities/user/referral_status';
 import { ConfirmModal } from '../../ConfirmModal';
 import { AnimatePresence, motion } from 'framer-motion';
-
 export const Button = ({
   refPoints = 0,
   referralStatus,

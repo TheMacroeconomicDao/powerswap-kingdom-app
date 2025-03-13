@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export const TabAnimatedReferral = (props: { children?: React.ReactNode; className: string }) => {
   return (
     <motion.div
-      key="tab"
+      key="tab-referral"
       initial={{ translateY: '100%' }}
       animate={{ translateY: 0 }}
       exit={{ translateY: '100%' }}

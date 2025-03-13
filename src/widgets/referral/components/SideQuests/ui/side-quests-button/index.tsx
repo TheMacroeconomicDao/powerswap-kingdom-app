@@ -23,6 +23,7 @@ export const SideQuestsButton = () => {
 
   return (
     <motion.button
+      key='side-quests-btn'
       initial={{ scale: 1 }}
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.05 }}
