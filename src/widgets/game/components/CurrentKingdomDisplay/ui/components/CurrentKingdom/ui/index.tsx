@@ -46,9 +46,11 @@ export const CurrentKingdom = () => {
     tap();
     setTapTrigger((prev) => prev + 1);
   
-    // Проверяем, поддерживается ли вибрация
-    if (typeof navigator !== 'undefined' && navigator.vibrate) {
-      navigator.vibrate(50); // Вибрация 50 мс
+    if (window.Telegram?.WebApp?.HapticFeedback?.impactOccurred) {
+      window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
+      
+    } else {
+      console.warn("HapticFeedback недоступен");
     }
   };
 
