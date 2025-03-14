@@ -9,6 +9,7 @@ import { referralTap } from '@/entities';
 import styles from './styles/mainPageLink.module.css';
 import { useState } from 'react';
 import { TapTapMeRef } from '@/features/TapTapMeRef';
+import { suppressLogs } from '@/shared/libs/suppressLogs';
 
 export const MainPageLink = () => {
   const [tapTrigger, setTapTrigger] = useState(0);
@@ -16,8 +17,16 @@ export const MainPageLink = () => {
   const handleClick = () => {
     referralTap();
     setTapTrigger((prev) => prev + 1);
-    if (window.Telegram?.WebApp?.HapticFeedback?.impactOccurred) {
-      window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
+
+    if ('vibrate' in navigator) {
+      navigator.vibrate(50);
+    }
+
+    const tgHapticFeedback = window.Telegram?.WebApp?.HapticFeedback;
+    if (tgHapticFeedback?.impactOccurred) {
+      suppressLogs(()=>{
+        tgHapticFeedback.impactOccurred('light');
+      })
     }
   };
 
