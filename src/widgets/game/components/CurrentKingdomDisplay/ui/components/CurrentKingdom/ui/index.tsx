@@ -49,8 +49,6 @@ export const CurrentKingdom = () => {
     if (window.Telegram?.WebApp?.HapticFeedback?.impactOccurred) {
       window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
       
-    } else {
-      console.warn("HapticFeedback недоступен");
     }
     
   };
