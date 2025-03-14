@@ -16,6 +16,9 @@ export const MainPageLink = () => {
   const handleClick = () => {
     referralTap();
     setTapTrigger((prev) => prev + 1);
+    if (window.Telegram?.WebApp?.HapticFeedback?.impactOccurred) {
+      window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
+    }
   };
 
   return (
