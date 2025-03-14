@@ -27,6 +27,7 @@ import { tap, $kingdom } from '@/entities';
 import { StyledWrapper } from './styled';
 import { useEffect, useState } from 'react';
 import { TapTapMe } from '@/features/TapTapMe';
+import { suppressLogs } from '@/shared/libs/suppressLogs';
 
 export const CurrentKingdom = () => {
   const kingdom = useUnit($kingdom);
@@ -45,12 +46,17 @@ export const CurrentKingdom = () => {
   const handleClick = () => {
     tap();
     setTapTrigger((prev) => prev + 1);
-  
-    if (window.Telegram?.WebApp?.HapticFeedback?.impactOccurred) {
-      window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
-      
-    }
     
+    if ('vibrate' in navigator) {
+      navigator.vibrate(50);
+    }
+
+    const tgHapticFeedback = window.Telegram?.WebApp?.HapticFeedback;
+    if (tgHapticFeedback?.impactOccurred) {
+      suppressLogs(()=> {
+        tgHapticFeedback.impactOccurred('light');
+      })
+    }
   };
 
   return (
