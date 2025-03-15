@@ -34,7 +34,7 @@ export const GameUI = () => {
       {isKingdomsNotPicked ? (
         <>
           <div className="flex-grow overflow-clip">
-            {kingdom ? <CurrentKingdomDisplay /> : <LoadingFallback />}
+            {kingdom ? <CurrentKingdomDisplay /> : <div className='min-h-[80vh] flex items-center'> <LoadingFallback /></div>} 
           </div>
           <KingdomSwitcher />
         </>

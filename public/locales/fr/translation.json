@@ -3,8 +3,28 @@
     "header": {
       "about": "À propos de nous"
     },
+    "home":{
+      "navbar":{
+        "friends":{
+          "text":"AMIS"
+        },
+        "home":{
+          "text":"ACCUEIL"
+        },
+        "game":{
+          "title":"JEU"
+        }
+      },
+      "pswTokens": {
+        "title": "JETONS PSWMeta"
+      },
+      "kingdomResource": {
+        "text": "KÖNIGREICHSRESSOURCE"
+      }
+    },
     "tabs": {
       "resources": {
+        "title": "RESSOURCES",
         "resourcePool": {
           "title": "Piscine de Ressources"
         },
@@ -13,13 +33,30 @@
         },
         "buyResource": {
           "text": "Acheter une ressource"
+        },
+        "referenceDescription":{
+          "text": "Achetez des ressources directement auprès de la Reine ! Les prix dans le pool sont dynamiques et varient selon la demande. La quantité de ressources est limitée — si elles viennent à manquer, vous devrez les chercher en bourse auprès d'autres joueurs"
+        },
+        "modalSubmit":{
+          "text":"PRENDRE MAINTENANT!"
         }
       },
       "augmentations": {
-        "buyButton": "Acheter"
+        "balance": {
+          "text": "Bilan"
+        },
+        "augmentation": {
+          "title": "AMÉLIORATION"
+        },
+        "buyButton": {
+          "text": "Acheter"
+        } 
       },
       "about": {
         "text": "<4>Gybernaty</4> — <0>c'est une communauté de chercheurs et de développeurs passionnés,</0> créant des applications innovantes sur une pile technologique.<br/>Un des projets clés est <0>PowerSwapMeta — un métavers,</0> où les actions numériques influencent le monde réel.<br/><1>Le mini-jeu PowerSwapKingdom — fait partie de l'écosystème PowerSwapMeta.</1> <2><br/>Les joueurs construisent</2> leurs propres royaumes, <2>participent au commerce de tokens</2> et interagissent les uns avec les autres dans le cadre d'<2>un processus de jeu unique.</2> Tous les fonds provenant de la vente de <0>NFT</0> et d'actifs en jeu sont destinés à soutenir des projets réels, tels que <3>le minage</3> et <2>l'énergie verte.</2> <br/><1>PowerSwapMeta unit le monde virtuel</1> à l'économie réelle, créant un nouveau format <3>d'interaction numérique.</3>"
+      },
+      "leaderboard":{
+        "title": "CLASSEMENT"
       }
     },
     "kingdom-pick": {
@@ -29,7 +66,7 @@
           "subtitle": "L'Usine Alimentaire Mondiale"
         },
         "crypto": {
-          "title": "Le Royaume Crypto",
+          "title": "Le Royaume Mineurs",
           "subtitle": "Le Premier Producteur Mondial de Crypto"
         }
       },
@@ -91,6 +128,12 @@
               ]
             }
           }
+        },
+        "blockedPage": {
+          "title": "LE PROGRAMME DE PARRAINAGE EST VERROUILLÉ!",
+          "description": "appuyez ci-dessous pour déverrouiller",
+          "button":"ACTIVER",
+          "commingSoon":"arrive bientôt"
         }
       },
       "aboutUs": {
@@ -126,9 +169,8 @@
     },
     "notAvailable": {
       "title": "En développement.",
-      "text": "Abonnez-vous à notre chaîne <0>Telegram pour connaître</0> l'état actuel du projet.",
-      "text2": "<0>Inscrivez-vous en premier!</0> 🎉 Devenez l'un des 1000 joueurs sélectionnés dans notre WhiteList TestNet exclusif et obtenez un accès anticipé à notre projet, ainsi que des bonus et des cadeaux de Noël uniques! 🎁"
-    },
+      "text": "Abonnez-vous à notre chaîne <0>Telegram pour connaître</0> l'état actuel du projet."
+  },
     "updatesTab": {
       "title": "Version 1.1",
       "text": "<0>PowerSwapKingdom!</0><br/> <1>Nous sommes ravis d'annoncer</1> le lancement de la première étape du jeu ! 🎮<br/> Maintenant, ceux qui ont participé activement au programme de parrainage peuvent échanger leurs points accumulés contre <2>des avantages de jeu uniques</2> pour devenir encore plus forts et influents dans leur royaume.<br/> Veuillez noter que le programme de parrainage est temporairement désactivé, mais ne vous inquiétez pas — il reviendra dans un format complètement nouveau et génial, prêt à vous offrir de nouvelles opportunités de croissance ! 🚀"

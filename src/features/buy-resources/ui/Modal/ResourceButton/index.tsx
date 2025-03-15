@@ -15,7 +15,7 @@ import { ResourceWithStateType } from '@/shared/types';
 
 export const ResourceButton = ({
   resource,
-  size = 32,
+  size = 25,
 }: {
   resource: ResourceWithStateType;
   size?: number;
@@ -54,6 +54,7 @@ export const ResourceButton = ({
 
   return (
     <motion.button
+    key='resource-btn'
       initial={{
         scale: 1,
       }}

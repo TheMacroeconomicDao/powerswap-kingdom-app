@@ -14,6 +14,7 @@ export const ExitButton = () => {
   });
   return (
     <motion.button
+      key='shut-down-btn'
       initial={{ scale: 1 }}
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.05 }}

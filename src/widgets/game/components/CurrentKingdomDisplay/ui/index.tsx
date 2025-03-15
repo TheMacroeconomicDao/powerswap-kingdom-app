@@ -1,11 +1,18 @@
 'use client';
 
-import { CurrentKingdom, KingdomResource, TokensDisplay } from '@/widgets';
+import { CurrentKingdom, KingdomResource, TokensDisplay, UpdateModal } from '@/widgets';
 
 import { useUnit } from 'effector-react';
 import { $kingdom, $lastActiveResource, $lastOpenedPage } from '@/entities';
+import { useEffect } from 'react';
+import { $tab, setTab } from '@/entities';
 
 export const CurrentKingdomDisplay = () => {
+
+    useEffect(() => {
+      setTab('update-tab');
+    }, []);
+
   const textColors = {
     crypto: 'text-[#EE71E2]',
     heat: 'text-[#7CB1FF]',
@@ -16,10 +23,10 @@ export const CurrentKingdomDisplay = () => {
   const kingdom = useUnit($kingdom);
 
   return (
-    <div className={`${kingdom && textColors[kingdom]} flex flex-col gap-1`}>
-      <CurrentKingdom />
-      <TokensDisplay />
-      <KingdomResource />
-    </div>
+      <div className={`${kingdom && textColors[kingdom]} flex flex-col gap-1`}>
+        <CurrentKingdom />
+        <TokensDisplay />
+        <KingdomResource />
+      </div>
   );
 };

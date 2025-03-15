@@ -26,6 +26,7 @@ const CopyButton = () => {
 
   return (
     <motion.button
+      key='ref-link-copy-btn'
       initial={{ scale: 1 }}
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.05 }}

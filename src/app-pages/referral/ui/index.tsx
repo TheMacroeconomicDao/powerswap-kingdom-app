@@ -17,6 +17,7 @@ import {
   TokensExchange,
 } from '@/widgets';
 import { $referralStatus } from '@/entities/user/referral_status';
+import { ActivateReferral } from '@/widgets/referral/components/ActivateReferral';
 
 export const ReferralUI = () => {
   const refs = useUnit($refs);
@@ -30,37 +31,44 @@ export const ReferralUI = () => {
 
   useEffect(() => {
     getReferrals();
-    setRefTab('update-tab');
+    // setRefTab('update-tab');
   }, [getReferrals]);
 
   return (
     <AnimatePresence>
       {!!refs ? (
-        <motion.div
-          key="mainui"
-          initial={{ opacity: 0, scale: 0.95, translateY: 10 }}
-          animate={{ opacity: 1, scale: 1, translateY: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="flex flex-col items-center justify-center"
-        >
-          <MainPageLink />
-          <CopySection copied={t('sections.url.myUrl')} />
-          <TokensExchange
-            refPoints={refPoints}
-            referralStatus={referralStatus}
-          />
-          <ReferralInfo
-            refPoints={refPoints}
-            refStatus={referralStatus}
-          />
-          <Missions
-            title={t('sections.quests.inviteQuests.title')}
-            refs={refs}
-          />
-          <SideQuestsButton />
-        </motion.div>
-      ) : (
+        <>
+          <motion.div
+            key="mainui"
+            initial={{ opacity: 0, scale: 0.95, translateY: 10 }}
+            animate={{ opacity: 1, scale: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex flex-col items-center justify-center"
+          >
+            <MainPageLink />
+            <CopySection copied={t('sections.url.myUrl')} />
+            <TokensExchange
+              refPoints={refPoints}
+              referralStatus={referralStatus}
+            />
+            <ReferralInfo
+              refPoints={refPoints}
+              refStatus={referralStatus}
+            />
+            <Missions
+              title={t('sections.quests.inviteQuests.title')}
+              refs={refs}
+            />
+            <SideQuestsButton />
+          </motion.div>
+            {!referralStatus && (
+              <ActivateReferral /> 
+            )}
+        </> 
+  ) : (
+      <div className='absolute'>
         <LoadingUIMain key="loading" />
+      </div>
       )}
     </AnimatePresence>
   );

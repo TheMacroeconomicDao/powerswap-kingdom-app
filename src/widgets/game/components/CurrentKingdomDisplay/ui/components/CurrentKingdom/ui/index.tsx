@@ -25,9 +25,13 @@ import TraderKingdomTier4 from './assets/kingdoms/trader/tier-4.svg';
 import { useUnit } from 'effector-react';
 import { tap, $kingdom } from '@/entities';
 import { StyledWrapper } from './styled';
+import { useEffect, useState } from 'react';
+import { TapTapMe } from '@/features/TapTapMe';
+import { suppressLogs } from '@/shared/libs/suppressLogs';
 
 export const CurrentKingdom = () => {
   const kingdom = useUnit($kingdom);
+  const [tapTrigger, setTapTrigger] = useState(0);
 
   const kingdoms = {
     crypto: [MinerKingdomTier1, MinerKingdomTier2, MinerKingdomTier3, MinerKingdomTier4],
@@ -38,6 +42,22 @@ export const CurrentKingdom = () => {
 
   // @TODO: change this shit to fetchable tier
   const Kingdom = kingdom && kingdoms[kingdom] ? kingdoms[kingdom][0] : () => <></>;
+
+  const handleClick = () => {
+    tap();
+    setTapTrigger((prev) => prev + 1);
+    
+    if ('vibrate' in navigator) {
+      navigator.vibrate(50);
+    }
+
+    const tgHapticFeedback = window.Telegram?.WebApp?.HapticFeedback;
+    if (tgHapticFeedback?.impactOccurred) {
+      suppressLogs(()=> {
+        tgHapticFeedback.impactOccurred('light');
+      })
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -57,20 +77,11 @@ export const CurrentKingdom = () => {
           transition: { duration: 0.6, ease: 'circInOut' },
         }}
       >
-        <motion.button
-          key="kingdom"
-          initial={{ scale: 1, opacity: 1 }}
-          whileTap={{
-            scale: 0.9,
-            opacity: 0.9,
-            transition: { duration: 0.03, ease: 'easeInOut' },
-          }}
-          onClick={() => tap()}
-          className="h-[220px] max-h-[220px] w-auto"
-        >
-          <Kingdom preserveAspectRatio="meet" />
-        </motion.button>
+        <button onClick={handleClick}>
+          <Kingdom preserveAspectRatio="meet" className="h-[220px] max-h-[220px] transition-transform duration-75 active:scale-90 active:opacity-90"/>
+        </button>
       </StyledWrapper>
+      <TapTapMe onTap={tapTrigger} />
     </AnimatePresence>
   );
 };

@@ -3,7 +3,7 @@
 import { useUnit } from 'effector-react';
 import { buyResourcesModelInputs, buyResourcesModelChosenResource } from '../../model';
 
-import styles from './styles/sliderInput.module.css';
+import cls from './styles/sliderInput.module.css';
 export const ResourceBuySlider = () => {
   const buyResourceAmount = useUnit(buyResourcesModelInputs.$buyResourceAmount);
   const setResourceBuyAmount = useUnit(buyResourcesModelInputs.setResourceBuyAmount);
@@ -15,9 +15,9 @@ export const ResourceBuySlider = () => {
   };
 
   return (
-    <div className="mx-auto min-h-fit w-[calc(100%-72px)]">
+    <div className="mx-auto min-h-fit w-full">
       <input
-        className={styles.slider}
+        className={cls.slider}
         onInput={handleInput}
         type="range"
         min={0}

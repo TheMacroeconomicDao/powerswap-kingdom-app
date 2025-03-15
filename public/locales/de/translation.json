@@ -3,8 +3,28 @@
     "header": {
       "about": "Über uns"
     },
+    "home":{
+      "navbar":{
+        "friends":{
+          "text":"FREUNDE"
+        },
+        "home":{
+          "text":"STARTSEITE"
+        },
+        "game":{
+          "title":"SPIEL"
+        }
+      },
+      "pswTokens": {
+        "title": "PSWMeta TOKEN"
+      },
+      "kingdomResource": {
+        "text": "KÖNIGREICHSRESSOURCE"
+      }
+    },
     "tabs": {
       "resources": {
+        "title": "RESSOURCEN",
         "resourcePool": {
           "title": "Ressourcenpool"
         },
@@ -13,13 +33,28 @@
         },
         "buyResource": {
           "text": "Ressource kaufen"
+        },
+        "referenceDescription":{
+          "text": "Kaufen Sie Ressourcen direkt von der Königin! Die Preise im Pool sind dynamisch und ändern sich je nach Nachfrage. Die Menge der Ressourcen ist begrenzt — wenn sie ausgehen, müssen Sie sie an der Börse von anderen Spielern erwerben."
+        },
+        "modalSubmit":{
+          "text":"JETZT ABHOLEN!"
         }
       },
       "augmentations": {
+        "balance": {
+          "text": "Bilanz"
+        },
+        "augmentation": {
+          "title": "AUFRÜSTUNG"
+        },
         "buyButton": "Kaufen"
       },
       "about": {
         "text": "<4>Gybernaty</4> — <0>das ist eine Gemeinschaft von Forschern und Entwickler-Enthusiasten,</0> die innovative Anwendungen auf einem Technologie-Stack erstellen.<br/>Eines der Schlüsselprojekte ist <0>PowerSwapMeta — ein Metaversum,</0> in dem digitale Handlungen die reale Welt beeinflussen.<br/><1>Das Mini-Spiel PowerSwapKingdom — ist Teil des Ökosystems PowerSwapMeta.</1> <2><br/>Die Spieler bauen</2> ihre eigenen Königreiche, <2>nehmen am Token-Handel teil</2> und interagieren miteinander in einem <2>einzigartigen Spielprozess.</2> Alle Mittel aus dem Verkauf von <0>NFTs</0> und In-Game-Assets fließen in die Unterstützung realer Projekte wie <3>Mining</3> und <2>grüne Energie.</2> <br/><1>PowerSwapMeta verbindet die virtuelle Welt</1> mit der realen Wirtschaft und schafft ein neues Format der <3>digiitalen Interaktion.</3>"
+      },
+      "leaderboard":{
+        "title": "RANGLISTE"
       }
     },
     "kingdom-pick": {
@@ -29,7 +64,7 @@
           "subtitle": "Die Weltweite Nahrungsfabrik"
         },
         "crypto": {
-          "title": "Das Krypto-Königreich",
+          "title": "Das Miner-Königreich",
           "subtitle": "Der Weltweit Erste Krypto-Produzent"
         }
       },
@@ -91,6 +126,12 @@
               ]
             }
           }
+        },
+        "blockedPage": {
+          "title": "DAS REFERRAL-PROGRAMM IST GESPERRT!",
+          "description": "drücken Sie unten, um zu entsperren",
+          "button":"AKTIVIEREN",
+          "commingSoon":"kommt bald"
         }
       },
       "aboutUs": {
