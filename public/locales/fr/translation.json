@@ -169,12 +169,11 @@
     },
     "notAvailable": {
       "title": "En développement.",
-      "text": "Abonnez-vous à notre chaîne <0>Telegram pour connaître</0> l'état actuel du projet.",
-      "text2": "<0>Inscrivez-vous en premier!</0> 🎉 Devenez l'un des 1000 joueurs sélectionnés dans notre WhiteList TestNet exclusif et obtenez un accès anticipé à notre projet, ainsi que des bonus et des cadeaux de Noël uniques! 🎁"
-    },
+      "text": "Abonnez-vous à notre chaîne <0>Telegram pour connaître</0> l'état actuel du projet."
+  },
     "updatesTab": {
       "title": "Version 1.1",
-      "text": "<0>PowerSwapKingdom!</0><br/> <1>Nous sommes ravis d'annoncer</1> le lancement de la première étape du jeu ! 🎮<br/> Maintenant, ceux qui ont participé activement au programme de parrainage peuvent échanger leurs points accumulés contre <2>des avantages de jeu uniques</2> pour devenir encore plus forts et influents dans leur royaume.<br/> Veuillez noter que le programme de parrainage est temporairement désactivé, mais ne vous inquiétez pas — il reviendra dans un format complètement nouveau et génial, prêt à vous offrir de nouvelles opportunités de croissance ! 🚀<br/><3>Ceci n'est que le début — à l'avenir, vous pouvez vous attendre à de nombreuses mises à jour passionnantes</3>, des surprises incroyables et de nouvelles façons de renforcer votre position dans le jeu !<br/><1>Ne manquez pas</1>, restez à l'écoute de nos nouvelles et soyez prêt pour de nouveaux sommets que nous conquerrons ensemble ! 🏔️<br/> <1>Nous vous félicitons pour la nouvelle année 🎄 et vous souhaitons des victoires éclatantes et du succès tant dans le jeu que dans la vie ! 🥳 </1>"
+      "text": "<0>PowerSwapKingdom!</0><br/> <1>Nous sommes ravis d'annoncer</1> le lancement de la première étape du jeu ! 🎮<br/> Maintenant, ceux qui ont participé activement au programme de parrainage peuvent échanger leurs points accumulés contre <2>des avantages de jeu uniques</2> pour devenir encore plus forts et influents dans leur royaume.<br/> Veuillez noter que le programme de parrainage est temporairement désactivé, mais ne vous inquiétez pas — il reviendra dans un format complètement nouveau et génial, prêt à vous offrir de nouvelles opportunités de croissance ! 🚀<br/><3>Ceci n'est que le début — à l'avenir, vous pouvez vous attendre à de nombreuses mises à jour passionnantes</3>, des surprises incroyables et de nouvelles façons de renforcer votre position dans le jeu !<br/><1>Ne manquez pas</1>, restez à l'écoute de nos nouvelles et soyez prêt pour de nouveaux sommets que nous conquerrons ensemble ! 🏔️<br/>"
     },
     "errorPage": {
       "title": "Erreur",
